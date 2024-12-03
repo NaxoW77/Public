@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Peajes | Ruta 27</title>
     <style>
         body {
             margin: 0;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             width: 100%;
             height: 100%;
+            background-color: rgb(24, 21, 61);
         }
 
         section {
@@ -22,8 +22,18 @@
 
         div {
             display: flex;
-            background-color: rgba(0, 255, 255, 0.329);
+
             margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            color: white;
+        }
+
+        .disabled {
+            display: none;
         }
 
         .handler {
@@ -34,16 +44,41 @@
         .header {
             position: relative;
             margin-top: 2%;
+            text-align: center;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .titleBox{
+            flex: 50%;
+            min-width: 250px;
+            max-width: 800px;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+
+        .titleSubBox{
+            display: block;
+        }
+
+        .title>h1 {
+            margin-top: 10px;
+        }
+        .title>h2 {
+            font-weight: 200;
+            margin-top: 10px;
         }
 
         .content {
             display: block;
             position: relative;
-            margin-top: 2%;
         }
 
         .footer {
-            margin-top: -10px;
+            margin-top: 1.7%;
+            margin-bottom: 1.7%;
             position: relative;
         }
 
@@ -59,18 +94,91 @@
 
         .row {
             display: flex;
-            margin: 10px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .item {
             margin: 15px;
-            padding: 10px;
-            max-width: 250px;
-            min-width: 128px;
-            flex: 35%;
+            border: 5px outset rgb(63, 63, 172);
+            border-radius: 3px;
             background-color: blue;
+            flex: 1 0 30vw;
+            max-width: 28vw;
+            height: 200px;
+            max-height: 250px;
+            box-sizing: border-box;
+        }
+
+        .item>div:has(div) {
+            background: linear-gradient(15deg, rgb(89, 78, 204), rgb(24, 12, 150));
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .item>div>h1 {
+            font-size: calc(100% + 1.7vw);
+            font-weight: 900;
+            position: absolute;
+            width: 100%;
+            top: 17%;
+            text-shadow: 0px 0px 7px rgb(67, 93, 180);
+            color: rgba(215, 222, 255, 0.925);
+        }
+
+        .item>div>h2 {
+            font-size: calc(100% + 1.2vw);
+            font-weight: 100;
+            position: absolute;
+            width: 100%;
+            bottom: 25%;
+            text-shadow: 0px 0px 7px rgb(67, 93, 180);
+            color: rgba(215, 222, 255, 0.925);
+        }
+
+        .numInd {
+            background-color: rgba(102, 117, 207, 0.356);
+            border-right: 3px inset rgb(63, 63, 172);
+            border-bottom: 3px inset rgb(63, 63, 172);
+            text-shadow: 0px 0px 7px rgb(67, 93, 180);
+            color: rgba(215, 222, 255, 0.925);
+            border-bottom-right-radius: 7px;
+            padding: 3px;
+            margin: 0px;
+            float: left;
+            position: absolute;
+            font-size: calc(100% + 1.5vw);
+        }
+
+        @media screen and (max-width: 800px) {
+            .item {
+                margin: 15px;
+                background-color: blue;
+                flex: 1 0 30vw;
+                max-width: 50vw;
+                height: 200px;
+                max-height: 250px;
+                box-sizing: border-box;
+            }
+
+            .item>div>h1 {
+                font-size: calc(100% + 3vw);
+                font-weight: 900;
+                position: absolute;
+                width: 100%;
+                top: 20%;
+            }
+
+            .item>div>h2 {
+                font-size: calc(90% + 2.5vw);
+                font-weight: 100;
+                position: absolute;
+                width: 100%;
+                bottom: 25%;
+            }
         }
 
         .dtext {
@@ -81,130 +189,171 @@
 </head>
 
 <body onload="load()">
-    <section id="selectArea">
-        <div class="handler header">
-            <div class="dtext">
-                <h1>
-                    Precios de peaje
-                </h1>
-                <h2>
-                    Haz click en los peajes para calcular un total.
-                </h2>
-            </div>
+    <div class="handler header">
+        <div class="titleBox">
+            <div class="titleSubBox">
+            <h1>Precios de peaje, ruta 27</h1>
+            <h2>Vehículos de carga normal.</h2>
         </div>
-
-        <div class="handler content">
-
-            <div class="row">
-                <div class="item dtext" id="p1">
-                    <h1>Escazú</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-
-                <div class="item dtext" id="p2">
-                    <h1>Ciudad Colón</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-
-                <div class="item dtext" id="p3">
-                    <h1>San Rafael</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-                <div class="item dtext" id="p4">
-                    <h1>Guácima</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-
-                <div class="item dtext" id="p5">
-                    <h1>Siquiares</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-
-                <div class="item dtext" id="p6">
-                    <h1>Rampa Atenas</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-                <div class="item dtext" id="p7">
-                    <h1>Atenas</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-
-                <div class="item dtext" id="p8">
-                    <h1>Pozón</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-
-                <div class="item dtext" id="p9">
-                    <h1>Rampa Pozón</h1>
-                    <h2>&#8353;0000</h2>
-                </div>
-            </div>
-
-            <div class="dtext">
-                <h1>Última actualización: [ACT]</h1>
-            </div>
         </div>
-    </section>
-
-
-
-    <div class="handler nav">
-        <div class="dtext">
-            <button>
-                Ir al total
-            </button>
+        <div class="titleBox">
+        <div class="titleSubBox">
+            <h1>Dirección: Hacia San José.</h1>
+            <h2 id="updTxt">Cargando...</h2>
+        </div>
         </div>
     </div>
 
+    <div class="handler content">
 
+        <div class="row">
+            <div class="item dtext">
+                <div id="p1">
+                    <div class="numInd">#1</div>
+                    <h1>Rampa Pozón</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
 
+            <div class="item dtext">
+                <div id="p2">
+                    <div class="numInd">#2</div>
+                    <h1>Pozón</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
 
-    <section id="calcArea">
-        <div class="handler header">
-            <div class="dtext">
-                <h1>
-                    Cálculo de total
-                </h1>
-                <h2>
-                    Haz click en los peajes para calcular un total.
-                </h2>
+            <div class="item dtext">
+                <div id="p3">
+                    <div class="numInd">#3</div>
+                    <h1>Atenas</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
+            <div class="item dtext">
+                <div id="p4">
+                    <div class="numInd">#4</div>
+                    <h1>Rampa Atenas</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
+
+            <div class="item dtext">
+                <div id="p5">
+                    <div class="numInd">#5</div>
+                    <h1>Siquiares</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
+
+            <div class="item dtext">
+                <div id="p6">
+                    <div class="numInd">#6</div>
+                    <h1>Guácima</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
+            <div class="item dtext">
+                <div id="p7">
+                    <div class="numInd">#7</div>
+                    <h1>San Rafael</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
+
+            <div class="item dtext">
+                <div id="p8">
+                    <div class="numInd">#8</div>
+                    <h1>Ciudad Colón</h1>
+                    <h2>Cargando...</h2>
+                </div>
+            </div>
+
+            <div class="item dtext">
+                <div id="p9">
+                    <div class="numInd">#9</div>
+                    <h1>Escazú</h1>
+                    <h2>Cargando...</h2>
+                </div>
             </div>
         </div>
-        <div class="handler content">
-            <div>
-                <h1>Cálculo de total</h1>
-            </div>
-        </div>
-    </section>
+    </div>
 
+    <div class="footer">
+        <div class="dtext">
+            
+        </div>
+    </div>
+
+    <div class="handler nav">
+        <button>Hola</button>
+    </div>
 </body>
 <script>
+    var doc2;
+    var actualz = "";
+    var preciosElmnt = [];
+    var preciosTxt = [];
+
+    var updTxt = document.getElementById("updTxt");
+
     function load() {
-        changeMode()
 
+        if(window.innerWidth)
 
-        $.ajax("https://globalviaruta27.com/tarifas", {
-            success: function(response) {
-              console.log(response)
-            }
-          }); 
+        for (var i = 0; i < 9; i++) {
+            preciosElmnt.push(document.querySelector(`#p${i + 1}`));
+            preciosTxt.push(document.querySelector(`#p${i + 1} > h2`))
+        }
+        fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://globalviaruta27.com/tarifas'))
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                const parser = new DOMParser()
+
+                doc2 = parser.parseFromString(data, "text/html");
+                doc2.documentElement.innerHTML = doc2.documentElement.innerHTML.replace(/\\&quot;|\\n|\\t/gm, "");
+                actualz = doc2.querySelector("#tarifas > h3").innerHTML;
+
+                for (var j = 0; j < 9; j++) {
+                    preciosTxt[j].innerHTML = "&#8353;" + doc2.querySelector(`.row-2 > .column-${(8-j) + 2}`).innerHTML.replace(/¢/gm, "");
+                }
+
+                var updMsg = actualz.split(" ");
+                updMsg = updMsg.slice(updMsg.length - 2, updMsg.length);
+                updMsg[0] = updMsg[0].toLowerCase().split("");
+                updMsg[0][0] = updMsg[0][0].toUpperCase();
+                updMsg[0] = updMsg[0].join("");
+                updTxt.innerHTML = `Última actualización: ${updMsg.join(" ")}.`;
+            })
+            .catch(error => {
+                console.error('Failed to fetch page: ', error)
+                updTxt.innerHTML = `Error al cargar los datos.`;
+                for (z in preciosElmnt) {
+                    preciosElmnt[z].querySelector("h2").innerHTML = "Error."
+                }
+            })
+
     }
 
-
-    var sect1 = document.getElementById("selectArea");
-    var sect2 = document.getElementById("calcArea");
-
-    var mode = 1;
-    function changeMode() {
-        if (mode == 1) {
-            sect1.style.display = "none";
-            sect2.style.display = "";
-            mode = 2;
-        } else {
-            sect1.style.display = "";
-            sect2.style.display = "none";
-            mode = 1;
+    var route = 0;
+    function changeRoute() {
+        for (var x = 0; x < 8; x++) {
+            let oldEl = document.querySelector(`#p${x + 1}`);
+            let newEl = document.querySelector(`#p${8 - x + 1}`)
+            if (x <= 3) {
+                console.log(oldEl.querySelector(".numInd").innerHTML, newEl.querySelector(".numInd").innerHTML)
+                let aft = oldEl.outerHTML;
+                let aftNum = oldEl.querySelector(".numInd").innerHTML;
+                oldEl.querySelector(".numInd").innerHTML = newEl.querySelector(".numInd").innerHTML;
+                newEl.querySelector(".numInd").innerHTML = aftNum;
+                oldEl.outerHTML = newEl.outerHTML;
+                newEl.outerHTML = aft
+            }
         }
+        route == 0 ? route = 1 : route = 0;
+        console.log(route)
     }
 
 </script>
