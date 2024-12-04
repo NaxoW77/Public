@@ -32,12 +32,12 @@
             color: white;
         }
 
-        a{
+        a {
             text-decoration: none;
         }
 
-        button{
-            color: aqua;
+        button {
+            color: rgb(0, 196, 196);
             font-size: 32px;
             width: 0px;
             height: 0px;
@@ -47,13 +47,13 @@
             background-color: #00000000;
             border: none;
         }
-        button:hover{
-            color: rgb(184, 255, 255);
-            cursor: pointer;
+
+        button:hover {
+            filter: brightness(130%);
         }
 
-        span{
-            white-space:nowrap;
+        span {
+            white-space: nowrap;
             position: relative;
         }
 
@@ -76,7 +76,7 @@
             flex-wrap: wrap;
         }
 
-        .titleBox{
+        .titleBox {
             flex: 50%;
             min-width: 500px;
             max-width: 800px;
@@ -85,7 +85,7 @@
         }
 
         @media screen and (max-width: 800px) {
-            .titleBox{
+            .titleBox {
                 flex: 50%;
                 margin: 10px;
                 margin-left: 30px;
@@ -95,6 +95,7 @@
                 box-sizing: border-box;
                 margin-bottom: 25px;
             }
+
             .titleSubBox>h1 {
                 margin-top: 10px;
                 font-size: 33px;
@@ -102,6 +103,7 @@
                 padding: 0px;
                 height: auto;
             }
+
             .titleSubBox>h2 {
                 font-weight: 200;
                 margin-top: 10px;
@@ -109,7 +111,7 @@
             }
         }
 
-        .titleSubBox{
+        .titleSubBox {
             display: block;
             width: 100%;
         }
@@ -120,16 +122,18 @@
             padding: 0px;
             height: auto;
         }
+
         .titleSubBox>h2 {
             font-weight: 200;
             margin-top: 10px;
         }
+
         .content {
             display: block;
             position: relative;
         }
 
-        .foot{
+        .foot {
             position: relative;
             display: flex;
             align-items: center;
@@ -149,8 +153,8 @@
             box-sizing: border-box;
         }
 
-        .footer > div > h1 {
-            font-size: calc(100% + 1.2vw);
+        .footer>div>h1 {
+            font-size: calc(100% + 1.0vw);
             font-weight: 900;
             position: relative;
             display: grid;
@@ -161,6 +165,7 @@
             padding: 10px;
             text-align: center;
         }
+
         @media screen and (max-width: 830px) {
             .footer {
                 margin: 15px;
@@ -174,7 +179,7 @@
                 box-sizing: border-box;
             }
 
-            .footer > div > h1 {
+            .footer>div>h1 {
                 font-size: calc(100% + 1.5vw);
                 font-weight: 900;
                 position: relative;
@@ -214,13 +219,18 @@
             max-height: 250px;
             box-sizing: border-box;
             background: linear-gradient(15deg, rgb(89, 78, 204), rgb(24, 12, 150));
-            transition: 0.5s;
+            transition: 0.2s;
         }
 
-        .selected{
+        .selected {
+            border: 5px outset rgb(63, 63, 172);
+            border-radius: 7px;
+            margin-left: -5px;
+            margin-top: -5px;
             background: linear-gradient(15deg, rgb(89, 78, 204), rgb(24, 12, 150));
             animation: 3s linear infinite colorChange;
         }
+
         @keyframes colorChange {
             0% {
 
@@ -329,15 +339,16 @@
     <div class="handler header">
         <div class="titleBox">
             <div class="titleSubBox">
-            <h1>Precios de peaje, <span>ruta 27</span></h1>
-            <h2>Vehículos de carga normal.</h2>
-        </div>
+                <h1>Precios de peaje, <span>Ruta 27</span></h1>
+                <h2>Vehículos de carga normal.</h2>
+            </div>
         </div>
         <div class="titleBox">
-        <div class="titleSubBox">
-            <h1>Dirección: <span>Hacia San José. </span><button onclick="changeRoute()">&LeftRightArrow;</button></h1>
-            <h2 id="updTxt">Cargando...</h2>
-        </div>
+            <div class="titleSubBox">
+                <h1 id="dirTxt">Dirección: <span>Hacia San José. </span><button
+                        id="changeButton">&LeftRightArrow;</button></h1>
+                <h2 id="updTxt">Cargando...</h2>
+            </div>
         </div>
     </div>
 
@@ -424,11 +435,6 @@
         </div>
     </div>
 
-    <div class="handler nav">
-        <div class="navButton">
-        <button>Hola</button>
-    </div>
-    </div>
 </body>
 <script>
     var doc2;
@@ -437,6 +443,7 @@
     var preciosTxt = [];
 
     var updTxt = document.getElementById("updTxt");
+    var dirTxt = document.getElementById("dirTxt");
     var resTxt = document.querySelector("#resTxt>h1");
 
     function load() {
@@ -455,17 +462,18 @@
                 doc2 = parser.parseFromString(data, "text/html");
                 doc2.documentElement.innerHTML = doc2.documentElement.innerHTML.replace(/\\&quot;|\\n|\\t/gm, "");
                 actualz = doc2.querySelector("#tarifas > h3").innerHTML;
-
-                for(var x = 0; x < 9; x++){
-                    document.getElementsByClassName("item")[x].addEventListener("click", function(ev){clicked(ev)});
-                    document.getElementsByClassName("item")[x].addEventListener("mouseover", function(ev){this.style.filter+="brightness(1.15)"});
-                    document.getElementsByClassName("item")[x].addEventListener("mouseout", function(ev){this.style.filter = this.style.filter.replace("brightness(1.15)","")});
+                for (var x = 0; x < 9; x++) {
+                    document.getElementsByClassName("item")[x].style.cursor="pointer";
+                    document.getElementsByClassName("item")[x].addEventListener("click", function (ev) { clicked(ev) });
+                    document.getElementsByClassName("item")[x].addEventListener("mouseover", function (ev) { this.style.filter += "brightness(1.15)" });
+                    document.getElementsByClassName("item")[x].addEventListener("mouseout", function (ev) { this.style.filter = this.style.filter.replace("brightness(1.15)", "") });
                 }
-
                 for (var j = 0; j < 9; j++) {
-                    preciosTxt[j].innerHTML = "&#8353;" + doc2.querySelector(`.row-2 > .column-${(8-j) + 2}`).innerHTML.replace(/¢/gm, "");
+                    preciosTxt[j].innerHTML = "&#8353;" + doc2.querySelector(`.row-2 > .column-${(8 - j) + 2}`).innerHTML.replace(/¢/gm, "");
                 }
 
+                dirTxt.querySelector("button").style.cursor="pointer";
+                dirTxt.querySelector("button").addEventListener("click", function(){changeRoute()});
                 var updMsg = actualz.split(" ");
                 updMsg = updMsg.slice(updMsg.length - 2, updMsg.length);
                 updMsg[0] = updMsg[0].toLowerCase().split("");
@@ -477,6 +485,7 @@
                 console.error('Failed to fetch page: ', error)
                 updTxt.innerHTML = `Error.`;
                 resTxt.innerHTML = `Error al cargar los datos.`;
+                dirTxt.querySelector("button").style.color = "gray";
                 for (z in preciosElmnt) {
                     preciosElmnt[z].querySelector("h2").innerHTML = "Error."
                 }
@@ -484,68 +493,69 @@
 
     }
 
-    function clicked (ev){
+    function clicked(ev) {
         let parntEl = ev.target;
         let chldEl = ev.target.querySelector(".item>div")
         if (!chldEl.classList.contains("selected")) {
-            parntEl.style.border="5px outset rgb(74, 66, 148)";
-            parntEl.style.background = "rgba(0, 0, 0, 0.0)";
             chldEl.classList.add("selected");
-        }else{
-            parntEl.style.border="5px outset rgb(63, 63, 172)";
-            parntEl.style.background ="linear-gradient(15deg, rgb(89, 78, 204), rgb(24, 12, 150))";
+        } else {
             chldEl.classList.remove("selected");
         }
 
         calc(chldEl);
     }
 
-    var precioSum=[];
-    function calc(elm){
+    var precioSum = [];
+    function calc(elm) {
         let prec = parseInt(elm.querySelector(`#${elm.id}>h2`).innerHTML.replace("₡", ""));
         console.log(prec)
-        if(!isNaN(prec)){
-            if(!precioSum.includes(prec)){
+        if (!isNaN(prec)) {
+            if (!precioSum.includes(prec)) {
                 precioSum.push(prec);
-            }else{
-                precioSum.splice(precioSum.indexOf(prec),1);
+            } else {
+                precioSum.splice(precioSum.indexOf(prec), 1);
             }
         }
 
         let res = 0;
-        for(var z = 0; z < precioSum.length; z++){
+        for (var z = 0; z < precioSum.length; z++) {
             res += precioSum[z];
         }
         console.log(res)
-        if(res > 0){
-            resTxt.innerHTML = `Precio total a pagar: <span>&#8353;${res}.</span>`;
-        }else{
+        if (res > 0) {
+            resTxt.innerHTML = `Precio total a pagar: <span>&#8353;${res}</span>`;
+        } else {
             resTxt.innerHTML = "Seleccione los peajes para calcular.";
         }
     }
 
-    var route = 0;
+    var route = 1;
     function changeRoute() {
         for (var x = 0; x < 8; x++) {
             let oldEl = document.querySelector(`#p${x + 1}`);
             let newEl = document.querySelector(`#p${8 - x + 1}`);
             if (x <= 3) {
-                
-                let aftCss = document.querySelector(`div:has(#p${x + 1})`).style.cssText;
-                console.log(aftCss)
-                document.querySelector(`div:has(#p${x + 1})`).style.cssText = document.querySelector(`div:has(#p${8 - x + 1})`).style.cssText
-                document.querySelector(`div:has(#p${8 - x + 1})`).style.cssText = aftCss
-                
+
+
+
                 let aftNum = oldEl.querySelector(".numInd").innerHTML;
+                oldEl.parentElement.style.background = "";
+                oldEl.parentElement.style.border = "";
                 oldEl.querySelector(".numInd").innerHTML = newEl.querySelector(".numInd").innerHTML;
                 newEl.querySelector(".numInd").innerHTML = aftNum;
 
                 let aftEl = oldEl.outerHTML;
                 oldEl.outerHTML = newEl.outerHTML;
-                newEl.outerHTML = aftEl
+                newEl.outerHTML = aftEl;
             }
         }
-        route == 0 ? route = 1 : route = 0;
+        route == 0 ? (route = 1,
+            dirTxt.querySelector("span").innerHTML = "Hacia San José.",
+            dirTxt.querySelector("button").style.color = "")
+
+            : (route = 0,
+                dirTxt.querySelector("span").innerHTML = "Desde San José.",
+                dirTxt.querySelector("button").style.color = "#9a00ff")
         console.log(route)
     }
 
