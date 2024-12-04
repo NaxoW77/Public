@@ -39,13 +39,20 @@
         button {
             color: rgb(0, 196, 196);
             font-size: 32px;
-            width: 0px;
-            height: 0px;
-            margin-top: -10px;
-            position: absolute;
+            margin-top: -3px;
+            margin-left: 5px;
+            background-color: rgba(67, 59, 109, 0.753);
+            border-radius: 20px;
+            display: table-cell;
+            vertical-align: middle;
+            height: auto;
             font-weight: 900;
-            background-color: #00000000;
             border: none;
+        }
+
+        button>div {
+            height: 40px;
+            margin-top: -14px;
         }
 
         button:hover {
@@ -345,8 +352,8 @@
         </div>
         <div class="titleBox">
             <div class="titleSubBox">
-                <h1 id="dirTxt">Dirección: <span>Hacia San José. </span><button
-                        id="changeButton">&LeftRightArrow;</button></h1>
+                <h1 id="dirTxt">Dirección: <span>Hacia San José.</span><button
+                    id="changeButton"><div>&LeftRightArrow;</div></button></h1>
                 <h2 id="updTxt">Cargando...</h2>
             </div>
         </div>
