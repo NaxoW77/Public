@@ -40,19 +40,23 @@
             color: rgb(0, 196, 196);
             font-size: 32px;
             margin-top: -3px;
-            margin-left: 5px;
-            background-color: rgba(67, 59, 109, 0.753);
-            border-radius: 20px;
+            margin-left: 10px;
+            background-color: rgba(65, 54, 117, 0.753);
+            border-radius: 10px;
             display: table-cell;
             vertical-align: middle;
             height: auto;
             font-weight: 900;
-            border: none;
+            border: 3px solid rgb(50, 29, 99);
         }
 
         button>div {
-            height: 40px;
-            margin-top: -14px;
+            height: 28px;
+            width: 50px;
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 15px;
+            font-weight: 800;
         }
 
         button:hover {
@@ -124,7 +128,7 @@
         }
 
         .titleSubBox>h1 {
-            margin-top: 10px;
+            margin-top: 7px;
             height: 50px;
             padding: 0px;
             height: auto;
@@ -132,7 +136,7 @@
 
         .titleSubBox>h2 {
             font-weight: 200;
-            margin-top: 10px;
+            margin-top: 7px;
         }
 
         .content {
@@ -352,8 +356,8 @@
         </div>
         <div class="titleBox">
             <div class="titleSubBox">
-                <h1 id="dirTxt">Dirección: <span>Hacia San José.</span><button
-                    id="changeButton"><div>&LeftRightArrow;</div></button></h1>
+                <h1 id="dirTxt">Dirección: <span><span>Hacia San José.</span><button
+                    id="changeButton"><div>Girar</div></button></span></h1>
                 <h2 id="updTxt">Cargando...</h2>
             </div>
         </div>
@@ -557,12 +561,12 @@
             }
         }
         route == 0 ? (route = 1,
-            dirTxt.querySelector("span").innerHTML = "Hacia San José.",
+            dirTxt.querySelector("span>span").innerHTML = "Hacia San José.",
             dirTxt.querySelector("button").style.color = "")
 
             : (route = 0,
-                dirTxt.querySelector("span").innerHTML = "Desde San José.",
-                dirTxt.querySelector("button").style.color = "#9a00ff")
+                dirTxt.querySelector("span>span").innerHTML = "Desde San José.",
+                dirTxt.querySelector("button").style.color = "rgb(171, 125, 221)")
         console.log(route)
     }
 
