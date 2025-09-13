@@ -1130,7 +1130,7 @@ var preguntas =
   },
   {
     "idPregunta": 95,
-    "txtPregunta": "Considere el siguiente diagrama y sus instrucciones:[IMG-100]A. El diagrama representa posibles caminos para ir de INICIO a FIN.\nB. Hay cinco etapas; los números indican el fin de cada etapa.\nC. Una etapa es independiente y no necesaria. Las otras cuatro deben cumplirse en orden numérico ascendente.\nD. Las flechas indican direcciones posibles.\nE. Se puede pasar más de una vez por un cuadro.\n¿Cuántos caminos hay para llegar a 1 saliendo de INICIO?",
+    "txtPregunta": "Considere el siguiente diagrama y sus instrucciones:[IMG-129]A. El diagrama representa posibles caminos para ir de INICIO a FIN.\nB. Hay cinco etapas; los números indican el fin de cada etapa.\nC. Una etapa es independiente y no necesaria. Las otras cuatro deben cumplirse en orden numérico ascendente.\nD. Las flechas indican direcciones posibles.\nE. Se puede pasar más de una vez por un cuadro.\n¿Cuántos caminos hay para llegar a 1 saliendo de INICIO?",
     "respOpciones": [
       "1) 2",
       "2) 3",
@@ -1140,4 +1140,5 @@ var preguntas =
     "idRespPregunta": 4,
     "respPregunta": "Se deben trazar las rutas desde INICIO hasta el cuadro 1 siguiendo las flechas.\n1) INICIO → B → Z → G → 1\n2) INICIO → B → Z → H → Y → J → K → 1\n3) INICIO → C → F → L → K → 1\n4) INICIO → D → 3 → L → K → 1\n5) INICIO → C → F → G → 1\nYa se han encontrado 5 caminos distintos, y es posible que existan más (por ejemplo, haciendo bucles permitidos por la instrucción E). Por lo tanto, la respuesta es que hay más de 4 caminos. \n\nLa opción correcta es la 4."
   }
+
 ]
