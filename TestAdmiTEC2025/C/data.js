@@ -314,7 +314,7 @@ var preguntas =
   },
   {
     "idPregunta": 27,
-    "txtPregunta": "En un torneo participan 6 jugadores: X, Y, Z, D, E y F y cada uno se enfrenta a los demás. Se asignan tres puntos por cada gane y un punto por cada empate. La tabla final de resultados tiene la siguiente información:\nGanados Empatados Perdidos Puntos totales\nX 2  -   2    -\nY -  1   -   10\nZ 1  2   -    5\nD 2  1   -    -\nE 1  -   4    3\nF -  3   0    -\nConsidere las siguientes afirmaciones:\nA. D perdió contra X.\nB. Hay dos jugadores que empatan en puntaje.\nC. Si F hubiera ganado un partido más, habría ganado el torneo.\nDe las anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "En un torneo participan 6 jugadores: X, Y, Z, D, E y F y cada uno se enfrenta a los demás. Se asignan tres puntos por cada gane y un punto por cada empate. La tabla final de resultados tiene la siguiente información:[IMG-19]Considere las siguientes afirmaciones:\nA. D perdió contra X.\nB. Hay dos jugadores que empatan en puntaje.\nC. Si F hubiera ganado un partido más, habría ganado el torneo.\nDe las anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo B",
@@ -458,7 +458,7 @@ var preguntas =
   },
   {
     "idPregunta": 39,
-    "txtPregunta": "Sobre el conjunto A={1, 2, 3, 4}, se define la operación ⊕ por medio de una tabla. Se define el orden de un número como la cantidad de veces que se opera consigo mismo hasta obtener 1.\n\n¿Cuál es el orden de 3?",
+    "txtPregunta": "Sobre el conjunto A={1, 2, 3, 4}, se define la operación ⊕ por medio de una tabla:[IMG-20]Así, por ejemplo, se puede observar que 3⊕4=3 [IMG-21] Se define el orden de un número como la cantidad de veces que se opera consigo mismo hasta obtener 1.\n¿Cuál es el orden de 3?",
     "respOpciones": [
       "1) 2",
       "2) 3",
@@ -466,71 +466,71 @@ var preguntas =
       "4) 5"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Para encontrar el orden de 3, operamos 3 consigo mismo repetidamente hasta obtener 1 (se asume una tabla de operaciones no proporcionada).\n&bullet; 1ra operación:\no3 ⊕ 3 = 2\nc\n&bullet; 2da operación:\no(3 ⊕ 3) ⊕ 3 = 2 ⊕ 3 = 1\nc\nSe necesitaron 2 operaciones para obtener 1. Por lo tanto, el orden de 3 es 2. \n\nLa opción correcta es la 1."
+    "respPregunta": "Para encontrar el orden de 3, operamos 3 consigo mismo repetidamente hasta obtener 1 (se asume una tabla de operaciones no proporcionada).\n&bullet; 1ra operación:\no3 ⊕ 3 = 2\nc\n&bullet; 2da operación:\no2 ⊕ 3 = 1\nc\nSe necesitaron 2 operaciones para obtener 1. Por lo tanto, el orden de 3 es 2. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 40,
-    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:\n[IMG-19]\n¿Cuál opción corresponde a la cuarta fila?",
+    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:[IMG-22]¿Cuál opción corresponde a la cuarta fila?",
     "respOpciones": [
-      "1) [IMG-20]",
-      "2) [IMG-21]",
-      "3) [IMG-22]",
-      "4) [IMG-23]"
+      "1) [IMG-23]",
+      "2) [IMG-24]",
+      "3) [IMG-25]",
+      "4) [IMG-26]"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se deben analizar los patrones en cada columna. \na) Primer rectángulo: El círculo se mueve en sentido horario entre los cuatro cuadrantes definidos por las diagonales: izquierda, arriba, derecha. En la cuarta fila debe estar abajo. \nb) Segundo rectángulo: Los colores (oscuro/claro) se alternan. En la cuarta fila debe ser claro arriba de la diagonal y oscuro abajo. \nc) Tercer rectángulo: El color del rectángulo completo alterna. En la cuarta fila debe ser claro. \nLa opción 4 ([IMG-23]) es la única que cumple con estas tres condiciones. \n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "Se deben analizar los patrones en cada columna. \na) Primer rectángulo: El círculo se mueve en sentido horario entre los cuatro cuadrantes definidos por las diagonales: izquierda, arriba, derecha. En la cuarta fila debe estar abajo. \nb) Segundo rectángulo: Los colores (oscuro/claro) se alternan. En la cuarta fila debe ser claro arriba de la diagonal y oscuro abajo. \n c) Tercer rectángulo: El color del rectángulo completo alterna. En la cuarta fila debe ser claro. \nLa opción 4 es la única que cumple con estas tres condiciones: [IMG-26] \n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 41,
-    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:\n[IMG-24]\n¿Cuál opción debe colocarse en el recuadro en blanco?",
+    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:[IMG-27]¿Cuál opción debe colocarse en el recuadro en blanco?",
     "respOpciones": [
-      "1) [IMG-25]",
-      "2) [IMG-26]",
-      "3) [IMG-27]",
-      "4) [IMG-28]"
+      "1) [IMG-28]",
+      "2) [IMG-29]",
+      "3) [IMG-30]",
+      "4) [IMG-31]"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "En cada fila hay tres tipos de figuras: 4 triángulos, 4 cuadrados y 9 cuadrados. En la tercera fila faltan las figuras de 4 y 9 cuadrados. Además, hay un patrón de sombreado por columna: Columna 1 siempre tiene 1 sección sombreada, Columna 2 siempre tiene 3, y Columna 3 siempre tiene 2. La figura faltante está en la columna 2, por lo que debe tener 3 secciones sombreadas. De las opciones, la única que corresponde a una figura de 9 cuadrados con 3 secciones sombreadas es la opción 3 ([IMG-27]). \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "En cada fila hay tres tipos de figuras: 4 triángulos, 4 cuadrados y 9 cuadrados. \nEn la tercera fila faltan las figuras de 4 y 9 cuadrados. \nAdemás, hay un patrón de sombreado por columna: Columna 1 siempre tiene 1 sección sombreada, Columna 2 siempre tiene 3, y Columna 3 siempre tiene 2. \nLa figura faltante está en la columna 2, por lo que debe tener 3 secciones sombreadas. \nDe las opciones, la única que corresponde a una figura de 9 cuadrados con 3 secciones sombreadas es la opción 3: [IMG-30] \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 42,
-    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:\n[IMG-29]\n¿Cuál opción debe colocarse en el recuadro en blanco?",
+    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:[IMG-32]¿Cuál opción debe colocarse en el recuadro en blanco?",
     "respOpciones": [
-      "1) [IMG-30]",
-      "2) [IMG-31]",
-      "3) [IMG-32]",
-      "4) [IMG-33]"
+      "1) [IMG-33]",
+      "2) [IMG-34]",
+      "3) [IMG-35]",
+      "4) [IMG-36]"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El patrón es que al superponer las figuras de las primeras tres columnas se obtiene la figura de la cuarta columna, con la excepción de que si un punto ya existe, desaparece (una operación XOR). Para la tercera fila, al superponer la figura de la columna 1 con la de la columna 2, se obtiene un resultado. Para que este resultado, superpuesto con la figura faltante (de la columna 3), dé la figura de la columna 4, se debe buscar la opción que cumpla esta regla. Analizando la tercera fila, se determina que la figura faltante es la opción 2 ([IMG-31]). \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "El patrón es que al superponer las figuras de las primeras tres columnas se obtiene la figura de la cuarta columna, con la excepción de que si un punto ya existe, desaparece.[IMG-37] [IMG-38] Para la tercera fila, al superponer la figura de la columna 1 con la de la columna 2, se obtiene un resultado. \nPara que este resultado, superpuesto con la figura faltante (de la columna 3), dé la figura de la columna 4, se debe buscar la opción que cumpla esta regla. \nAnalizando la tercera fila, se determina que la figura faltante es la opción 2: [IMG-34] \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 43,
-    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:\n[IMG-34]\n¿Cuál opción corresponde a la parte faltante?",
-    "respOpciones": [
-      "1) [IMG-35]",
-      "2) [IMG-36]",
-      "3) [IMG-37]",
-      "4) [IMG-38]"
-    ],
-    "idRespPregunta": 2,
-    "respPregunta": "El patrón en cada fila es una rotación de la figura. La primera figura se rota 90 grados para obtener la segunda, y esta se rota 90 grados para obtener la tercera. En la tercera fila, se tiene un pentágono. Siguiendo el patrón de rotación de 90 grados en sentido horario, la figura faltante (la segunda de la fila) debe ser el pentágono de la primera posición rotado 90 grados. Esta corresponde a la opción 2 ([IMG-36]). \n\nPor lo tanto, la opción correcta es la 2."
-  },
-  {
-    "idPregunta": 44,
-    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:\n[IMG-39]\n¿Cuál opción debe colocarse en el recuadro en blanco?",
+    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:[IMG-39]¿Cuál opción corresponde a la parte faltante?",
     "respOpciones": [
       "1) [IMG-40]",
       "2) [IMG-41]",
       "3) [IMG-42]",
       "4) [IMG-43]"
     ],
+    "idRespPregunta": 2,
+    "respPregunta": "El patrón en cada fila es una rotación de la figura. \nLa primera figura se rota 90 grados para obtener la segunda, y esta se rota 90 grados para obtener la tercera.[IMG-44] En la tercera fila, se tiene un pentágono. Siguiendo el patrón de rotación de 90 grados en sentido horario, la figura faltante (la segunda de la fila) debe ser el pentágono de la primera posición rotado 90 grados.[IMG-45] Esta corresponde a la opción 2: [IMG-41] \n\nPor lo tanto, la opción correcta es la 2."
+  },
+  {
+    "idPregunta": 44,
+    "txtPregunta": "Considere la siguiente figura que sigue un patrón por fila:[IMG-47]¿Cuál opción debe colocarse en el recuadro en blanco?",
+    "respOpciones": [
+      "1) [IMG-48]",
+      "2) [IMG-49]",
+      "3) [IMG-50]",
+      "4) [IMG-51]"
+    ],
     "idRespPregunta": 4,
-    "respPregunta": "En cada fila, los cuadrados alternan entre sombreados y no sombreados. En los no sombreados, un círculo gris se mueve sobre la diagonal en tres posiciones: 'arriba', 'medio' y 'abajo'. En cada fila, deben aparecer las tres posiciones. En la tercera fila, ya tenemos las posiciones 'arriba' y 'abajo'. Por lo tanto, falta la posición 'medio'. \n\nLa opción correcta es la 4 ([IMG-43])."
+    "respPregunta": "En cada fila, los cuadrados alternan entre sombreados y no sombreados.\n En los no sombreados, un círculo gris se mueve sobre la diagonal en tres posiciones: 'arriba', 'medio' y 'abajo'. \nEn cada fila, deben aparecer las tres posiciones. En la tercera fila, ya tenemos las posiciones 'arriba' y 'abajo'. Por lo tanto, falta la posición 'medio', como el la figura 4:[IMG-51] \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 45,
-    "txtPregunta": "Considere las siguientes figuras:\n[IMG-44]\n¿Cuál figura tiene un patrón geométrico diferente de las otras?",
+    "txtPregunta": "Considere las siguientes figuras:[IMG-52]¿Cuál figura tiene un patrón geométrico diferente de las otras?",
     "respOpciones": [
       "1) 1",
       "2) 2",
@@ -538,11 +538,11 @@ var preguntas =
       "4) 5"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "En las figuras 1, 2, 3 y 5, la diferencia entre el número de puntos en el cuadro superior y el inferior es de una unidad. En la figura 4, la diferencia es de 2 unidades (5 puntos arriba, 3 abajo). Por lo tanto, la figura 4 tiene un patrón diferente. \n\nLa opción correcta es la 3."
+    "respPregunta": "En las figuras 1, 2, 3 y 5, la diferencia entre el número de puntos en el cuadro superior y el inferior es de una unidad (Ej: 6 puntos arriba y 5 puntos abajo: 6→5=1 unidad). \nEn la figura 4, la diferencia es de 2 unidades (2 puntos arriba, 0 abajo: 2→0=2 unidades). Por lo tanto, la figura 4 tiene un patrón diferente. \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 46,
-    "txtPregunta": "Considere las siguientes figuras:\n[IMG-45]\n¿Cuál figura tiene un patrón geométrico diferente de las otras, con respecto a los cuadros sombreados?",
+    "txtPregunta": "Considere las siguientes figuras:[IMG-53]¿Cuál figura tiene un patrón geométrico diferente de las otras, con respecto a los cuadros sombreados?",
     "respOpciones": [
       "1) 1",
       "2) 2",
@@ -550,83 +550,83 @@ var preguntas =
       "4) 4"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "En las figuras 1, 2 y 4, los cuadrados sombreados se agrupan en múltiplos de dos (formando rectángulos de 1x2 o 2x1). En la figura 3, hay un cuadro sombreado que está aislado y no forma parte de una pareja, rompiendo el patrón. \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "En las figuras 1, 2 y 4, los cuadrados sombreados se agrupan de dos en dos (formando rectángulos de 1x2 o 2x1). \nEn la figura 3, hay un cuadro sombreado que está aislado y no forma parte de una pareja, rompiendo el patrón. \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 47,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-46]\n¿Cuál es la figura que continúa la secuencia?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-54]¿Cuál es la figura que continúa la secuencia?",
     "respOpciones": [
-      "1) [IMG-47]",
-      "2) [IMG-48]",
-      "3) [IMG-49]",
-      "4) [IMG-50]"
+      "1) [IMG-55]",
+      "2) [IMG-56]",
+      "3) [IMG-57]",
+      "4) [IMG-58]"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Hay dos patrones. Primero, las formas planas se repiten en un ciclo de tres: círculo, cuadrado, triángulo. La figura 7 es un triángulo, por lo que la siguiente debe ser un círculo. Segundo, la línea externa rota en sentido horario en cinco posiciones posibles. Siguiendo la rotación, la siguiente posición corresponde a la de la opción 1 ([IMG-47]). \n\nPor lo tanto, la opción correcta es la 1."
+    "respPregunta": "Hay dos patrones. \nPrimero, las formas planas se repiten en un ciclo de tres: círculo → cuadrado → triángulo. \nLa figura 6 es un triángulo, por lo que la siguiente debe ser un círculo. \nSegundo, la línea externa rota en sentido horario en cinco posiciones posibles. [IMG-59] \nSiguiendo la rotación, la siguiente posición corresponde a la de la opción 1: [IMG-55] \n\nPor lo tanto, la opción correcta es la 1."
   },
   {
     "idPregunta": 48,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-51]\n¿Cuál figura debe ir en la posición 6?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-60]¿Cuál figura debe ir en la posición 6?",
     "respOpciones": [
-      "1) [IMG-52]",
-      "2) [IMG-53]",
-      "3) [IMG-54]",
-      "4) [IMG-55]"
+      "1) [IMG-61]",
+      "2) [IMG-62]",
+      "3) [IMG-63]",
+      "4) [IMG-64]"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "La línea divisoria de la figura gira 45 grados en sentido horario en cada paso. Empezando vertical (0°), pasa a 45°, luego horizontal (90°), luego 135°, y vuelve a vertical (180°). El siguiente giro de 45° desde la posición 5 (vertical) la llevaría a una diagonal a 225°. Esta posición corresponde a la figura de la opción 4 ([IMG-55]). \n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "La línea divisoria de la figura gira 45 grados en sentido horario en cada paso. Empezando vertical (0°), pasa a 45°, luego horizontal (90°), luego 135°, y vuelve a vertical (180°).\n El siguiente giro de 45° desde la posición 5 (vertical) la llevaría a una diagonal a 225°. \nEsta posición corresponde a la figura de la opción 4: [IMG-64] \n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 49,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-56]\n¿Cuál figura debe ir en la posición 8?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-65]¿Cuál figura debe ir en la posición 8?",
     "respOpciones": [
-      "1) [IMG-57]",
-      "2) [IMG-58]",
-      "3) [IMG-59]",
-      "4) [IMG-60]"
+      "1) [IMG-66]",
+      "2) [IMG-67]",
+      "3) [IMG-68]",
+      "4) [IMG-69]"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Se observa un patrón que se repite cada 4 figuras: 1) Triángulo fuera. 2) Triángulo doblado hacia adentro. 3) Figura rotada 180 grados. 4) Triángulo devuelto a su posición original. Este ciclo se repite. La figura 5 es como la 1, pero rotada. La figura 6 será como la 2 (triángulo adentro), la 7 como la 3 (rotada 180°), y la 8 será como la 4 (triángulo afuera). Respetando la orientación de la figura 5, la figura 8 debe corresponder a la opción 2 ([IMG-58]). \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Se observa un patrón que se repite cada 4 figuras: [IMG-70]1) Triángulo fuera. \n2) Triángulo doblado hacia adentro. \n3) Figura rotada 180 grados. \n4) Triángulo devuelto a su posición original. \nEste ciclo se repite. \nLa figura 5 es como la 1, pero rotada. \nLa figura 6 será como la 2 (triángulo adentro), la 7 como la 3 (rotada 180°), y la 8 será como la 4 (triángulo afuera). \nRespetando la orientación de la figura 5, la figura 8 debe corresponder a la opción 2:[IMG-67] \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 50,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-61]\n¿Cuál figura debe ir en la posición 8?",
-    "respOpciones": [
-      "1) [IMG-62]",
-      "2) [IMG-63]",
-      "3) [IMG-64]",
-      "4) [IMG-65]"
-    ],
-    "idRespPregunta": 2,
-    "respPregunta": "Las figuras son cuadrados de puntos de tamaño creciente (1x1, 2x2, 3x3, etc.). La figura en la posición n es un cuadrado de nxn. Además, el color del punto en la primera fila y primera columna alterna entre negro y blanco. Para la figura 8, será un cuadrado de 8x8. Dado el patrón de alternancia, el color del punto de la esquina superior izquierda será blanco y la diagonal será negra. La opción 2 ([IMG-63]) muestra un cuadrado de 8x8 con estas características. \n\nPor lo tanto, la opción correcta es la 2."
-  },
-  {
-    "idPregunta": 51,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-66]\n¿Cuál figura debe ir en la posición 36?",
-    "respOpciones": [
-      "1) [IMG-67]",
-      "2) [IMG-68]",
-      "3) [IMG-69]",
-      "4) [IMG-70]"
-    ],
-    "idRespPregunta": 2,
-    "respPregunta": "Hay dos patrones. Primero, el sombreado de la estrella alterna: las figuras en posición impar están sombreadas, y las pares no. Como 36 es par, la figura no debe estar sombreada. Segundo, el círculo negro se mueve entre las 5 puntas de la estrella, volviendo a la posición original cada 5 pasos. Para la posición 36, calculamos el residuo de 36 al dividir por 5, que es 1 (36 = 5*7 + 1). Esto significa que el círculo estará en la misma posición que en la figura 1. Una figura no sombreada con el círculo en la posición 1 corresponde a la opción 2 ([IMG-68]). \n\nPor lo tanto, la opción correcta es la 2."
-  },
-  {
-    "idPregunta": 52,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-71]\n¿Cuál figura debe ir en la posición 99?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-71]¿Cuál figura debe ir en la posición 8?",
     "respOpciones": [
       "1) [IMG-72]",
       "2) [IMG-73]",
       "3) [IMG-74]",
       "4) [IMG-75]"
     ],
+    "idRespPregunta": 2,
+    "respPregunta": "Las figuras son cuadrados de puntos de tamaño creciente (1x1, 2x2, 3x3, etc.). \nLa figura en la posición n es un cuadrado de nxn. \nAdemás, el color del punto en la primera fila y primera columna alterna entre negro y blanco. [IMG-76]\nPara la figura 8, será un cuadrado de 8x8. \nDado el patrón de alternancia, el color del punto de la esquina superior izquierda será blanco y la diagonal será negra. \nLa opción 2 muestra un cuadrado de 8x8 con estas características: [IMG-73] \n\nPor lo tanto, la opción correcta es la 2."
+  },
+  {
+    "idPregunta": 51,
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-77]¿Cuál figura debe ir en la posición 36?",
+    "respOpciones": [
+      "1) [IMG-78]",
+      "2) [IMG-79]",
+      "3) [IMG-80]",
+      "4) [IMG-81]"
+    ],
+    "idRespPregunta": 2,
+    "respPregunta": "Hay dos patrones. \nPrimero, el sombreado de la estrella alterna: las figuras en posición impar están sombreadas, y las pares no. \nComo 36 es par, la figura no debe estar sombreada. \nSegundo, el círculo negro se mueve entre las 5 puntas de la estrella, volviendo a la posición original cada 5 pasos. [IMG-82]Para la posición 36, calculamos el residuo de 36 al dividir por 5, que es 1 (36 = 5*7 + 1). \nEsto significa que el círculo estará en la misma posición que en la figura 1. \nUna figura no sombreada con el círculo en la posición 1 corresponde a la opción 2: [IMG-79] \n\nPor lo tanto, la opción correcta es la 2."
+  },
+  {
+    "idPregunta": 52,
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-83]¿Cuál figura debe ir en la posición 99?",
+    "respOpciones": [
+      "1) [IMG-84]",
+      "2) [IMG-85]",
+      "3) [IMG-86]",
+      "4) [IMG-87]"
+    ],
     "idRespPregunta": 3,
-    "respPregunta": "El patrón consta de 4 figuras que se repiten cíclicamente. Para encontrar la figura en la posición 99, se divide 99 entre 4. 99 / 4 = 24 con un residuo de 3. Esto significa que la secuencia completa 24 ciclos y luego avanza 3 posiciones más. La figura en la posición 99 será la misma que la de la posición 3 ([IMG-74]). \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "El patrón consta de 4 figuras que se repiten cíclicamente. \nPara encontrar la figura en la posición 99, se divide 99 entre 4. 99 / 4 = 24 con un residuo de 3. \nEsto significa que la secuencia completa 24 ciclos y luego avanza 3 posiciones más. [IMG-88]La figura en la posición 99 será la misma que la de la posición 3: [IMG-86] \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 53,
-    "txtPregunta": "Considere la siguiente secuencia de figuras formada por pajillas y bolitas:\n[IMG-76]\n¿Cuántas pajillas se necesitan para construir la figura 10?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras formada por pajillas y bolitas:[IMG-89]¿Cuántas pajillas se necesitan para construir la figura 10?",
     "respOpciones": [
       "1) 20",
       "2) 52",
@@ -634,35 +634,35 @@ var preguntas =
       "4) 70"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Analicemos la estructura. La figura n tiene 3 filas horizontales de n pajillas cada una (total 3n). También tiene (n+1) pajillas verticales y (n+1) pajillas oblicuas. La fórmula para el total de pajillas en la figura n es:\n\no3n + (n+1) + (n+1) = 5n + 2\nc\nPara la figura 10, se necesitan:\n\no5(10) + 2 = 52 pajillas\nc\n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "La cantidad de pajillas aumenta hasta generar la figura en la décima posición, la cual se puede dibujar añadiendo cuadrados y romboides:[IMG-90] Al contar cada pajilla por aparte, se obtiene lo siguiente:[IMG-91] Así en 'a' se cuentan todas las pajillas laterales; en 'b' se cuentan las pajillas superiores; en 'c' se cuentan los lados compartidos por romboides y cuadrados y, finalmente, en 'd' se cuentan todas las pajillas que forman la base de cada cuadrado.\nDe esta manera, 22+10+10+10 = 52. \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 54,
-    "txtPregunta": "Considere la siguiente figura:\n[IMG-77]\n¿Cuál es la forma que proyectan las figuras sobre el plano con respecto a la vista frontal?",
+    "txtPregunta": "Considere la siguiente figura:[IMG-92]¿Cuál es la forma que proyectan las figuras sobre el plano con respecto a la vista frontal?",
     "respOpciones": [
-      "1) [IMG-78]",
-      "2) [IMG-79]",
-      "3) [IMG-80]",
-      "4) [IMG-81]"
+      "1) [IMG-93]",
+      "2) [IMG-94]",
+      "3) [IMG-95]",
+      "4) [IMG-96]"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Al proyectar cada figura tridimensional hacia el plano desde la vista frontal, se obtiene su sombra o contorno bidimensional. La figura curva (sección de cilindro) proyecta un rectángulo. El cono truncado proyecta un círculo. La pirámide truncada rectangular proyecta un rectángulo. \n\nPor lo tanto, la opción correcta es la 1 ([IMG-78])."
+    "respPregunta": "Al proyectar cada figura tridimensional hacia el plano desde la vista frontal, se obtiene su sombra o contorno bidimensional. [IMG-97]La figura curva (sección de cilindro) proyecta un rectángulo. \nEl cono truncado proyecta un círculo. \nLa pirámide truncada rectangular proyecta un rectángulo. \nEn este caso la figura 1 cumple con estas características: [IMG-93] \n\nPor lo tanto, la opción correcta es la 1."
   },
   {
     "idPregunta": 55,
-    "txtPregunta": "Considere las siguientes vistas de una figura tridimensional:\n[IMG-82]\n¿Cuál de las siguientes figuras se puede formar con estas vistas?",
+    "txtPregunta": "Considere las siguientes vistas de una figura tridimensional:[IMG-98]¿Cuál de las siguientes figuras se puede formar con estas vistas?",
     "respOpciones": [
-      "1) [IMG-83]",
-      "2) [IMG-84]",
-      "3) [IMG-85]",
-      "4) [IMG-86]"
+      "1) [IMG-99]",
+      "2) [IMG-100]",
+      "3) [IMG-101]",
+      "4) [IMG-102]"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "La vista superior muestra que la figura debe tener un trapecio en el techo, lo que descarta las opciones 1 y 4. La vista lateral muestra un corte en diagonal, lo que descarta la opción 2, que tiene un corte vertical. La única figura que coincide con las tres vistas (frontal, superior y lateral) es la opción 3 ([IMG-85]). \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "La vista superior muestra que la figura debe tener un trapecio en el techo, lo que descarta las opciones 1 y 4. \nLa vista lateral muestra un corte en diagonal, lo que descarta la opción 2, que tiene un corte vertical. [IMG-103]La única figura que coincide con las tres vistas (frontal, superior y lateral) es la opción 3: [IMG-101] \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 56,
-    "txtPregunta": "¿Cuál de las siguientes figuras se debe rotar para obtener la figura de referencia?\n[IMG-87]\n[IMG-88]",
+    "txtPregunta": "Considere las siguientes figuras:[IMG-104]¿Cuál de las siguientes figuras se debe rotar para obtener esta figura? [IMG-105]",
     "respOpciones": [
       "1) a",
       "2) b",
@@ -670,7 +670,7 @@ var preguntas =
       "4) d"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Se debe analizar cuál de las figuras de las opciones, al ser rotada, puede coincidir exactamente con la figura de referencia. Las figuras a y c tienen líneas internas que no son paralelas, a diferencia de la figura de referencia, por lo que se descartan. La figura d, al rotarla, no coincide con la posición de las diagonales. La figura b, al rotarla 90 grados en sentido antihorario, coincide perfectamente con la figura de referencia. \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Se debe analizar cuál de las figuras de las opciones, al ser rotada, puede coincidir exactamente con la figura de referencia.\n Las figuras a y c tienen líneas internas que no son paralelas, a diferencia de la figura de referencia, por lo que se descartan.\n La figura d, al rotarla, no coincide con la posición de las diagonales. \nLa figura b, al rotarla 90 grados en sentido antihorario, coincide perfectamente con la figura de referencia:[IMG-106]\n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 57,
@@ -682,35 +682,35 @@ var preguntas =
       "4) no exceden los 3 cm de diámetro."
     ],
     "idRespPregunta": 3,
-    "respPregunta": "Para que las bolas quepan en el cilindro, su radio no puede ser mayor que el radio del cilindro. El radio del cilindro es de 3 cm. Por lo tanto, el radio de cada bola no puede exceder los 3 cm. Esto no excluye que puedan ser más pequeñas. Las opciones 1 y 2 son falsas porque si las bolas excedieran ese tamaño, no cabrían. La opción 4 es indeterminada, ya que podrían tener un radio entre 1.5 cm y 3 cm. La única afirmación que se cumple con certeza es que las bolas no exceden los 3 cm de radio. \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "Para que las bolas quepan en el cilindro, su radio no puede ser mayor que el radio del cilindro.\n El radio del cilindro es de 3 cm. Por lo tanto, el radio de cada bola no puede exceder los 3 cm. Esto no excluye que puedan ser más pequeñas. [IMG-107] \nLas opciones 1 y 2 son falsas porque si las bolas excedieran ese tamaño, no cabrían. La opción 4 es indeterminada, ya que podrían tener un radio entre 1.5 cm y 3 cm. \nLa única afirmación que se cumple con certeza es que las bolas no exceden los 3 cm de radio. \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 58,
-    "txtPregunta": "Si se dobla la siguiente figura para formar un cubo, ¿cuál figura se obtiene?\n[IMG-89]",
+    "txtPregunta": "Considere la siguiente figura: [IMG-108] Si se dobla esta figura para formar un cubo, ¿cuál figura se obtiene?",
     "respOpciones": [
-      "1) [IMG-90]",
-      "2) [IMG-91]",
-      "3) [IMG-92]",
-      "4) [IMG-93]"
+      "1) [IMG-109]",
+      "2) [IMG-110]",
+      "3) [IMG-111]",
+      "4) [IMG-112]"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Al doblar la figura, las caras opuestas serán: triángulo y cuadrado negro; estrella y corazón; círculo y cuadrado blanco. Visualizando el cubo formado, el corazón queda al lado del círculo, y el triángulo negro arriba del corazón. Las opciones 1, 3 y 4 muestran una disposición incorrecta de las caras adyacentes u opuestas. La opción 2 ([IMG-91]) es la única que muestra una vista posible del cubo ensamblado correctamente. \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Al doblar la figura, las caras opuestas serán: triángulo y cuadrado negro; estrella y corazón; círculo y cuadrado blanco. \nVisualizando el cubo formado, el corazón queda al lado del círculo, y el triángulo negro arriba del corazón. \nLas opciones 1, 3 y 4 muestran una disposición incorrecta de las caras adyacentes u opuestas. \nLa opción 2 es la única que muestra una vista posible del cubo ensamblado correctamente: [IMG-110] \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 59,
-    "txtPregunta": "Considere la siguiente figura, la cual corresponde a un papel cuadrado doblado con algunas figuras marcadas:\n[IMG-94]\nAl desdoblar el papel, ¿cuál figura se obtiene, de manera que presente simetría con respecto a ambas diagonales?",
+    "txtPregunta": "Considere la siguiente figura, la cual corresponde a un papel cuadrado doblado con algunas figuras marcadas:[IMG-113]Al desdoblar el papel, ¿cuál figura se obtiene, de manera que presente simetría con respecto a ambas diagonales?",
     "respOpciones": [
-      "1) [IMG-95]",
-      "2) [IMG-96]",
-      "3) [IMG-97]",
-      "4) [IMG-98]"
+      "1) [IMG-114]",
+      "2) [IMG-115]",
+      "3) [IMG-116]",
+      "4) [IMG-117]"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "La condición clave es que la figura desdoblada debe tener simetría con respecto a ambas diagonales. Esto descarta las figuras 2 y 3. Al observar el papel doblado, se ve que los cuadrados marcados no son continuos. Al desdoblar la figura con simetría diagonal, las marcas se reflejarán a través de las diagonales, creando un patrón discontinuo y rotado, como se muestra en la opción 4 ([IMG-98]). \n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "La condición clave es que la figura desdoblada debe tener simetría con respecto a ambas diagonales. \nEsto descarta las figuras 2 y 3. \nAl observar el papel doblado, se ve que los cuadrados marcados no son continuos. \nAl desdoblar la figura con simetría diagonal, las marcas se reflejarán a través de las diagonales, creando un patrón discontinuo y rotado, como se muestra en la opción 4: [IMG-117] \n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 60,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:\n[IMG-99]\nCon base en el patrón anterior, considere las siguientes afirmaciones:\nA. El área sombreada de la figura 2 es 1/3 del área sombreada de la figura 1.\nB. El área sombreada de la figura 1 es 1/4 del área sombreada de la figura 3.\nC. El área sombreada de la figura 3 es 1/2 del área sombreada de la figura 2.\nDe las anteriores, ¿cuáles son verdaderas?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-118]Con base en el patrón anterior, considere las siguientes afirmaciones:\nA. El área sombreada de la figura 2 es \\frac{1}{3} del área sombreada de la figura 1.\nB. El área sombreada de la figura 1 es \\frac{1}{4} del área sombreada de la figura 3.\nC. El área sombreada de la figura 3 es \\frac{1}{2} del área sombreada de la figura 2.\nDe las anteriores, ¿cuáles son verdaderas?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo C",
@@ -1130,7 +1130,7 @@ var preguntas =
   },
   {
     "idPregunta": 95,
-    "txtPregunta": "Considere el siguiente diagrama y sus instrucciones:\n[IMG-100]\nA. El diagrama representa posibles caminos para ir de INICIO a FIN.\nB. Hay cinco etapas; los números indican el fin de cada etapa.\nC. Una etapa es independiente y no necesaria. Las otras cuatro deben cumplirse en orden numérico ascendente.\nD. Las flechas indican direcciones posibles.\nE. Se puede pasar más de una vez por un cuadro.\n¿Cuántos caminos hay para llegar a 1 saliendo de INICIO?",
+    "txtPregunta": "Considere el siguiente diagrama y sus instrucciones:[IMG-100]A. El diagrama representa posibles caminos para ir de INICIO a FIN.\nB. Hay cinco etapas; los números indican el fin de cada etapa.\nC. Una etapa es independiente y no necesaria. Las otras cuatro deben cumplirse en orden numérico ascendente.\nD. Las flechas indican direcciones posibles.\nE. Se puede pasar más de una vez por un cuadro.\n¿Cuántos caminos hay para llegar a 1 saliendo de INICIO?",
     "respOpciones": [
       "1) 2",
       "2) 3",

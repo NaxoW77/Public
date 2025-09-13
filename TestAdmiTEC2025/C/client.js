@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
             p.respOpciones[o] = htmlFormat(p.respOpciones[o])
             el.innerHTML += `<label><input type="radio" name="${p.idPregunta}" value="${parseInt(o) + 1}">${p.respOpciones[o]}<br></label>`;
         }
-        el.innerHTML += `<div class="respDiv hidden"><h1>Explicación:</h1> <p>${p.respPregunta}</p></div>`;
+        el.innerHTML += `<div class="respDiv hiddena"><h1>Explicación:</h1> <p>${p.respPregunta}</p></div>`;
         contentDiv.appendChild(el);
     }
 
@@ -57,6 +57,7 @@ window.addEventListener("load", function () {
 });
 
 function checkAnswers() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     sendButton.classList.add("hidden");
     resetButton.classList.remove("hidden");
     result.classList.remove("hidden");
@@ -94,5 +95,6 @@ function checkAnswers() {
 }
 
 function reset() {
+    window.scrollTo({ top: 0 });
     window.location.reload();
 }
