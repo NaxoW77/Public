@@ -8,21 +8,30 @@ resetButton.addEventListener("click", reset);
 
 function htmlFormat(text) {
     let formattedText = text
-        .replace(/\n\n/g, "<br><br><p class='center'><strong>")
-        .replace(/\no/g, "</p><br><p class='center'>")
-        .replace(/\nc/g, "</p><p><br>")
-        .replace(/\n/g, "<br><br>")
-        .replace(/\\cdot/g, "&sdot;")
+        .replace(/\n\n(.+)/g, "<span class='final'>$1</span>")
+
+        .replace(/¬¬([^¬¬]+)¬¬/g, "<span class='quote'>$1</span>")
+        .replace(/¬([^¬]+)¬/g, "<span class='center'>$1</span>")
+
+        .replace(/\n \n+/g, "</p><p>")
+        .replace(/\n/g, "<br>")
+
+        .replace(/~([^~]+)~/g, "<u>$1</u>")
+
+        .replace(/'/g, "\"")
         .replace(/\\le/g, "&le;")
         .replace(/\\ge/g, "&ge;")
-        .replace(/\^(\w+)/g, "<sup>$1</sup>")
+
+        .replace(/\^(\{[^}]+\}|\w+)/g, (match, p1) => {
+            return `<sup>${p1.replace(/[{}]/g, "")}</sup>`;
+        })
         .replace(
             /\\frac\{([^}]*)\}\{([^}]*)\}/g,
             "<span style='display:inline-block;text-align:center;'><sup>$1</sup>&frasl;<sub>$2</sub></span>"
         )
         .replace(/\[IMG-(\d+)\]/g, (match, num) => {
-            return `</p><br><div class="imgDiv"><img src="C/img/${num}.png"></div><br><p>`;
-        });
+            return `<span class="imgDiv"><img src="C/img/${num}.png"></span>`;
+        })
 
     return formattedText;
 }
@@ -97,5 +106,4 @@ function checkAnswers() {
 function reset() {
     window.scrollTo({ top: 0 });
     window.location.reload();
-
 }
