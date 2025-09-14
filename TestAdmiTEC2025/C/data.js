@@ -10,11 +10,11 @@ var preguntas =
       "4) Abuela"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "En este ítem se requiere analizar la información dada para identificar las relaciones familiares. Una posible estrategia es construir un diagrama para organizar la información:[IMG-01] De acuerdo con el diagrama, la madre de mi prima es mi tía. Luego, la abuela de la hija de mi prima, es la madre de mi prima, quien es mi tía. \n\nPor lo tanto, la opción correcta es la 1."
+    "respPregunta": "En este ítem se requiere analizar la información dada para identificar las relaciones familiares. \nUna posible estrategia es construir un diagrama para organizar la información:[IMG-01] De acuerdo con el diagrama, la madre de mi prima es mi tía. Luego, la abuela de la hija de mi prima, es la madre de mi prima, quien es mi tía. \n\nPor lo tanto, la opción correcta es la 1."
   },
   {
     "idPregunta": 2,
-    "txtPregunta": "Se tienen tres lapiceros X, Y y Z: dos son verdes y uno es rojo; además, X y Y son de diferente color.\nConsidere las siguientes proposiciones:\nA. Y es verde.\nB. Z es verde.\nC. X es verde.\nDe las anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "Se tienen tres lapiceros X, Y y Z: dos son verdes y uno es rojo; además, X y Y son de diferente color.\n \nConsidere las siguientes proposiciones:\nA. Y es verde.\nB. Z es verde.\nC. X es verde.\n \nDe las anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) Solo B",
       "2) Solo C",
@@ -26,7 +26,7 @@ var preguntas =
   },
   {
     "idPregunta": 3,
-    "txtPregunta": "Suponga que para cinco números representados por V, W, X, Y y Z se sabe que:\n&bullet; V es el doble de W y a lo sumo tiene el valor de Y.\n&bullet; El valor de X junto con el de Z representan el valor de W.\nConsidere las siguientes afirmaciones:\nA. Y es el doble de W.\nB. Y es más que el doble de X.\nC. Z es al menos la mitad de W.\nDe las afirmaciones anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "Suponga que para cinco números representados por V, W, X, Y y Z se sabe que:\n&bullet; V es el doble de W y a lo sumo tiene el valor de Y.\n&bullet; El valor de X junto con el de Z representan el valor de W.\n \nConsidere las siguientes afirmaciones:\nA. Y es el doble de W.\nB. Y es más que el doble de X.\nC. Z es al menos la mitad de W.\n \nDe las afirmaciones anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) A y B",
       "2) Solo C",
@@ -34,11 +34,11 @@ var preguntas =
       "4) Solo B"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Para facilitar el razonamiento, las premisas pueden expresarse mediante relaciones matemáticas:\no 1. V=2W y V \\le Y\n2. X+Z=W\ncCon estas expresiones, se analiza cada afirmación:\n \nA. Y es el doble de W: \nSegún las premisas, Y \\ge V=2W pero Y no necesariamente es igual a 2W; puede ser mayor. Por lo tanto, esta afirmación no se cumple con certeza.\n \nB. Y es más que el doble de X:\n Reemplazando W=X+Z en V=2W, se obtiene: \noV=2(X+Z)=2X+2Z.\nc Dado que V \\le Y, se concluye que Y \\ge 2X+2Z. Por lo tanto, Y siempre será mayor que 2X, y esta afirmación es correcta.\n \nC. Z es al menos la mitad de W:\n De W=X+Z no es posible determinar con certeza que Z \\ge \\frac{W}{2} ya que Z depende de X, cuya relación específica no se establece en las premisas. Por lo tanto, esta afirmación no se cumple con certeza.\n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "Para facilitar el razonamiento, las premisas pueden expresarse mediante relaciones matemáticas: ¬1. V=2W y V \\le Y\n2. X+Z=W¬ Con estas expresiones, se analiza cada afirmación:\n \nA. Y es el doble de W: \nSegún las premisas, Y \\ge V=2W pero Y no necesariamente es igual a 2W; puede ser mayor. Por lo tanto, esta afirmación no se cumple con certeza.\n \nB. Y es más que el doble de X:\n Reemplazando W=X+Z en V=2W, se obtiene: ¬V=2(X+Z)=2X+2Z.¬ Dado que V \\le Y, se concluye que Y \\ge 2X+2Z. Por lo tanto, Y siempre será mayor que 2X, y esta afirmación es correcta.\n \nC. Z es al menos la mitad de W:\n De W=X+Z no es posible determinar con certeza que Z \\ge \\frac{W}{2} ya que Z depende de X, cuya relación específica no se establece en las premisas. Por lo tanto, esta afirmación no se cumple con certeza.\n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 4,
-    "txtPregunta": "Hay tres personas: Jorge, Lorena y Arturo que viven en provincias distintas: San José, Alajuela y Puntarenas, y tienen apellidos distintos: Berrocal, Castro y Soto.\nSe sabe que:\n&bullet; Jorge no vive en San José ni Lorena en Alajuela.\n&bullet; El que vive en Puntarenas es de apellido Soto.\n&bullet; El que vive en San José no es de apellido Berrocal.\n&bullet; Lorena no es de apellido Berrocal ni Castro.\nCon certeza, ¿dónde vive Arturo y cuál es su apellido?",
+    "txtPregunta": "Hay tres personas: Jorge, Lorena y Arturo que viven en provincias distintas: San José, Alajuela y Puntarenas, y tienen apellidos distintos: Berrocal, Castro y Soto.\n \nSe sabe que:\n&bullet; Jorge no vive en San José ni Lorena en Alajuela.\n&bullet; El que vive en Puntarenas es de apellido Soto.\n&bullet; El que vive en San José no es de apellido Berrocal.\n&bullet; Lorena no es de apellido Berrocal ni Castro.\n \nCon certeza, ¿dónde vive Arturo y cuál es su apellido?",
     "respOpciones": [
       "1) Alajuela - Castro",
       "2) San José - Castro",
@@ -50,7 +50,7 @@ var preguntas =
   },
   {
     "idPregunta": 5,
-    "txtPregunta": "Considere la siguiente información:\n&bullet; Cada una de las letras A, O, P y Z representa una cifra del 0 al 9 distinta.\n&bullet; Z = 1\nCon base en la información anterior, en la expresión\no (ZO)^2 = PAO\nc¿Cuál es el valor de PA?",
+    "txtPregunta": "Considere la siguiente información:\n&bullet; Cada una de las letras A, O, P y Z representa una cifra del 0 al 9 distinta.\n&bullet; Z = 1\n \nCon base en la información anterior, en la expresión¬ (ZO)^2 = PAO¬¿Cuál es el valor de PA?",
     "respOpciones": [
       "1) 12",
       "2) 22",
@@ -62,7 +62,7 @@ var preguntas =
   },
   {
     "idPregunta": 6,
-    "txtPregunta": "Considere las letras C, D, E, I, N, O, R, S, T que representan cifras del 0 al 9 y cada letra representa una cifra distinta. Si se sabe que:\n&bullet; S + S = D + R\n&bullet; C = 1\n&bullet; T = 9\ny además:[IMG-03] Considere las siguientes proposiciones basadas en las condiciones anteriores:\nA. Si S = 6 entonces N = 3\nB. Si S = 7, entonces N = 5\nC. Si S = 8 entonces N = 7\nDe las anteriores, ¿cuáles son verdaderas?",
+    "txtPregunta": "Considere las letras C, D, E, I, N, O, R, S, T que representan cifras del 0 al 9 y cada letra representa una cifra distinta. Si se sabe que:\n&bullet; S + S = D + R\n&bullet; C = 1\n&bullet; T = 9\n \ny además:[IMG-03] Considere las siguientes proposiciones basadas en las condiciones anteriores:\nA. Si S = 6 entonces N = 3\nB. Si S = 7, entonces N = 5\nC. Si S = 8 entonces N = 7\n \nDe las anteriores, ¿cuáles son verdaderas?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo B",
@@ -74,7 +74,7 @@ var preguntas =
   },
   {
     "idPregunta": 7,
-    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Todos los ciervos tienen cuernos.\nPremisa 2: Algunos rumiantes son ciervos.\nDe las premisas anteriores se sigue que:",
+    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Todos los ciervos tienen cuernos.\nPremisa 2: Algunos rumiantes son ciervos.\n \nDe las premisas anteriores se sigue que:",
     "respOpciones": [
       "1) algunos ciervos no son rumiantes.",
       "2) algunos rumiantes tienen cuernos.",
@@ -82,11 +82,11 @@ var preguntas =
       "4) algunos rumiantes no tienen cuernos."
     ],
     "idRespPregunta": 2,
-    "respPregunta": "La información se puede ilustrar con un diagrama. [IMG-04] La premisa 1 establece que el conjunto de 'ciervos' está contenido en el conjunto de 'animales con cuernos'. \nLa premisa 2 indica que hay una intersección entre el conjunto de 'rumiantes' y el de 'ciervos'.\nDado que algunos rumiantes son ciervos, y todos los ciervos tienen cuernos, se puede concluir con certeza que esos rumiantes que son ciervos también tienen cuernos. \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "La información se puede ilustrar con un diagrama: [IMG-04] La premisa 1 establece que el conjunto de 'ciervos' está contenido en el conjunto de 'animales con cuernos'. \nLa premisa 2 indica que hay una intersección entre el conjunto de 'rumiantes' y el de 'ciervos'.\nDado que algunos rumiantes son ciervos, y todos los ciervos tienen cuernos, se puede concluir con certeza que esos rumiantes que son ciervos también tienen cuernos. \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 8,
-    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Toda conferencia es discurso.\nPremisa 2: Algunas conferencias no son lecciones.\nDe las premisas anteriores se sigue que:",
+    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Toda conferencia es discurso.\nPremisa 2: Algunas conferencias no son lecciones.\n \nDe las premisas anteriores se sigue que:",
     "respOpciones": [
       "1) ninguna lección es discurso.",
       "2) todas las lecciones son discursos.",
@@ -98,7 +98,7 @@ var preguntas =
   },
   {
     "idPregunta": 9,
-    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Todos los músicos coleccionan carteles.\nPremisa 2: P no es músico y Q no colecciona carteles.\nConsidere las siguientes afirmaciones:\nA. P no colecciona carteles.\nB. Q no es músico.\nC. P colecciona carteles.\nDe las anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Todos los músicos coleccionan carteles.\nPremisa 2: P no es músico y Q no colecciona carteles.\n \nConsidere las siguientes afirmaciones:\nA. P no colecciona carteles.\nB. Q no es músico.\nC. P colecciona carteles.\n \nDe las anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo B",
@@ -110,7 +110,7 @@ var preguntas =
   },
   {
     "idPregunta": 10,
-    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Si V lee, entonces L dibuja o J salta.\nPremisa 2: Si L dibuja, entonces P no corre.\nPremisa 3: L no dibuja y J no salta.\nDe las premisas anteriores se sigue que:",
+    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Si V lee, entonces L dibuja o J salta.\nPremisa 2: Si L dibuja, entonces P no corre.\nPremisa 3: L no dibuja y J no salta.\n \nDe las premisas anteriores se sigue que:",
     "respOpciones": [
       "1) V lee.",
       "2) P corre.",
@@ -122,7 +122,7 @@ var preguntas =
   },
   {
     "idPregunta": 11,
-    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Si A es un muchacho, entonces A es más joven que J.\nPremisa 2: Si A no tiene 14 años, entonces A no es más joven que J.\nPremisa 3: A no tiene 14 años.\nDe las premisas anteriores se sigue que:",
+    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Si A es un muchacho, entonces A es más joven que J.\nPremisa 2: Si A no tiene 14 años, entonces A no es más joven que J.\nPremisa 3: A no tiene 14 años.\n \nDe las premisas anteriores se sigue que:",
     "respOpciones": [
       "1) A es menor que J.",
       "2) J es menor que A.",
@@ -134,7 +134,7 @@ var preguntas =
   },
   {
     "idPregunta": 12,
-    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Todo C es S.\nPremisa 2: Ningún E es T.\nPremisa 3: Todo S es T.\nDe las anteriores se sigue que:",
+    "txtPregunta": "Considere las siguientes premisas:\nPremisa 1: Todo C es S.\nPremisa 2: Ningún E es T.\nPremisa 3: Todo S es T.\n \nDe las anteriores se sigue que:",
     "respOpciones": [
       "1) todo S es E.",
       "2) todo C no es E.",
@@ -146,7 +146,7 @@ var preguntas =
   },
   {
     "idPregunta": 13,
-    "txtPregunta": "Considere la siguiente secuencia:\n1, 5, 14, 30, 55, ...\n¿Cuál es el sétimo término de esta secuencia?",
+    "txtPregunta": "Considere la siguiente secuencia:¬1, 5, 14, 30, 55, ...¬¿Cuál es el sétimo término de esta secuencia?",
     "respOpciones": [
       "1) 79",
       "2) 91",
@@ -158,7 +158,7 @@ var preguntas =
   },
   {
     "idPregunta": 14,
-    "txtPregunta": "Considere la siguiente secuencia:\n−1, 1, 0, 1, 1, 2, 3, 5, p\n¿Cuál es el valor de p?",
+    "txtPregunta": "Considere la siguiente secuencia:¬−1, 1, 0, 1, 1, 2, 3, 5, p¬¿Cuál es el valor de p?",
     "respOpciones": [
       "1) 5",
       "2) 6",
@@ -170,7 +170,7 @@ var preguntas =
   },
   {
     "idPregunta": 15,
-    "txtPregunta": "Considere la siguiente secuencia, donde n es un número entero positivo:\n3n − 1, 3n + 2, 3n + x, 3n + 8,...\n¿Cuál es el valor de x?",
+    "txtPregunta": "Considere la siguiente secuencia, donde n es un número entero positivo:¬3n − 1, 3n + 2, 3n + x, 3n + 8,...¬ ¿Cuál es el valor de x?",
     "respOpciones": [
       "1) 3",
       "2) 4",
@@ -182,7 +182,7 @@ var preguntas =
   },
   {
     "idPregunta": 16,
-    "txtPregunta": "Considere la siguiente secuencia de pares ordenados:\n(1,2), (3,8), (7,26), (b,80), (31,a), (63,728), ...\n¿Cuál es el valor de a + b?",
+    "txtPregunta": "Considere la siguiente secuencia de pares ordenados:¬(1,2), (3,8), (7,26), (b,80), (31,a), (63,728), ...¬¿Cuál es el valor de a + b?",
     "respOpciones": [
       "1) 255",
       "2) 256",
@@ -202,7 +202,7 @@ var preguntas =
       "4) [IMG-11]"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "Se analiza el patrón del numerador y del denominador por separado. \nEl numerador sigue la secuencia de números impares: 1, 3, 5, ... El siguiente es 7. \nEn el denominador, el exponente de n aumenta de dos en dos: 2, 4, 6, ... El siguiente es 8. \nEl término constante que se suma aumenta de uno en uno: 1, 2, 3, ... El siguiente es 4. \nPor lo tanto, la expresión que continúa la secuencia es: [IMG-10]. \n\nLa opción correcta es la 3."
+    "respPregunta": "Se analiza el patrón del numerador y del denominador por separado. \nEl numerador sigue la secuencia de números impares: 1, 3, 5, ... El siguiente es 7. \nEn el denominador, el exponente de n aumenta de dos en dos: 2, 4, 6, ... El siguiente es 8. \nEl término constante que se suma aumenta de uno en uno: 1, 2, 3, ... El siguiente es 4. \nPor lo tanto, la expresión que continúa la secuencia es: [IMG-10] \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 18,
@@ -230,7 +230,7 @@ var preguntas =
   },
   {
     "idPregunta": 20,
-    "txtPregunta": "Considere el siguiente patrón:[IMG-15]Cada número interior del triángulo está rodeado por otros 6 números. Por ejemplo, 4 está rodeado por 1, 1, 3, 6, 10 y 5.\nConsidere las siguientes afirmaciones:\nA. El número 50 estará en la fila 49.\nB. Hay un número rodeado solo de números impares.\nC. El 28 está dentro del grupo de números que rodea al 7.\nDe las anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "Considere el siguiente patrón:[IMG-15]Cada número interior del triángulo está rodeado por otros 6 números. \nPor ejemplo, 4 está rodeado por 1, 1, 3, 6, 10 y 5.\n \nConsidere las siguientes afirmaciones:\nA. El número 50 estará en la fila 49.\nB. Hay un número rodeado solo de números impares.\nC. El 28 está dentro del grupo de números que rodea al 7.\n \nDe las anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) A y B",
       "2) B y C",
@@ -242,7 +242,7 @@ var preguntas =
   },
   {
     "idPregunta": 21,
-    "txtPregunta": "¿Cuál es el último dígito del número 2545 \\cdot 5^117 + 1?",
+    "txtPregunta": "¿Cuál es el último dígito del número 2545 &bullet; 5^117 + 1?",
     "respOpciones": [
       "1) 0",
       "2) 1",
@@ -250,11 +250,11 @@ var preguntas =
       "4) 6"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Para la resolución de este ítem, se debe tener en cuenta que en cualquier potencia de base cinco el último dígito es 5, ya que al multiplicar números terminados en cinco, el producto también terminará en 5.[IMG-17] Entonces, 5^117 terminará en 5, al igual que 2545 \\cdot 5^5117, por lo que al sumarle el 1 se tiene que la última cifra será 6.\n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "Para la resolución de este ítem, se debe tener en cuenta que en cualquier potencia de base cinco el último dígito es 5, ya que al multiplicar números terminados en cinco, el producto también terminará en 5.[IMG-17] Entonces, 5^117 terminará en 5, al igual que 2545 &bullet; 5^5117, por lo que al sumarle el 1 se tiene que la última cifra será 6.\n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 22,
-    "txtPregunta": "Considere las siguientes equivalencias:\no10 tazas de agua = 2000 ml\n16 cucharadas de agua = 200 ml\nc¿Cuántas tazas se obtienen de 240 cucharadas de agua?",
+    "txtPregunta": "Considere las siguientes equivalencias:¬10 tazas de agua = 2000 ml\n16 cucharadas de agua = 200 ml¬¿Cuántas tazas se obtienen de 240 cucharadas de agua?",
     "respOpciones": [
       "1) 15",
       "2) 24",
@@ -266,7 +266,7 @@ var preguntas =
   },
   {
     "idPregunta": 23,
-    "txtPregunta": "Después de hacer una encuesta en la población A, conformada por 425 mujeres y 325 hombres, se obtiene la siguiente información:[IMG-18]Considere las siguientes afirmaciones:\nA. De cada 75 adultos mayores, 13 son mujeres.\nB. Por cada 7 colegiales hay 9 escolares.\nC. De cada 30 escolares, 13 son hombres.\nDe las afirmaciones anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "Después de hacer una encuesta en la población A, conformada por 425 mujeres y 325 hombres, se obtiene la siguiente información:[IMG-18]Considere las siguientes afirmaciones:\nA. De cada 75 adultos mayores, 13 son mujeres.\nB. Por cada 7 colegiales hay 9 escolares.\nC. De cada 30 escolares, 13 son hombres.\n \nDe las afirmaciones anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) Solo B",
       "2) Solo C",
@@ -278,7 +278,7 @@ var preguntas =
   },
   {
     "idPregunta": 24,
-    "txtPregunta": "Una empresa dispone de tres contenedores con capacidad para 90 kg, 180 kg y 150 kg, respectivamente. En cada uno se colocan frijoles empacados en sacos con el mayor peso posible y con igual peso en los tres contenedores. ¿Cuántos kilogramos debe pesar cada saco de frijoles?",
+    "txtPregunta": "Una empresa dispone de tres contenedores con capacidad para 90 kg, 180 kg y 150 kg, respectivamente. \nEn cada uno se colocan frijoles empacados en sacos con el mayor peso posible y con igual peso en los tres contenedores. \n \n¿Cuántos kilogramos debe pesar cada saco de frijoles?",
     "respOpciones": [
       "1) 15",
       "2) 30",
@@ -290,7 +290,7 @@ var preguntas =
   },
   {
     "idPregunta": 25,
-    "txtPregunta": "Una fábrica tiene tres timbres. Uno suena cada hora y cuarto, el segundo cada hora y veinte, el tercero cada hora y media. Si los tres suenan simultáneamente a las 10 de la mañana del domingo, ¿cuándo es la próxima vez que volverá a suceder?",
+    "txtPregunta": "Una fábrica tiene tres timbres. \nUno suena cada hora y cuarto, el segundo cada hora y veinte, el tercero cada hora y media. \n \nSi los tres suenan simultáneamente a las 10 de la mañana del domingo, ¿cuándo es la próxima vez que volverá a suceder?",
     "respOpciones": [
       "1) A las 10 de la noche del lunes",
       "2) A las 10 de la noche del martes",
@@ -298,7 +298,7 @@ var preguntas =
       "4) A las 10 de la mañana del miércoles"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Primero, convertimos los intervalos a minutos: 1 hora y cuarto = 75 min; 1 hora y veinte = 80 min; 1 hora y media = 90 min. Luego, calculamos el Mínimo Común Múltiplo (mcm) de 75, 80 y 90. El mcm(75, 80, 90) es 3600. Esto significa que volverán a sonar juntos después de 3600 minutos. \n\n3600 minutos / 60 min/hora = 60 horas. \n\n60 horas son 2 días y 12 horas (2*24 + 12). A partir de las 10 a.m. del domingo, 2 días nos llevan a las 10 a.m. del martes. Sumando las 12 horas restantes, llegamos a las 10 de la noche del martes. \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Primero, convertimos los intervalos a minutos: 1 hora y cuarto = 75 min; 1 hora y veinte = 80 min; 1 hora y media = 90 min. Luego, calculamos el Mínimo Común Múltiplo (mcm) de 75, 80 y 90. El mcm(75, 80, 90) es 3600. Esto significa que volverán a sonar juntos después de 3600 minutos. ¬ 3600 minutos / 60 min/hora = 60 horas. ¬60 horas son 2 días y 12 horas (2*24 + 12). \nA partir de las 10 a.m. del domingo, 2 días nos llevan a las 10 a.m. del martes. \nSumando las 12 horas restantes, llegamos a las 10 de la noche del martes. \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 26,
@@ -310,11 +310,11 @@ var preguntas =
       "4) 30"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "Sea x la edad actual de P y sea y la de Z. Las ecuaciones son:\n\no1) x - 5 = 4(y - 5) → x - 5 = 4y - 20 → x = 4y - 15\n2) x + 5 = 2(y + 5) → x + 5 = 2y + 10 → x = 2y + 5\nc\nIgualando las expresiones para x:\n\no4y - 15 = 2y + 5 → 2y = 20 → y = 10\nc\nLa edad de Z es 10 años.\nSustituyendo y en la segunda ecuación:\n\nox = 2(10) + 5 = 25\nc\nLa edad de P es 25 años. \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "Sea x la edad actual de P y sea y la de Z. Las ecuaciones son:¬1) x - 5 = 4(y - 5) → x - 5 = 4y - 20 → x = 4y - 15\n2) x + 5 = 2(y + 5) → x + 5 = 2y + 10 → x = 2y + 5¬Igualando las expresiones para x:¬4y - 15 = 2y + 5 → 2y = 20 → y = 10¬La edad de Z es 10 años.\nSustituyendo y en la segunda ecuación:¬x = 2(10) + 5 = 25¬La edad de P es 25 años. \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 27,
-    "txtPregunta": "En un torneo participan 6 jugadores: X, Y, Z, D, E y F y cada uno se enfrenta a los demás. Se asignan tres puntos por cada gane y un punto por cada empate. La tabla final de resultados tiene la siguiente información:[IMG-19]Considere las siguientes afirmaciones:\nA. D perdió contra X.\nB. Hay dos jugadores que empatan en puntaje.\nC. Si F hubiera ganado un partido más, habría ganado el torneo.\nDe las anteriores, ¿cuáles se cumplen con certeza?",
+    "txtPregunta": "En un torneo participan 6 jugadores: X, Y, Z, D, E y F y cada uno se enfrenta a los demás. \nSe asignan tres puntos por cada gane y un punto por cada empate. \nLa tabla final de resultados tiene la siguiente información:[IMG-19]Considere las siguientes afirmaciones:\nA. D perdió contra X.\nB. Hay dos jugadores que empatan en puntaje.\nC. Si F hubiera ganado un partido más, habría ganado el torneo.\n \nDe las anteriores, ¿cuáles se cumplen con certeza?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo B",
@@ -322,7 +322,7 @@ var preguntas =
       "4) B y C"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Cada jugador participa en 5 juegos. Completamos la tabla usando la fórmula: Puntos = 3 &bullet; Ganados + Empatados.\n&bullet; X: 2 G, ? E, 2 P. Total juegos = 5. Falta 1 juego, debe ser empate (2G, 1E, 2P). Puntos=3(2)+1=7.\n&bullet; Y: ? G, 1 E, ? P. Puntos=10. 3(G)+1=10 → 3G=9 → G=3. (3G, 1E, 1P).\n&bullet; Z: 1 G, 2 E, 2 P. Puntos=3(1)+2=5. (Correcto).\n&bullet; D: 2 G, 1 E, 2 P. Puntos=3(2)+1=7.\n&bullet; E: 1 G, ? E, 4 P. Puntos=3. 3(1)+E=3 → E=0. (1G, 0E, 4P).\n&bullet; F: ? G, 3 E, 0 P. Total juegos = 5. Faltan 2, deben ser ganados (2G, 3E, 0P). Puntos=3(2)+3=9.\n \nLa tabla completa de puntos es: X(7), Y(10), Z(5), D(7), E(3), F(9).\n \n&bullet; A. No se puede asegurar que D perdió contra X.\n&bullet; B. Es cierto, D y X empatan con 7 puntos.\n&bullet; C. F no puede haber ganado un partido más, pues ya jugó sus 5 partidos.\n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Cada jugador participa en 5 juegos. Completamos la tabla usando la fórmula: ¬Puntos = 3 &bullet; Ganados + Empatados¬[IMG-130]&bullet; A. No se puede asegurar que D perdió contra X.\n&bullet; B. Es cierto, D y X empatan con 7 puntos.\n&bullet; C. F no puede haber ganado un partido más, pues ya jugó sus 5 partidos.\n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 28,
@@ -334,7 +334,7 @@ var preguntas =
       "4) 25"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Se trata de formar parejas de números distintos de un conjunto de 5 números para multiplicarlos. El orden no importa (3x5 es el mismo producto que 5x3). Esto es un problema de combinaciones: el número de maneras de elegir 2 elementos de un conjunto de 5. Se calcula como C(5,2):\n\noC(5,2) = \\frac{5!}{2!(5-2)!} = \\frac{120}{2 \\cdot 6} = 10\nc\nHay 10 posibles productos. \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Se puede organizar la información en una tabla para identificar el número de casos posibles sin repetir los números, como se muestra a continuación:[IMG-131] Note que al considerar la pareja 3 y 5 ya no se debe contar el 5 y 3, pues representan el mismo producto y así se eliminan las otras parejas repetidas. Esto nos da un total de 10 posibles productos.\n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 29,
@@ -346,7 +346,7 @@ var preguntas =
       "4) 25"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "El ordenamiento tiene 4 posiciones: S _ _ A. La primera y la última letra están fijas. Para la segunda posición, hay 5 opciones (M, S, R, A, O), ya que el enunciado no restringe la repetición de letras. Para la tercera posición, también hay 5 opciones. El total de ordenamientos es:\n\no1 &bullet; 5 &bullet; 5 &bullet; 1 = 25\nc\n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "El ordenamiento tiene 4 posiciones: S _ _ A. La primera y la última letra están fijas. Para la segunda y tercera posición, hay 5 opciones (M, S, R, A, O), ya que el enunciado no restringe la repetición de letras.[IMG-132]Entonces, al ser 5 letras y cada una genera 5 ordenamientos, se cuentan 5 · 5 en total.[IMG-133]\n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 30,
@@ -358,7 +358,7 @@ var preguntas =
       "4) 216"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "El número tiene la forma _ _ _ 0. Los tres primeros dígitos deben ser distintos y elegidos del conjunto {1, 2, 3, 4, 5, 6, 7}. Para la primera cifra (millares), hay 7 opciones. Para la segunda cifra (centenas), como deben ser distintos, quedan 6 opciones. Para la tercera cifra (decenas), quedan 5 opciones. El total de números que se pueden formar es:\n\no7 &bullet; 6 &bullet; 5 = 210\nc \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "El número tiene la forma _ _ _ 0. \nLos tres primeros dígitos deben ser distintos y elegidos del conjunto {1, 2, 3, 4, 5, 6, 7}. \nPara la primera cifra (millares), hay 7 opciones. \nPara la segunda cifra (centenas), como deben ser distintos, quedan 6 opciones. \nPara la tercera cifra (decenas), quedan 5 opciones. \nEl total de números que se pueden formar es:¬7 &bullet; 6 &bullet; 5 = 210¬\n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 31,
@@ -370,11 +370,11 @@ var preguntas =
       "4) 8"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se pueden formar números de tres cifras _ _ _. El enunciado no restringe la repetición de cifras. Para la primera cifra, hay 2 opciones (1 o 7). Para la segunda cifra, hay 2 opciones. Para la tercera cifra, hay 2 opciones. El total de números que se pueden formar es:\n\no2 &bullet; 2 &bullet; 2 = 8\nc\n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "Se pueden formar números de tres cifras _ _ _. El enunciado no restringe la repetición de cifras. Para la primera cifra, hay 2 opciones (1 o 7). Para la segunda cifra, hay 2 opciones. Para la tercera cifra, hay 2 opciones. El total de números que se pueden formar es:¬2 &bullet; 2 &bullet; 2 = 8¬\n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 32,
-    "txtPregunta": "En una colección de películas, 9 son de comedia y 7 son de terror. Considere las siguientes afirmaciones:\nA. La cantidad de maneras para elegir dos películas, sin importar el orden es 120.\nB. La cantidad de maneras para elegir dos películas de comedia es 81.\nC. La cantidad de maneras para elegir dos películas, primero de comedia y luego de terror, es 63.\nDe acuerdo con lo anterior, ¿cuál de las afirmaciones anteriores se cumple con certeza?",
+    "txtPregunta": "En una colección de películas, 9 son de comedia y 7 son de terror. \n \nConsidere las siguientes afirmaciones:\nA. La cantidad de maneras para elegir dos películas, sin importar el orden es 120.\nB. La cantidad de maneras para elegir dos películas de comedia es 81.\nC. La cantidad de maneras para elegir dos películas, primero de comedia y luego de terror, es 63.\n \nDe acuerdo con lo anterior, ¿cuál de las afirmaciones anteriores se cumple con certeza?",
     "respOpciones": [
       "1) Solo A",
       "2) A y B",
@@ -382,7 +382,7 @@ var preguntas =
       "4) A y C"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "&bullet; A. Hay 16 películas en total. El número de maneras de elegir 2 sin importar el orden es C(16,2) = \\frac{16 \\cdot 15}{2} = 120. La afirmación A es correcta.\n \n&bullet; B. Hay 9 películas de comedia. El número de maneras de elegir 2 sin importar el orden es C(9,2) = \\frac{9 \\cdot 8}{2} = 36. La afirmación B es incorrecta.\n \n&bullet; C. Hay 9 opciones para la película de comedia y 7 para la de terror. Como el orden importa ('primero de comedia y luego de terror'), se multiplican las opciones: 9 &bullet; 7 = 63. La afirmación C es correcta.\n \nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "&bullet; A. Hay 16 películas en total. El número de maneras de elegir 2 sin importar el orden es:¬C(16,2) = \\frac{16 &bullet; 15}{2} = 120¬ La afirmación A es correcta.\n \n&bullet; B. Hay 9 películas de comedia. El número de maneras de elegir 2 sin importar el orden es ¬C(9,2) = \\frac{9 &bullet; 8}{2} = 36¬ La afirmación B es incorrecta.\n \n&bullet; C. Hay 9 opciones para la película de comedia y 7 para la de terror. Como el orden importa ('primero de comedia y luego de terror'), se multiplican las opciones: ¬9 &bullet; 7 = 63¬ La afirmación C es correcta.\n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 33,
@@ -398,7 +398,7 @@ var preguntas =
   },
   {
     "idPregunta": 34,
-    "txtPregunta": "En el conjunto de los números reales se define la operación ⊙, que cumple las siguientes condiciones:\n&bullet; m ⊙ −1 = m\n&bullet; 2 ⊙ −2 = 1\nDe acuerdo con lo anterior, ¿cuál es una posible fórmula para definir la operación ⊙?",
+    "txtPregunta": "En el conjunto de los números reales se define la operación ⊙, que cumple las siguientes condiciones:\n&bullet; m ⊙ −1 = m\n&bullet; 2 ⊙ −2 = 1\n \nDe acuerdo con lo anterior, ¿cuál es una posible fórmula para definir la operación ⊙?",
     "respOpciones": [
       "1) a ⊙ b = 2a + ab",
       "2) a ⊙ b = a + b + 1",
@@ -406,11 +406,11 @@ var preguntas =
       "4) a ⊙ b = a + 2b + 2"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Se prueba cada opción con las dos condiciones dadas.\n \n1) a ⊙ b = 2a + ab:\nm ⊙ -1 = 2m + m(-1) = m. Cumple. \n2 ⊙ -2 = 2(2) + 2(-2) = 0. No cumple.\n \n2) a ⊙ b = a + b + 1:\nm ⊙ -1 = m + (-1) + 1 = m. Cumple. \n2 ⊙ -2 = 2 + (-2) + 1 = 1. Cumple.\n \n3) a ⊙ b = a − b − 3:\nm ⊙ -1 = m - (-1) - 3 = m - 2. No cumple.\n \n4) a ⊙ b = a + 2b + 2:\nm ⊙ -1 = m + 2(-1) + 2 = m. Cumple. \n2 ⊙ -2 = 2 + 2(-2) + 2 = 0. No cumple.\n \nLa única fórmula que cumple ambas condiciones es la de la opción 2. \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Se prueba cada opción con las dos condiciones dadas.\n1) a ⊙ b = 2a + ab:\nm ⊙ -1 = 2m + m(-1) = m. Cumple. \n2 ⊙ -2 = 2(2) + 2(-2) = 0. No cumple.\n \n2) a ⊙ b = a + b + 1:\nm ⊙ -1 = m + (-1) + 1 = m. Cumple. \n2 ⊙ -2 = 2 + (-2) + 1 = 1. Cumple.\n \n3) a ⊙ b = a − b − 3:\nm ⊙ -1 = m - (-1) - 3 = m - 2. No cumple.\n \n4) a ⊙ b = a + 2b + 2:\nm ⊙ -1 = m + 2(-1) + 2 = m. Cumple. \n2 ⊙ -2 = 2 + 2(-2) + 2 = 0. No cumple.\n \nLa única fórmula que cumple ambas condiciones es la de la opción 2. \n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 35,
-    "txtPregunta": "Se requiere que n^p siempre sea un número impar, con n y p naturales distintos de cero.\nConsidere las siguientes afirmaciones:\nA. n tiene que ser un número par siempre que p sea impar.\nB. n puede ser cualquier número natural siempre que p sea impar.\nC. p tiene que ser un número impar y n puede ser un número impar.\nD. p puede ser cualquier número natural siempre que n sea impar.\nDe las anteriores, ¿cuáles son verdaderas?",
+    "txtPregunta": "Se requiere que n^p siempre sea un número impar, con n y p naturales distintos de cero.\n \nConsidere las siguientes afirmaciones:\nA. n tiene que ser un número par siempre que p sea impar.\nB. n puede ser cualquier número natural siempre que p sea impar.\nC. p tiene que ser un número impar y n puede ser un número impar.\nD. p puede ser cualquier número natural siempre que n sea impar.\n \nDe las anteriores, ¿cuáles son verdaderas?",
     "respOpciones": [
       "1) Solo B",
       "2) Solo C",
@@ -418,11 +418,11 @@ var preguntas =
       "4) A y B"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "Para que el resultado de una potencia sea impar, la base debe ser impar. El exponente no afecta la paridad del resultado (impar elevado a cualquier potencia natural es impar).\n \nA. Falsa. Si n es par, el resultado es par.\n \nB. Falsa. Si n es par, el resultado es par.\n \nC. Verdadera. Si n es impar, el resultado es impar (independientemente de si p es par o impar). Esta afirmación es un caso particular de la condición necesaria.\n \nD. Verdadera. Si n es impar, n^p es siempre impar para cualquier p natural. \n\nPor lo tanto, la opción correcta es la 3."
+    "respPregunta": "Para que el resultado de una potencia sea impar, la base debe ser impar. El exponente no afecta la paridad del resultado (impar elevado a cualquier potencia natural es impar).\nA. Falsa. Si n es par, el resultado es par.\nB. Falsa. Si n es par, el resultado es par.\nC. Verdadera. Si n es impar, el resultado es impar (independientemente de si p es par o impar). Esta afirmación es un caso particular de la condición necesaria.\nD. Verdadera. Si n es impar, n^p es siempre impar para cualquier p natural. \n\nPor lo tanto, la opción correcta es la 3."
   },
   {
     "idPregunta": 36,
-    "txtPregunta": "Considere un sistema de numeración con los siguientes símbolos: |=1, ||=2, |||=3, ||||=4, Γ=5, Δ=10, H=100. Los símbolos que se colocan al mismo nivel se suman y el que se coloca como exponente se multiplica con la base.\nPor ejemplo: 13=Δ|||, 60=ΓΔΔ, 500=ΓH.\n¿Cuál número corresponde a la diferencia entre ΓH HΔΓ y H H ΓΔΔΔ||?",
+    "txtPregunta": "Considere un sistema de numeración con los siguientes símbolos: ¬|=1, ||=2, |||=3, ||||=4, Γ=5, Δ=10, H=100¬ Los símbolos que se colocan al mismo nivel se suman y el que se coloca como exponente se multiplica con la base.\nPor ejemplo: ¬13=Δ|||\n60=Γ^{Δ}Δ\n500=Γ^{H}¬¿Cuál número corresponde a la diferencia entre Γ^{H}HΔΓ y HHΓ^{Δ}ΔΔ||?",
     "respOpciones": [
       "1) 272",
       "2) 343",
@@ -430,11 +430,11 @@ var preguntas =
       "4) 887"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Primero, se decodifican los números:\n&bullet; ΓH HΔΓ = (Γ &bullet; H) + H + Δ + Γ = (5 &bullet; 100) + 100 + 10 + 5 = 615.\n&bullet; H H ΓΔΔΔ|| = H + H + (Γ &bullet; Δ) + Δ + Δ + || = 100 + 100 + (5 &bullet; 10) + 10 + 10 + 2 = 272.\n\nLa diferencia es:\n\no615 - 272 = 343\nc\n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Primero, se decodifican los números:\n&bullet; Γ^{H}HΔΓ = (Γ &bullet; H) + H + Δ + Γ = (5 &bullet; 100) + 100 + 10 + 5 = 615.\n&bullet; HHΓ^{Δ}ΔΔ|| = H + H + (Γ &bullet; Δ) + Δ + Δ + || = 100 + 100 + (5 &bullet; 10) + 10 + 10 + 2 = 272.\nLa diferencia es:¬615 - 272 = 343¬\n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 37,
-    "txtPregunta": "Se sabe que el producto de dos números naturales A y B es S. ¿Cuál expresión representa A aumentado en 2 unidades multiplicado por B?",
+    "txtPregunta": "Se sabe que el producto de dos números naturales A y B es S. \n \n¿Cuál expresión representa A aumentado en 2 unidades multiplicado por B?",
     "respOpciones": [
       "1) S + 2",
       "2) S + B",
@@ -442,11 +442,11 @@ var preguntas =
       "4) S + 2B"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se tiene que A &bullet; B = S. La expresión 'A aumentado en 2 unidades' es (A + 2). Al multiplicarlo por B, se obtiene:\n\no(A + 2) &bullet; B = (A &bullet; B) + (2 &bullet; B)\nc\nSustituyendo A &bullet; B por S, la expresión queda: S + 2B.\n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "Se tiene que A &bullet; B = S. La expresión 'A aumentado en 2 unidades' es (A + 2). \nAl multiplicarlo por B, se obtiene:¬(A + 2) &bullet; B = (A &bullet; B) + (2 &bullet; B)¬Sustituyendo A &bullet; B por S, la expresión queda:¬ S + 2B.¬ \n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 38,
-    "txtPregunta": "Se le llama número habilidoso a un número de tres dígitos que es múltiplo de 4 y divisible por 7. ¿Cuál es la última cifra del menor y la última cifra del mayor número habilidoso?",
+    "txtPregunta": "Se le llama número habilidoso a un número de tres dígitos que es múltiplo de 4 y divisible por 7. \n \n¿Cuál es la última cifra del menor y la última cifra del mayor número habilidoso?",
     "respOpciones": [
       "1) 2 y 0",
       "2) 8 y 5",
@@ -454,11 +454,11 @@ var preguntas =
       "4) 2 y 6"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Un número que es múltiplo de 4 y 7 es múltiplo de su mcm, que es 28. Buscamos múltiplos de 28 de tres dígitos.\n&bullet; Menor: El primer múltiplo de 28 mayor que 100. 100/28 ≈ 3.57. El múltiplo es 28 &bullet; 4 = 112. Su última cifra es 2.\n&bullet; Mayor: El último múltiplo de 28 menor que 1000. 1000/28 ≈ 35.7. El múltiplo es 28 &bullet; 35 = 980. Su última cifra es 0.\n\nLas últimas cifras son 2 y 0. \n\nPor lo tanto, la opción correcta es la 1."
+    "respPregunta": "Un número que es múltiplo de 4 y 7 es múltiplo de su mcm, que es 28. Buscamos múltiplos de 28 de tres dígitos.\n&bullet; Menor: El primer múltiplo de 28 mayor que 100. 100/28 ≈ 3.57. El múltiplo es 28 &bullet; 4 = 112. Su última cifra es 2.\n&bullet; Mayor: El último múltiplo de 28 menor que 1000. 1000/28 ≈ 35.7. El múltiplo es 28 &bullet; 35 = 980. Su última cifra es 0.\nLas últimas cifras son 2 y 0. \n\nPor lo tanto, la opción correcta es la 1."
   },
   {
     "idPregunta": 39,
-    "txtPregunta": "Sobre el conjunto A={1, 2, 3, 4}, se define la operación ⊕ por medio de una tabla:[IMG-20]Así, por ejemplo, se puede observar que 3⊕4=3 [IMG-21] Se define el orden de un número como la cantidad de veces que se opera consigo mismo hasta obtener 1.\n¿Cuál es el orden de 3?",
+    "txtPregunta": "Sobre el conjunto A={1, 2, 3, 4}, se define la operación ⊕ por medio de una tabla:[IMG-20]Así, por ejemplo, se puede observar que 3⊕4=3 [IMG-21] Se define el orden de un número como la cantidad de veces que se opera consigo mismo hasta obtener 1.\n \n¿Cuál es el orden de 3?",
     "respOpciones": [
       "1) 2",
       "2) 3",
@@ -466,7 +466,7 @@ var preguntas =
       "4) 5"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Para encontrar el orden de 3, operamos 3 consigo mismo repetidamente hasta obtener 1 (se asume una tabla de operaciones no proporcionada).\n&bullet; 1ra operación:\no3 ⊕ 3 = 2\nc\n&bullet; 2da operación:\no2 ⊕ 3 = 1\nc\nSe necesitaron 2 operaciones para obtener 1. Por lo tanto, el orden de 3 es 2. \n\nLa opción correcta es la 1."
+    "respPregunta": "Para encontrar el orden de 3, operamos 3 consigo mismo repetidamente hasta obtener 1 (se asume una tabla de operaciones no proporcionada).\n&bullet; 1ra operación:¬3 ⊕ 3 = 2¬&bullet; 2da operación:¬2 ⊕ 3 = 1¬Se necesitaron 2 operaciones para obtener 1. Por lo tanto, el orden de 3 es 2. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 40,
@@ -586,7 +586,7 @@ var preguntas =
       "4) [IMG-69]"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Se observa un patrón que se repite cada 4 figuras: [IMG-70]1) Triángulo fuera. \n2) Triángulo doblado hacia adentro. \n3) Figura rotada 180 grados. \n4) Triángulo devuelto a su posición original. \nEste ciclo se repite. \nLa figura 5 es como la 1, pero rotada. \nLa figura 6 será como la 2 (triángulo adentro), la 7 como la 3 (rotada 180°), y la 8 será como la 4 (triángulo afuera). \nRespetando la orientación de la figura 5, la figura 8 debe corresponder a la opción 2:[IMG-67] \n\nPor lo tanto, la opción correcta es la 2."
+    "respPregunta": "Se observa un patrón que se repite cada 4 figuras: [IMG-70]1) Triángulo fuera. \n2) Triángulo doblado hacia adentro. \n3) Figura rotada 180 grados. \n4) Triángulo devuelto a su posición original. \nEste ciclo se repite. \nLa figura 5 es como la 1, pero rotada. \nLa figura 6 será como la 2 (triángulo adentro), la 7 como la 3 (rotada 180°), y la 8 será como la 4 (triángulo afuera). \nRespetando la orientación de la figura 5, la figura 8 debe corresponder a la opción 2:[IMG-67]\n\nPor lo tanto, la opción correcta es la 2."
   },
   {
     "idPregunta": 50,
@@ -674,7 +674,7 @@ var preguntas =
   },
   {
     "idPregunta": 57,
-    "txtPregunta": "Para empacar cinco bolas se utilizan cilindros de 3 cm de radio y 30 cm de altura. Se puede afirmar con certeza que cada empaque contiene bolas que:",
+    "txtPregunta": "Para empacar cinco bolas se utilizan cilindros de 3 cm de radio y 30 cm de altura. \n \nSe puede afirmar con certeza que cada empaque contiene bolas que:",
     "respOpciones": [
       "1) exceden los 3 cm de radio.",
       "2) exceden los 6 cm de diámetro.",
@@ -710,7 +710,7 @@ var preguntas =
   },
   {
     "idPregunta": 60,
-    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-118]Con base en el patrón anterior, considere las siguientes afirmaciones:\nA. El área sombreada de la figura 2 es \\frac{1}{3} del área sombreada de la figura 1.\nB. El área sombreada de la figura 1 es \\frac{1}{4} del área sombreada de la figura 3.\nC. El área sombreada de la figura 3 es \\frac{1}{2} del área sombreada de la figura 2.\nDe las anteriores, ¿cuáles son verdaderas?",
+    "txtPregunta": "Considere la siguiente secuencia de figuras:[IMG-118]Con base en el patrón anterior, considere las siguientes afirmaciones:\nA. El área sombreada de la figura 2 es \\frac{1}{3} del área sombreada de la figura 1.\nB. El área sombreada de la figura 1 es \\frac{1}{4} del área sombreada de la figura 3.\nC. El área sombreada de la figura 3 es \\frac{1}{2} del área sombreada de la figura 2.\n \nDe las anteriores, ¿cuáles son verdaderas?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo C",
@@ -722,7 +722,7 @@ var preguntas =
   },
   {
     "idPregunta": 61,
-    "txtPregunta": "Considere el siguiente texto:\nLa televisión nos tantaliza, quedamos como prendados de ella. Este efecto entre mágico y maléfico es obra, creo, del exceso de la luz que con su intensidad nos toma. (Sábato, 2000)\nSegún el texto, ¿cuál palabra resume el efecto de la televisión?",
+    "txtPregunta": "Considere el siguiente texto:¬¬La televisión nos tantaliza, quedamos como prendados de ella. Este efecto entre mágico y maléfico es obra, creo, del exceso de la luz que con su intensidad nos toma. \n(Sábato, 2000)¬¬Según el texto, ¿cuál palabra resume el efecto de la televisión?",
     "respOpciones": [
       "1) Nociva",
       "2) Ilusoria",
@@ -730,11 +730,11 @@ var preguntas =
       "4) Seductora"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "En este ítem se solicita una definición de la palabra televisión con base en el texto. Una posible estrategia es analizar las características de la televisión para encontrar una palabra que las englobe. Según el texto, la televisión produce un efecto hipnótico, mágico y cautivador en el espectador. Dentro de este contexto, las opciones nociva, atractiva e ilusoria no necesariamente integran este conjunto de características. Por otra parte, el significado de seductora implica un efecto de cautivar o atrapar; por tanto, este es el término que mejor define a la televisión. \n\nLa opción correcta es la 4."
+    "respPregunta": "En este ítem se solicita una definición de la palabra televisión con base en el texto. \nUna posible estrategia es analizar las características de la televisión para encontrar una palabra que las englobe. \nSegún el texto, la televisión produce un efecto hipnótico, mágico y cautivador en el espectador. \nDentro de este contexto, las opciones nociva, atractiva e ilusoria no necesariamente integran este conjunto de características. \nPor otra parte, el significado de seductora implica un efecto de cautivar o atrapar; por tanto, este es el término que mejor define a la televisión. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 62,
-    "txtPregunta": "Considere el siguiente texto:\nAl principio, en la isla de Nueva Guinea, donde hace unos 10.000 años se domesticó la caña de azúcar, la gente cogía las cañas y masticaba el tallo hasta sentir la ______ en la lengua. El azúcar era una especie de ______, la cura de todos los males, y ocupaba un lugar destacado en los antiguos ______ de la isla. (National Geographic, 2020)\nSegún el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Al principio, en la isla de Nueva Guinea, donde hace unos 10.000 años se domesticó la caña de azúcar, la gente cogía las cañas y masticaba el tallo hasta sentir la ______ en la lengua. El azúcar era una especie de ______, la cura de todos los males, y ocupaba un lugar destacado en los antiguos ______ de la isla. \n(National Geographic, 2020)¬¬Según el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) dulzura - elixir - mitos",
       "2) delicia - bálsamo - ritos",
@@ -742,11 +742,11 @@ var preguntas =
       "4) suavidad - remedio - cuentos"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "El texto presenta tres espacios que deben completarse coherentemente. Para el primer espacio, se alude al sentido del gusto, por lo que 'dulzura' o 'delicia' son opciones viables. La frase 'la cura de todos los males' es clave para el segundo término; esta propiedad se relaciona directamente con el concepto de 'elixir', un remedio maravilloso que cura todos los males. Finalmente, 'mitos' o 'ritos' encajan en el contexto de las creencias y capacidades mágicas atribuidas a la caña. \n\nLa opción correcta es la 1."
+    "respPregunta": "El texto presenta tres espacios que deben completarse coherentemente. \nPara el primer espacio, se alude al sentido del gusto, por lo que 'dulzura' o 'delicia' son opciones viables. \nLa frase 'la cura de todos los males' es clave para el segundo término; esta propiedad se relaciona directamente con el concepto de 'elixir', un remedio maravilloso que cura todos los males. \nFinalmente, 'mitos' o 'ritos' encajan en el contexto de las creencias y capacidades mágicas atribuidas a la caña. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 63,
-    "txtPregunta": "Considere el siguiente texto:\nDisculpen esta impericia, esta torpeza al escribir. Me atropello, nada va en orden. No soy escritor... (Víquez, 1994)\nSegún el texto, ¿cuál palabra es equivalente a 'impericia'?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Disculpen esta ~impericia~, esta torpeza al escribir. Me atropello, nada va en orden. No soy escritor... \n(Víquez, 1994)¬¬Según el texto, ¿cuál palabra es equivalente a 'impericia'?",
     "respOpciones": [
       "1) Desorden",
       "2) Accidente",
@@ -754,11 +754,11 @@ var preguntas =
       "4) Incompetencia"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se busca un sinónimo de 'impericia' en el contexto dado. La clave que ofrece el texto es 'no soy escritor'. La palabra 'impericia' se refiere a la falta de destreza para ejecutar una actividad, que en este contexto es una 'incompetencia' al escribir. 'Desorden' alude a cambios pero no a falta de habilidad, 'accidente' a un suceso fortuito y 'negligencia' a un descuido. \n\nLa opción correcta es la 4."
+    "respPregunta": "Se busca un sinónimo de 'impericia' en el contexto dado. \nLa clave que ofrece el texto es 'no soy escritor'. \nLa palabra 'impericia' se refiere a la falta de destreza para ejecutar una actividad, que en este contexto es una 'incompetencia' al escribir. \n'Desorden' alude a cambios pero no a falta de habilidad, 'accidente' a un suceso fortuito y 'negligencia' a un descuido. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 64,
-    "txtPregunta": "Considere el siguiente texto:\nEl chiste es un dicho breve, agudo y gracioso que surge espontáneamente del pueblo; algunos investigadores y autores los recopilan para su publicación. (de la Torre, 2005)\nSegún el texto, ¿cuál palabra sintetiza los términos subrayados (breve, agudo y gracioso)?",
+    "txtPregunta": "Considere el siguiente texto:¬¬El chiste es un dicho ~breve~, ~agudo~ y ~gracioso~ que surge espontáneamente del pueblo; algunos investigadores y autores los recopilan para su publicación. \n(de la Torre, 2005)¬¬Según el texto, ¿cuál palabra sintetiza los términos subrayados?",
     "respOpciones": [
       "1) Sagaz",
       "2) Burlesco",
@@ -766,11 +766,11 @@ var preguntas =
       "4) Perspicaz"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "Se debe sintetizar el significado de 'breve, agudo y gracioso' para identificar el atributo principal del chiste. Estas cualidades describen una capacidad de ingenio que combina creatividad, perspicacia y síntesis. 'Sagaz' y 'perspicaz' apuntan más a la agudeza, mientras que 'burlesco' se relaciona solo con lo gracioso. 'Ingenioso' es el término que mejor engloba las tres características. \n\nLa opción correcta es la 3."
+    "respPregunta": "Se debe sintetizar el significado de 'breve, agudo y gracioso' para identificar el atributo principal del chiste. \nEstas cualidades describen una capacidad de ingenio que combina creatividad, perspicacia y síntesis. \n'Sagaz' y 'perspicaz' apuntan más a la agudeza, mientras que 'burlesco' se relaciona solo con lo gracioso. \n'Ingenioso' es el término que mejor engloba las tres características. \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 65,
-    "txtPregunta": "Considere el siguiente texto:\nLa literatura comprometida está hecha de pruebas, de alegatos, de refutaciones. Leerla puede no causarnos placer, pero nos inclina a asentir o a rechazar. (Castellanos, 1959)\nSegún el texto, ¿cuál palabra sintetiza los términos subrayados (pruebas, alegatos, refutaciones)?",
+    "txtPregunta": "Considere el siguiente texto:¬¬La literatura comprometida está hecha de ~pruebas~, de ~alegatos~, de ~refutaciones~. Leerla puede no causarnos placer, pero nos inclina a asentir o a rechazar. \n(Castellanos, 1959)¬¬Según el texto, ¿cuál palabra sintetiza los términos subrayados?",
     "respOpciones": [
       "1) Evidencias",
       "2) Testimonios",
@@ -778,11 +778,11 @@ var preguntas =
       "4) Argumentaciones"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "El objetivo es encontrar un término que englobe 'pruebas', 'alegatos' y 'refutaciones'. 'Evidencias' es sinónimo de 'pruebas', pero no incluye a los otros dos. Un 'alegato' es un argumento o discusión, y una 'refutación' es hallar el error en una argumentación. El término 'argumentaciones' involucra contradecir (refutar o alegar) usando hechos (pruebas) para respaldar una opinión. Por lo tanto, es la palabra que mejor sintetiza los tres conceptos. \n\nLa opción correcta es la 4."
+    "respPregunta": "El objetivo es encontrar un término que englobe 'pruebas', 'alegatos' y 'refutaciones'. \n'Evidencias' es sinónimo de 'pruebas', pero no incluye a los otros dos. \nUn 'alegato' es un argumento o discusión, y una 'refutación' es hallar el error en una argumentación. \nEl término 'argumentaciones' involucra contradecir (refutar o alegar) usando hechos (pruebas) para respaldar una opinión. Por lo tanto, es la palabra que mejor sintetiza los tres conceptos. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 66,
-    "txtPregunta": "Considere el siguiente texto:\nLa diferencia entre mito y leyenda es imprecisa, ya que sus orígenes son ______. En su lenguaje desempeñan un papel de particular relevancia la ______ y la alegoría; ya que describen figuras míticas, que generalmente son ______. (de la Torre, 2005)\nSegún el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬La diferencia entre mito y leyenda es imprecisa, ya que sus orígenes son ______. En su lenguaje desempeñan un papel de particular relevancia la ______ y la alegoría; ya que describen figuras míticas, que generalmente son ______. \n(de la Torre, 2005)¬¬Según el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) idénticos - poesía - insólitas",
       "2) semejantes - metáfora - simbólicas",
@@ -790,11 +790,11 @@ var preguntas =
       "4) relacionados - historia - imaginarias"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El texto expone más similitudes que diferencias entre mito y leyenda, por lo que en el primer espacio se deduce que sus orígenes son 'semejantes' o 'relacionados'. Las palabras 'lenguaje', 'alegoría' y 'míticas' apuntan a un término como 'metáfora' para el segundo espacio, que alude a una representación simbólica. En el tercer espacio, el término buscado debe reflejar lo mítico y alegórico, lo cual se asocia con la característica de 'simbólico' o 'imaginario'. La opción 2 ofrece la combinación más coherente. \n\nLa opción correcta es la 2."
+    "respPregunta": "El texto expone más similitudes que diferencias entre mito y leyenda, por lo que en el primer espacio se deduce que sus orígenes son 'semejantes' o 'relacionados'. \nLas palabras 'lenguaje', 'alegoría' y 'míticas' apuntan a un término como 'metáfora' para el segundo espacio, que alude a una representación simbólica. \nEn el tercer espacio, el término buscado debe reflejar lo mítico y alegórico, lo cual se asocia con la característica de 'simbólico' o 'imaginario'. \nLa opción 2 ofrece la combinación más coherente. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 67,
-    "txtPregunta": "Considere el siguiente texto:\nMachu Picchu es considerada, al mismo tiempo, una obra maestra de la arquitectura y la ingeniería. Sus peculiares características arquitectónicas y paisajísticas, y el velo de misterio que ha tejido a su alrededor buena parte de la literatura publicada sobre el sitio, lo han convertido en una de las siete maravillas del mundo moderno.\nSegún el texto, ¿cuál opción sintetiza las características subrayadas (obra maestra de la arquitectura y la ingeniería, peculiares características arquitectónicas y paisajísticas)?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Machu Picchu es considerada, al mismo tiempo, una ~obra maestra~ de la arquitectura y la ingeniería. Sus peculiares características ~arquitectónicas~ y ~paisajísticas~, y el velo de misterio que ha tejido a su alrededor buena parte de la literatura publicada sobre el sitio, lo han convertido en una de las siete maravillas del mundo moderno. \n(Elaboración propia)¬¬Según el texto, ¿cuál opción sintetiza las características subrayadas?",
     "respOpciones": [
       "1) Sitio espiritual",
       "2) Paraje histórico",
@@ -802,11 +802,11 @@ var preguntas =
       "4) Entorno monumental"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se debe sintetizar el significado de las características subrayadas para identificar el atributo más alusivo a Machu Picchu. El texto lo describe como una 'obra maestra' con 'características arquitectónicas y paisajísticas' únicas, lo que describe lo impresionante del lugar. Las opciones 1 y 3 no sintetizan estas características, mientras que la opción 2 se enfoca en lo histórico y no en su entorno físico. La opción 'Entorno monumental' es la que mejor describe estas cualidades. \n\nLa opción correcta es la 4."
+    "respPregunta": "Se debe sintetizar el significado de las características subrayadas para identificar el atributo más alusivo a Machu Picchu. \nEl texto lo describe como una 'obra maestra' con 'características arquitectónicas y paisajísticas' únicas, lo que describe lo impresionante del lugar. \nLas opciones 1 y 3 no sintetizan estas características, mientras que la opción 2 se enfoca en lo histórico y no en su entorno físico. \nLa opción 'Entorno monumental' es la que mejor describe estas cualidades. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 68,
-    "txtPregunta": "Considere el siguiente texto:\nLos textos electrónicos presentan nuevas ______ y también nuevos retos que pueden tener gran impacto sobre las ______ que tiene el individuo de comprender lo que lee. La destreza en las nuevas competencias de Internet se convertirá en algo esencial para el futuro ______ de nuestros alumnos. (Asociación Internacional de Lectura, 2001)\nSegún el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Los textos electrónicos presentan nuevas ______ y también nuevos retos que pueden tener gran impacto sobre las ______ que tiene el individuo de comprender lo que lee. La destreza en las nuevas competencias de Internet se convertirá en algo esencial para el futuro ______ de nuestros alumnos. \n(Asociación Internacional de Lectura, 2001)¬¬Según el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) acciones - estrategias - progreso",
       "2) ayudas - capacidades - alfabetismo",
@@ -814,11 +814,11 @@ var preguntas =
       "4) preferencias - actitudes - aprendizaje"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El primer espacio presenta una contraposición con 'retos', por lo que 'ayudas' es la única opción que encaja. Para el segundo espacio, 'capacidades' o 'habilidades' son posibles opciones que se refieren a las condiciones que una persona desarrolla para la lectura. Finalmente, 'alfabetismo' y 'aprendizaje' se relacionan con el contexto de la lectura y la educación de los alumnos. La combinación de la opción 2 es la más coherente. \n\nLa opción correcta es la 2."
+    "respPregunta": "El primer espacio presenta una contraposición con 'retos', por lo que 'ayudas' es la única opción que encaja. \nPara el segundo espacio, 'capacidades' o 'habilidades' son posibles opciones que se refieren a las condiciones que una persona desarrolla para la lectura. \nFinalmente, 'alfabetismo' y 'aprendizaje' se relacionan con el contexto de la lectura y la educación de los alumnos. \nLa combinación de la opción 2 es la más coherente. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 69,
-    "txtPregunta": "Considere el siguiente texto:\nEse texto, sin duda, por sus contenidos, por la manera en que está redactado, por su gran aporte histórico y demás características, promete tener gran envergadura para todos aquellos lectores que logren identificar toda su riqueza. (Elaboración propia)\nSegún el texto, ¿cuál palabra es equivalente a 'envergadura'?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Ese texto, sin duda, por sus contenidos, por la manera en que está redactado, por su gran aporte histórico y demás características, promete tener gran ~envergadura~ para todos aquellos lectores que logren identificar toda su riqueza. \n(Elaboración propia)¬¬Según el texto, ¿cuál palabra es equivalente a 'envergadura'?",
     "respOpciones": [
       "1) Calidad",
       "2) Sentido",
@@ -826,11 +826,11 @@ var preguntas =
       "4) Trascendencia"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se busca un sinónimo de 'envergadura' según el contexto. Las claves son su 'aporte histórico' y su 'riqueza'. 'Envergadura' se asocia con el alcance, importancia y relevancia que tendrá el texto para los lectores, lo cual es sinónimo de 'trascendencia'. 'Calidad' se refiere a las características del escrito, pero no a su relevancia, mientras que 'sentido' y 'significado' aluden más a la comprensión. \n\nLa opción correcta es la 4."
+    "respPregunta": "Se busca un sinónimo de 'envergadura' según el contexto. \nLas claves son su 'aporte histórico' y su 'riqueza'. \n'Envergadura' se asocia con el alcance, importancia y relevancia que tendrá el texto para los lectores, lo cual es sinónimo de 'trascendencia'. \n'Calidad' se refiere a las características del escrito, pero no a su relevancia, mientras que 'sentido' y 'significado' aluden más a la comprensión. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 70,
-    "txtPregunta": "Considere el siguiente texto:\nActualmente, se desarrolla el vínculo entre seres orgánicos y la tecnología. Precisamente, la bioelectrónica aprovecha directamente el prolífico repertorio de sensores olfativos y el sofisticado sistema nervioso de los insectos para crear biorrobots. (Hidalgo, 2020)\nSegún el texto, ¿cuáles palabras se oponen a los términos subrayados (prolífico, sofisticado)?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Actualmente, se desarrolla el vínculo entre seres orgánicos y la tecnología. Precisamente, la bioelectrónica aprovecha directamente el ~prolífico~ repertorio de sensores olfativos y el ~sofisticado~ sistema nervioso de los insectos para crear biorrobots. \n(Hidalgo, 2020)¬¬Según el texto, ¿cuáles palabras se oponen a los términos subrayados?",
     "respOpciones": [
       "1) limitado - básico",
       "2) amplio - elemental",
@@ -838,11 +838,11 @@ var preguntas =
       "4) insuficiente - artificial"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Se deben encontrar los antónimos de 'prolífico' y 'sofisticado' en el contexto del texto. 'Prolífico' se refiere a un gran y abundante repertorio, por lo que su antónimo sería 'limitado', 'reducido' o 'insuficiente'. 'Sofisticado' describe la complejidad del sistema nervioso, por lo que su antónimo sería 'básico' o 'elemental'. La opción que presenta antónimos para ambos términos es la 1: limitado y básico. \n\nLa opción correcta es la 1."
+    "respPregunta": "Se deben encontrar los antónimos de 'prolífico' y 'sofisticado' en el contexto del texto. \n'Prolífico' se refiere a un gran y abundante repertorio, por lo que su antónimo sería 'limitado', 'reducido' o 'insuficiente'. \n'Sofisticado' describe la complejidad del sistema nervioso, por lo que su antónimo sería 'básico' o 'elemental'. \nLa opción que presenta antónimos para ambos términos es la 1: limitado y básico. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 71,
-    "txtPregunta": "Considere el siguiente texto:\nLa localidad aparece por primera vez mencionada en la segunda mitad del siglo IX. De aquellos años quedan sepulcros en los alrededores de la parroquia de San Vicente. Pero sin duda los vestigios más destacados, además de una veintena de casas colgantes, son los de su castillo. (Luján, 2023)\nSegún el texto, ¿cuál palabra es equivalente a 'vestigios'?",
+    "txtPregunta": "Considere el siguiente texto:¬¬La localidad aparece por primera vez mencionada en la segunda mitad del siglo IX. De aquellos años quedan sepulcros en los alrededores de la parroquia de San Vicente. Pero sin duda los ~vestigios~ más destacados, además de una veintena de casas colgantes, son los de su castillo. \n(Luján, 2023)¬¬Según el texto, ¿cuál palabra es equivalente a 'vestigios'?",
     "respOpciones": [
       "1) Añicos",
       "2) Restos",
@@ -850,11 +850,11 @@ var preguntas =
       "4) Escombros"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El término 'vestigios' se refiere a edificios o partes de ellos que se mantienen a través de los años. 'Añicos', 'destrozos' y 'escombros' implican rotura, daño violento o residuos de una demolición, lo cual no encaja con el contexto de estructuras antiguas que han perdurado. La palabra 'restos' se refiere a las partes de algo que ha prevalecido en el tiempo, siendo el sinónimo más adecuado. \n\nLa opción correcta es la 2."
+    "respPregunta": "El término 'vestigios' se refiere a edificios o partes de ellos que se mantienen a través de los años. \n'Añicos', 'destrozos' y 'escombros' implican rotura, daño violento o residuos de una demolición, lo cual no encaja con el contexto de estructuras antiguas que han perdurado. \nLa palabra 'restos' se refiere a las partes de algo que ha prevalecido en el tiempo, siendo el sinónimo más adecuado. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 72,
-    "txtPregunta": "Considere el siguiente texto:\nDominando la escena central del Egeo, se distingue una constelación de islas a las que los griegos denominaron Cícladas por su disposición en círculo. Después de cinco milenios, el barco sigue siendo el medio utilizado para desplazarse entre las islas griegas. Mikonos es un excelente inicio para un periplo que visite las seis joyas más preciadas de islas habitadas que componen el archipiélago. (Martínez, 2019)\nSegún el texto, ¿cuál palabra es equivalente a 'periplo'?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Dominando la escena central del Egeo, se distingue una constelación de islas a las que los griegos denominaron Cícladas por su disposición en círculo. Después de cinco milenios, el barco sigue siendo el medio utilizado para desplazarse entre las islas griegas. Mikonos es un excelente inicio para un ~periplo~ que visite las seis joyas más preciadas de islas habitadas que componen el archipiélago. \n(Martínez, 2019)¬¬Según el texto, ¿cuál palabra es equivalente a 'periplo'?",
     "respOpciones": [
       "1) Paseo",
       "2) Acceso",
@@ -862,11 +862,11 @@ var preguntas =
       "4) Trayecto"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "'Periplo' significa un viaje o recorrido, usualmente largo y por mar. En el contexto de visitar seis islas, 'paseo' (salida corta), 'acceso' (entrada) y 'destino' (punto de llegada) no son equivalentes. 'Trayecto', que significa un espacio que se recorre, corresponde adecuadamente al viaje para visitar las islas. La respuesta correcta es la 4."
+    "respPregunta": "'Periplo' significa un viaje o recorrido, usualmente largo y por mar. \nEn el contexto de visitar seis islas, 'paseo' (salida corta), 'acceso' (entrada) y 'destino' (punto de llegada) no son equivalentes. \n'Trayecto', que significa un espacio que se recorre, corresponde adecuadamente al viaje para visitar las islas. \n\nLa respuesta correcta es la 4."
   },
   {
     "idPregunta": 73,
-    "txtPregunta": "Considere el siguiente texto:\nEn el momento de la fundación de la Roma Quadrata, el latín era una simple habla ______ y empleada por pastores, campesinos y forajidos soldados rudos; pero, conforme Roma comienza a lograr victoria tras victoria sobre otros pueblos, su idioma comienza a ______ por la misma Italia y fuera de sus fronteras. (Quirós, 2000)\nSegún el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬En el momento de la fundación de la Roma Quadrata, el latín era una simple habla ______ y empleada por pastores, campesinos y forajidos soldados rudos; pero, conforme Roma comienza a lograr victoria tras victoria sobre otros pueblos, su idioma comienza a ______ por la misma Italia y fuera de sus fronteras. \n(Quirós, 2000)¬¬Según el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) antigua - dividirse",
       "2) rústica - expandirse",
@@ -874,11 +874,11 @@ var preguntas =
       "4) arcaica - transmitirse"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "Para el primer espacio, el latín es descrito como el habla de 'pastores, campesinos y soldados rudos', lo que sugiere que era una habla 'rústica'. Para el segundo espacio, el texto indica que Roma logró 'victoria tras victoria', imponiendo su idioma en otros lugares. Este proceso de imponer una lengua a través de la conquista es una 'expansión'. Los términos 'rústica' y 'expandirse' completan el texto con sentido lógico. \n\nLa opción correcta es la 2."
+    "respPregunta": "Para el primer espacio, el latín es descrito como el habla de 'pastores, campesinos y soldados rudos', lo que sugiere que era una habla 'rústica'. \nPara el segundo espacio, el texto indica que Roma logró 'victoria tras victoria', imponiendo su idioma en otros lugares. \nEste proceso de imponer una lengua a través de la conquista es una 'expansión'. \nLos términos 'rústica' y 'expandirse' completan el texto con sentido lógico. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 74,
-    "txtPregunta": "Considere el siguiente texto:\nAmbos lugares (un lago ártico helado y una cueva tropical saturada de gases tóxicos) podrían proporcionar claves para resolver uno de los misterios más antiguos y apasionantes del mundo: ¿hay vida fuera de nuestro planeta? Es posible que la vida en otros mundos (...) tenga que ______ en océanos cubiertos de hielo (...) o en cuevas llenas de gases. Si encontramos la manera de ______ e identificar en la Tierra formas de vida capaces de ______ en ese tipo de ambientes extremos, estaremos un paso más cerca de hallar vida en otros planetas. (National Geographic, 2018)\nSegún el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Ambos lugares (un lago ártico helado y una cueva tropical saturada de gases tóxicos) podrían proporcionar claves para resolver uno de los misterios más antiguos y apasionantes del mundo: ¿hay vida fuera de nuestro planeta? Es posible que la vida en otros mundos, ya sea en nuestro sistema solar o en torno a estrellas distantes, tenga que ______ en océanos cubiertos de hielo, como los de Europa, uno de los satélites de Júpiter, o en cuevas llenas de gases. Si encontramos la manera de ______ e identificar en la Tierra formas de vida capaces de ______ en ese tipo de ambientes extremos, estaremos un paso más cerca de hallar vida en otros planetas. \n(National Geographic, 2018)¬¬Según el texto, ¿cuáles palabras completan el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) florecer - aislar - prosperar",
       "2) prosperar - capturar - mutar",
@@ -886,11 +886,11 @@ var preguntas =
       "4) mejorar - circundar - evolucionar"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Para el primer espacio, se habla del surgimiento de la vida en ambientes adversos, lo que encaja con 'florecer' o 'prosperar'. El segundo espacio se refiere a encontrar y estudiar estas formas de vida en la Tierra, por lo que 'aislar' sería un paso previo para su estudio. Para el tercer espacio, se busca un término que describa la capacidad de la vida para sobrevivir en ambientes extremos, donde 'prosperar' o 'evolucionar' son opciones adecuadas. La combinación de la opción 1 ('florecer', 'aislar', 'prosperar') es la más coherente con el contexto científico del texto. \n\nLa opción correcta es la 1."
+    "respPregunta": "Para el primer espacio, se habla del surgimiento de la vida en ambientes adversos, lo que encaja con 'florecer' o 'prosperar'. \nEl segundo espacio se refiere a encontrar y estudiar estas formas de vida en la Tierra, por lo que 'aislar' sería un paso previo para su estudio. \nPara el tercer espacio, se busca un término que describa la capacidad de la vida para sobrevivir en ambientes extremos, donde 'prosperar' o 'evolucionar' son opciones adecuadas. \nLa combinación de la opción 1 ('florecer', 'aislar', 'prosperar') es la más coherente con el contexto científico del texto. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 75,
-    "txtPregunta": "Considere el siguiente texto:\nEl storytelling es el arte de contar una historia y aprovechar todos los elementos de su atmósfera para transmitir sensaciones de una forma inolvidable. Consiste en la capacidad de comunicar ideas con la intención de generar un ______ emocional que marque al espectador y que dé lugar a un espacio de reflexión. (Rodríguez, 2021)\nSegún el texto, ¿cuál palabra completa el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬El storytelling es el arte de contar una historia y aprovechar todos los elementos de su atmósfera para transmitir sensaciones de una forma inolvidable. Consiste en la capacidad de comunicar ideas con la intención de generar un ______ emocional que marque al espectador y que dé lugar a un espacio de reflexión. \n(Rodríguez, 2021)¬¬Según el texto, ¿cuál palabra completa el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) vínculo",
       "2) impacto",
@@ -898,11 +898,11 @@ var preguntas =
       "4) encuentro"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El texto describe el storytelling como una forma de comunicar ideas con la intención de provocar una reacción emocional significativa que 'marque al espectador'. La palabra 'impacto' es la que mejor se ajusta a esta idea de una impresión emocional profunda y duradera. 'Vínculo', 'ambiente' o 'encuentro' no transmiten con la misma fuerza esta idea de una reacción intensa que deja una huella. Por lo tanto, 'impacto' es la palabra que mejor completa el sentido. \n\nLa opción correcta es la 2."
+    "respPregunta": "El texto describe el storytelling como una forma de comunicar ideas con la intención de provocar una reacción emocional significativa que 'marque al espectador'. \nLa palabra 'impacto' es la que mejor se ajusta a esta idea de una impresión emocional profunda y duradera. \n'Vínculo', 'ambiente' o 'encuentro' no transmiten con la misma fuerza esta idea de una reacción intensa que deja una huella. \nPor lo tanto, 'impacto' es la palabra que mejor completa el sentido. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 76,
-    "txtPregunta": "Considere el siguiente texto:\nComo parte del uso del ingenio se encuentra también el motivo del disfraz, el cual es usado como ______. Un ejemplo de ello es cuando el personaje de Odiseo se disfraza de mendigo en varias ocasiones, no solo a su llegada a Ítaca, sino también antes, durante la guerra de Troya, ciudad en la que entra así como espía y roba el Paladio. (Cerdas y Guevara, 2023)\nSegún el texto, ¿cuál palabra completa el párrafo anterior con sentido lógico?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Como parte del uso del ingenio se encuentra también el motivo del disfraz, el cual es usado como ______. Un ejemplo de ello es cuando el personaje de Odiseo se disfraza de mendigo en varias ocasiones, no solo a su llegada a Ítaca, sino también antes, durante la guerra de Troya, ciudad en la que entra así como espía y roba el Paladio. \n(Cerdas y Guevara, 2023)¬¬Según el texto, ¿cuál palabra completa el párrafo anterior con sentido lógico?",
     "respOpciones": [
       "1) timo",
       "2) truco",
@@ -910,11 +910,11 @@ var preguntas =
       "4) artimaña"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "El texto menciona el uso del ingenio y el disfraz para lograr objetivos estratégicos, como en el caso de Odiseo. Las palabras 'timo' y 'fraude' tienen una connotación negativa de estafa o ilegalidad que no se ajusta al contexto heroico. 'Truco' implica un engaño menor o simple. 'Artimaña' se refiere a una acción astuta, hábil y planeada para lograr un fin mediante el engaño, lo cual se ajusta perfectamente al uso del disfraz por parte de Odiseo. Por lo tanto, 'artimaña' es la palabra que mejor completa el sentido. \n\nLa opción correcta es la 4."
+    "respPregunta": "El texto menciona el uso del ingenio y el disfraz para lograr objetivos estratégicos, como en el caso de Odiseo. \nLas palabras 'timo' y 'fraude' tienen una connotación negativa de estafa o ilegalidad que no se ajusta al contexto heroico. \n'Truco' implica un engaño menor o simple. \n'Artimaña' se refiere a una acción astuta, hábil y planeada para lograr un fin mediante el engaño, lo cual se ajusta perfectamente al uso del disfraz por parte de Odiseo. \nPor lo tanto, 'artimaña' es la palabra que mejor completa el sentido. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 77,
-    "txtPregunta": "Considere el siguiente texto:\nAunque parezca paradójico, los mensajes más cotidianos son los más difíciles de descifrar porque el hablante, dada la poca trascendencia del mensaje o la rapidez con que debe pensarlo, no tiene mucho tiempo para reflexionar sobre él.\nSegún el texto, ¿cuáles palabras son equivalentes a 'paradójico' y 'trascendencia'?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Aunque parezca ~paradójico~, los mensajes más cotidianos son los más difíciles de descifrar porque el hablante, dada la poca ~trascendencia~ del mensaje o la rapidez con que debe pensarlo, no tiene mucho tiempo para reflexionar sobre él. \n(Madrigal, 2021)¬¬Según el texto, ¿cuáles palabras son equivalentes a 'paradójico' y 'trascendencia'?",
     "respOpciones": [
       "1) absurdo - importancia",
       "2) controversial - eficacia",
@@ -922,11 +922,11 @@ var preguntas =
       "4) cuestionable - consecuencia"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "En el contexto del texto, 'paradójico' se refiere a una situación que parece contraria a la lógica o al sentido común, lo que es similar a 'absurdo'. 'Trascendencia' se refiere a la relevancia o significación de algo, por lo que 'importancia' es un sinónimo directo en este caso. Las otras opciones no presentan una relación de significado tan directa con las palabras subrayadas. Por lo tanto, las palabras que mantienen una relación de sinonimia son 'absurdo' e 'importancia'. \n\nLa opción correcta es la 1."
+    "respPregunta": "En el contexto del texto, 'paradójico' se refiere a una situación que parece contraria a la lógica o al sentido común, lo que es similar a 'absurdo'. \n'Trascendencia' se refiere a la relevancia o significación de algo, por lo que 'importancia' es un sinónimo directo en este caso. \nLas otras opciones no presentan una relación de significado tan directa con las palabras subrayadas. \nPor lo tanto, las palabras que mantienen una relación de sinonimia son 'absurdo' e 'importancia'. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 78,
-    "txtPregunta": "Considere el siguiente texto:\nLa idea de que un texto sea capaz de múltiples lecturas es característica de la Edad Media, esa Edad Media tan calumniada y compleja que nos ha dado la arquitectura gótica, las sagas de Islandia y la filosofía escolástica en la que todo está discutido. Que nos dio, sobre todo, la Comedia, que seguimos leyendo y que nos sigue asombrando, que durará más allá de nuestra vida, mucho más allá de nuestras vigilias y que será enriquecida por cada generación de lectores. (Borges, 1980)\nDel texto anterior se puede inferir que la Edad Media:",
+    "txtPregunta": "Considere el siguiente texto:¬¬La idea de que un texto sea capaz de múltiples lecturas es característica de la Edad Media, esa Edad Media tan calumniada y compleja que nos ha dado la arquitectura gótica, las sagas de Islandia y la filosofía escolástica en la que todo está discutido. Que nos dio, sobre todo, la Comedia, que seguimos leyendo y que nos sigue asombrando, que durará más allá de nuestra vida, mucho más allá de nuestras vigilias y que será enriquecida por cada generación de lectores. \n(Borges, 1980)¬¬Del texto anterior se puede inferir que la Edad Media:",
     "respOpciones": [
       "1) ha trascendido gracias a su legado.",
       "2) ha sido elogiada por sus contribuciones.",
@@ -934,11 +934,11 @@ var preguntas =
       "4) limitó al lector de la Comedia en muchos sentidos."
     ],
     "idRespPregunta": 1,
-    "respPregunta": "El texto destaca que, a pesar de ser 'calumniada', la Edad Media ha dejado grandes aportes como la arquitectura, la filosofía y, notablemente, la Comedia, una obra que 'seguimos leyendo' y 'durará más allá de nuestra vida'. Al relacionar estas ideas, se concluye que la Edad Media ha sido relevante en tiempos posteriores, es decir, ha trascendido gracias a su legado. La opción 2 contradice el calificativo de 'calumniada', y las opciones 3 y 4 contradicen la idea de la trascendencia de la Comedia. \n\nLa opción correcta es la 1."
+    "respPregunta": "El texto destaca que, a pesar de ser 'calumniada', la Edad Media ha dejado grandes aportes como la arquitectura, la filosofía y, notablemente, la Comedia, una obra que 'seguimos leyendo' y 'durará más allá de nuestra vida'. \nAl relacionar estas ideas, se concluye que la Edad Media ha sido relevante en tiempos posteriores, es decir, ha trascendido gracias a su legado. \nLa opción 2 contradice el calificativo de 'calumniada', y las opciones 3 y 4 contradicen la idea de la trascendencia de la Comedia. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 79,
-    "txtPregunta": "Considere los siguientes textos:\nTexto 1: El liderazgo es la función que ocupa una persona que se distingue del resto y es capaz de tomar decisiones acertadas (...), inspirando al resto de los que participan de ese grupo a alcanzar una meta común. Es un elemento fundamental en los gestores del mundo empresarial, (...) pero también lo es en otros ámbitos, como los deportes (...), la educación (...) y hasta en la familia.\nTexto 2: El estilo de años atrás, jerárquico y decisivo, está dando paso a un nuevo modelo de liderazgo, más colaborativo, ágil e integral. Si algo caracterizaba a los líderes del antiguo entorno laboral, era la estructura piramidal.\n¿Cuál es una característica del líder presente en solo uno de los textos?",
+    "txtPregunta": "Considere los siguientes textos:\nTexto 1:¬¬ El liderazgo es la función que ocupa una persona que se distingue del resto y es capaz de tomar decisiones acertadas para el grupo, equipo u organización que preceda, inspirando al resto de los que participan de ese grupo a alcanzar una meta común. Es un elemento fundamental en los gestores del mundo empresarial, para sacar adelante una empresa u organización, pero también lo es en otros ámbitos, como los deportes (saber dirigir un equipo a la victoria), la educación (profesores que consiguen que sus alumnos se identifiquen con su forma de pensar) y hasta en la familia (padres o hermanos mayores que son tenidos como absoluto ejemplo por parte de sus hijos). \n(Pérez y Gardey, 2008)¬¬Texto 2: ¬¬El estilo de años atrás, jerárquico y decisivo, está dando paso a un nuevo modelo de liderazgo, más colaborativo, ágil e integral. Estos son los tres aspectos clave que los líderes tendrán que reajustar para adaptarse a la nueva realidad laboral. Si algo caracterizaba a los líderes del antiguo entorno laboral, era la estructura piramidal. Un gran jefe en un despacho grande que dirige la empresa dando órdenes que los empleados ponen en marcha. Compartir información, desarrollar ideas y la toma de decisiones era competencia de unos pocos. Pero hoy en día, cada uno de los empleados en la empresa, de cualquier nivel, ha de ser informado y recibir la capacitación y el poder para alcanzar los objetivos de la compañía. \n(Guijarro, 2018)¬¬¿Cuál es una característica del líder presente en solo uno de los textos?",
     "respOpciones": [
       "1) La idoneidad para dirigir al equipo",
       "2) La capacidad para tomar decisiones",
@@ -946,11 +946,11 @@ var preguntas =
       "4) La capacidad de dirigir en diferentes entornos"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "El texto 1 señala que un líder debe tomar decisiones, establecer metas, motivar y ser gestor en diferentes ámbitos (empresarial, deportes, educación, familia). El texto 2 se centra en el ámbito empresarial y compara dos modelos de liderazgo (jerárquico vs. colaborativo). Al comparar ambos, se encuentra que la característica de dirigir en diferentes entornos (deportes, educación, familia) se menciona explícitamente solo en el texto 1. \n\nLa opción correcta es la 4."
+    "respPregunta": "El texto 1 señala que un líder debe tomar decisiones, establecer metas, motivar y ser gestor en diferentes ámbitos (empresarial, deportes, educación, familia). \nEl texto 2 se centra en el ámbito empresarial y compara dos modelos de liderazgo (jerárquico vs. colaborativo). \nAl comparar ambos, se encuentra que la característica de dirigir en diferentes entornos (deportes, educación, familia) se menciona explícitamente solo en el texto 1. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 80,
-    "txtPregunta": "Considere los siguientes textos:\nTexto 1: El liderazgo es la función que ocupa una persona que se distingue del resto y es capaz de tomar decisiones acertadas (...), inspirando al resto de los que participan de ese grupo a alcanzar una meta común.\nTexto 2: (...) hoy en día, cada uno de los empleados en la empresa, de cualquier nivel, ha de ser informado y recibir la capacitación y el poder para alcanzar los objetivos de la compañía.\nDe ambos textos se deduce que una característica del liderazgo es:",
+    "txtPregunta": "De ambos textos se deduce que una característica del liderazgo es:",
     "respOpciones": [
       "1) dirigir equipos en diferentes ámbitos.",
       "2) impulsar a las personas para alcanzar las metas.",
@@ -958,11 +958,11 @@ var preguntas =
       "4) desarrollar el potencial de cada persona en una empresa."
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El texto 1 resalta que el líder inspira al grupo 'a alcanzar una meta común'. El texto 2, aunque describe un modelo diferente, también se enfoca en que los empleados puedan 'alcanzar los objetivos de la compañía'. Al comparar las características en ambos textos, la idea común es que el liderazgo, independientemente del estilo o ámbito, busca guiar o impulsar a las personas para lograr metas u objetivos. \n\nLa opción correcta es la 2."
+    "respPregunta": "El texto 1 resalta que el líder inspira al grupo 'a alcanzar una meta común'. \nEl texto 2, aunque describe un modelo diferente, también se enfoca en que los empleados puedan 'alcanzar los objetivos de la compañía'. \nAl comparar las características en ambos textos, la idea común es que el liderazgo, independientemente del estilo o ámbito, busca guiar o impulsar a las personas para lograr metas u objetivos. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 81,
-    "txtPregunta": "Considere el siguiente texto:\nEl cine permite la reunión de personas de distintos estratos sociales en un mismo lugar. Esto ayuda al público a identificarse como colectivo y a generar catarsis frente a los hechos que han marcado su historia. (...) cuando el espectador se enfrenta con un filme que lo conmueve (...), entonces la experiencia cinematográfica se convierte en un ejercicio sociológico y psicológico.\nConsidere los siguientes efectos:\nA. Crear una identidad cultural colectiva.\nB. Hacer una crítica sobre la realidad social.\nC. Sensibilizar sobre las experiencias de vida.\nD. Educar al público sobre la vida en sociedad.\nSegún el texto, ¿cuáles de los anteriores son efectos del cine en el público?",
+    "txtPregunta": "Considere el siguiente texto:¬¬El cine permite la reunión de personas de distintos estratos sociales en un mismo lugar. Esto ayuda al público a identificarse como colectivo y a generar catarsis frente a los hechos que han marcado su historia. Son muchas las películas, son diversas sus intenciones, pero cuando el espectador se enfrenta con un filme que lo conmueve, que cuenta con una narrativa que expone una problemática, entonces la experiencia cinematográfica se convierte en un ejercicio sociológico y psicológico. \n(Arbeláez, 2018)¬¬Considere los siguientes efectos:\nA. Crear una identidad cultural colectiva.\nB. Hacer una crítica sobre la realidad social.\nC. Sensibilizar sobre las experiencias de vida.\nD. Educar al público sobre la vida en sociedad.\n \nSegún el texto, ¿cuáles de los anteriores son efectos del cine en el público?",
     "respOpciones": [
       "1) A y B",
       "2) A y C",
@@ -970,11 +970,11 @@ var preguntas =
       "4) C y D"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El texto plantea que el cine propicia un espacio socializador y humano. Del hecho de que el público se 'identifique como colectivo' se deduce el efecto A: 'Crear una identidad cultural colectiva'. Del hecho de que el espectador se enfrente a un filme que lo 'conmueve', se deduce el efecto C: 'Sensibilizar sobre las experiencias de vida'. Los efectos B y D no se pueden inferir del texto, ya que no hay ideas que apoyen explícitamente un efecto crítico o educativo. \n\nLa opción correcta es la 2."
+    "respPregunta": "El texto plantea que el cine propicia un espacio socializador y humano. \nDel hecho de que el público se 'identifique como colectivo' se deduce el efecto A: 'Crear una identidad cultural colectiva'. \nDel hecho de que el espectador se enfrente a un filme que lo 'conmueve', se deduce el efecto C: 'Sensibilizar sobre las experiencias de vida'. \nLos efectos B y D no se pueden inferir del texto, ya que no hay ideas que apoyen explícitamente un efecto crítico o educativo. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 82,
-    "txtPregunta": "Considere el siguiente texto:\nVarios artistas del Renacimiento pintaron obras cuyos personajes tenían seis dedos. Aunque una de las hipótesis es que esta cualidad corresponde a un error, otros críticos concluyen que es una decisión deliberada dado el carácter meticuloso de las obras y las variadas interpretaciones del número seis. (Elaboración propia)\nConsidere las siguientes afirmaciones:\nA. Las motivaciones dadas por el artista carecen de importancia para la crítica.\nB. Los artistas renacentistas eran conscientes de los detalles en su arte.\nC. Las pinturas del Renacimiento cuentan con un carácter simbólico.\nDe las anteriores, ¿cuáles se infieren del texto?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Varios artistas del Renacimiento pintaron obras cuyos personajes tenían seis dedos. Aunque una de las hipótesis es que esta cualidad corresponde a un error, otros críticos concluyen que es una decisión deliberada dado el carácter meticuloso de las obras y las variadas interpretaciones del número seis. \n(Elaboración propia)¬¬Considere las siguientes afirmaciones:\nA. Las motivaciones dadas por el artista carecen de importancia para la crítica.\nB. Los artistas renacentistas eran conscientes de los detalles en su arte.\nC. Las pinturas del Renacimiento cuentan con un carácter simbólico.\n \nDe las anteriores, ¿cuáles se infieren del texto?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo C",
@@ -982,11 +982,11 @@ var preguntas =
       "4) B y C"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "&bullet; A. Esta afirmación es falsa, ya que el texto indica que los críticos deliberaron sobre las razones, lo que muestra la importancia de las motivaciones.\n&bullet; B. Esta afirmación es verdadera; es una paráfrasis de 'el carácter meticuloso de las obras'.\n&bullet; C. Esta afirmación es verdadera, ya que se mencionan 'variadas interpretaciones del número seis', lo que sugiere que el detalle tiene múltiples significados simbólicos.\n\nEn conclusión, se pueden inferir las afirmaciones B y C. \n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "&bullet; A. Esta afirmación es falsa, ya que el texto indica que los críticos deliberaron sobre las razones, lo que muestra la importancia de las motivaciones.\n&bullet; B. Esta afirmación es verdadera; es una paráfrasis de 'el carácter meticuloso de las obras'.\n&bullet; C. Esta afirmación es verdadera, ya que se mencionan 'variadas interpretaciones del número seis', lo que sugiere que el detalle tiene múltiples significados simbólicos.\nEn conclusión, se pueden inferir las afirmaciones B y C. \n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 83,
-    "txtPregunta": "Considere el siguiente texto:\nLos programas 'divertidos' tienen mucho rating −y el rating es lo supremo−, no importa a costa de qué valor, ni quién lo financia. Son esos programas donde divertirse es degradar, o donde todo se banaliza. Como, si habiendo perdido la capacidad para la grandeza, nos conformáramos con una comedia de regular calidad. (Sábato, 2000)\nConsidere las siguientes afirmaciones:\nA. Los programas culturales tienen poca popularidad.\nB. Las personas seleccionan el programa según el nivel de audiencia.\nC. La oferta tiende hacia la superficialidad y el entretenimiento.\nDe las anteriores, ¿cuáles se infieren del texto?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Los programas 'divertidos' tienen mucho rating −y el rating es lo supremo−, no importa a costa de qué valor, ni quién lo financia. Son esos programas donde divertirse es degradar, o donde todo se banaliza. Como, si habiendo perdido la capacidad para la grandeza, nos conformáramos con una comedia de regular calidad. \n(Sábato, 2000)¬¬Considere las siguientes afirmaciones:\nA. Los programas culturales tienen poca popularidad.\nB. Las personas seleccionan el programa según el nivel de audiencia.\nC. La oferta tiende hacia la superficialidad y el entretenimiento.\n \nDe las anteriores, ¿cuáles se infieren del texto?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo C",
@@ -998,7 +998,7 @@ var preguntas =
   },
   {
     "idPregunta": 84,
-    "txtPregunta": "Considere los siguientes textos acerca de la empatía:\nTexto 1: Es importante tener en cuenta que la empatía es una cualidad de la relación humana, sin la que nuestra mente no hubiera podido estructurarse saludablemente (...), ya que para que seamos capaces de dar sentido a nuestro propio mundo interno alguien ha tenido que hacerlo antes por nosotros. (Artés, 2021)\nTexto 2: La 'empatía' es una habilidad adquirida que se relaciona con las condiciones socioculturales en las que nos criamos y las características estructurales y funcionales en donde transcurren nuestros procesos de socialización (...).\nConsidere las siguientes afirmaciones acerca de la empatía:\nA. Es necesaria para el bienestar del ser humano.\nB. Es fundamental para el desarrollo mental.\nC. Es una destreza aprendida con la convivencia.\nDe las anteriores, ¿cuáles se infieren de ambos textos?",
+    "txtPregunta": "Considere los siguientes textos acerca de la empatía:\nTexto 1:¬¬ Es importante tener en cuenta que la empatía es una cualidad de la relación humana, sin la que nuestra mente no hubiera podido estructurarse saludablemente y aprendido a establecer relaciones con el mundo ni consigo misma en una cierta armonía y seguridad, ya que para que seamos capaces de dar sentido a nuestro propio mundo interno alguien ha tenido que hacerlo antes por nosotros. \n(Artés, 2021)¬¬Texto 2:¬¬ La 'empatía' es una habilidad adquirida que se relaciona con las condiciones socioculturales en las que nos criamos y las características estructurales y funcionales en donde transcurren nuestros procesos de socialización, incluyendo la formación escolar y las experiencias tempranas de nuestro 'aprendizaje social'. (Deher, 2009)¬¬Considere las siguientes afirmaciones acerca de la empatía:\nA. Es necesaria para el bienestar del ser humano.\nB. Es fundamental para el desarrollo mental.\nC. Es una destreza aprendida con la convivencia.\n \nDe las anteriores, ¿cuáles se infieren de ambos textos?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo C",
@@ -1006,11 +1006,11 @@ var preguntas =
       "4) B y C"
     ],
     "idRespPregunta": 1,
-    "respPregunta": "Se deben identificar las ideas presentes en ambos textos.\n&bullet; A. Se infiere de ambos textos que la empatía permite el bienestar y una relación saludable con el mundo.\n&bullet; B. Se refiere al desarrollo mental ('mente estructurada saludablemente'), lo cual se infiere únicamente del texto 1.\n&bullet; C. Se establece que la empatía es una 'habilidad adquirida' mediante relaciones sociales solo en el texto 2. \n\nPor lo tanto, la única afirmación que se infiere de ambos textos es la A. \n\nLa opción correcta es la 1."
+    "respPregunta": "Se deben identificar las ideas presentes en ambos textos.\n&bullet; A. Se infiere de ambos textos que la empatía permite el bienestar y una relación saludable con el mundo.\n&bullet; B. Se refiere al desarrollo mental ('mente estructurada saludablemente'), lo cual se infiere únicamente del texto 1.\n&bullet; C. Se establece que la empatía es una 'habilidad adquirida' mediante relaciones sociales solo en el texto 2. \nPor lo tanto, la única afirmación que se infiere de ambos textos es la A. \n\nLa opción correcta es la 1."
   },
   {
     "idPregunta": 85,
-    "txtPregunta": "Considere el siguiente texto:\nLos griegos desarrollaron una visión religiosa naturalista cimentada en los dioses del Olimpo (...); cuando despertaron del mito y la fábula, cuestionaron el origen fantástico de sus conocimientos, surgiendo así la filosofía, que tiene, a partir de entonces, su origen en la razón humana y ya no más en las concepciones míticas. (Martínez, 2016)\nSegún el texto, la filosofía nace en Grecia debido a:",
+    "txtPregunta": "Considere el siguiente texto:¬¬Los griegos desarrollaron una visión religiosa naturalista cimentada en los dioses del Olimpo, expresando sus creencias mediante la poesía y la música; cuando despertaron del mito y la fábula, cuestionaron el origen fantástico de sus conocimientos, surgiendo así la filosofía, que tiene, a partir de entonces, su origen en la razón humana y ya no más en las concepciones míticas. \n(Martínez, 2016)¬¬Según el texto, la filosofía nace en Grecia debido a:",
     "respOpciones": [
       "1) la fama que gozaban los grandes pensadores griegos.",
       "2) al desarrollo del pensamiento libre propiciado por los griegos.",
@@ -1018,11 +1018,11 @@ var preguntas =
       "4) las explicaciones mitológicas que fundamentaron el pensamiento crítico."
     ],
     "idRespPregunta": 3,
-    "respPregunta": "El texto plantea una ruptura en las creencias de los griegos, pasando de una visión basada en el mito a una basada en la razón. Esta transición cultural, donde se 'cuestionaron el origen fantástico de sus conocimientos', propició un cambio en el pensamiento que dio origen a la filosofía. Por lo tanto, fueron las condiciones culturales las que favorecieron el pensamiento crítico. El texto no menciona la fama de los pensadores ni el pensamiento libre, y señala que el pensamiento crítico surge en oposición, no a partir, de las explicaciones mitológicas. \n\nLa opción correcta es la 3."
+    "respPregunta": "El texto plantea una ruptura en las creencias de los griegos, pasando de una visión basada en el mito a una basada en la razón. \nEsta transición cultural, donde se 'cuestionaron el origen fantástico de sus conocimientos', propició un cambio en el pensamiento que dio origen a la filosofía. \nPor lo tanto, fueron las condiciones culturales las que favorecieron el pensamiento crítico. \nEl texto no menciona la fama de los pensadores ni el pensamiento libre, y señala que el pensamiento crítico surge en oposición, no a partir, de las explicaciones mitológicas. \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 86,
-    "txtPregunta": "Considere el siguiente texto:\nLa palabra simpatía hace referencia a la puesta en común de dos individualidades en un intento de sintonizar emocionalmente, sin que por ello nadie deba hacer abstracción de lo que piensa o siente. Podemos afirmar que la simpatía tiene más que ver con la expresión subjetiva de sentimientos y pensamientos, mientras que la empatía busca la comprensión objetiva del mundo interno del otro. (Artés, 2021)\nSegún el texto, ¿en qué se basa la diferencia entre simpatía y empatía hacia otras personas?",
+    "txtPregunta": "Considere el siguiente texto:¬¬La palabra simpatía hace referencia a la puesta en común de dos individualidades en un intento de sintonizar emocionalmente, sin que por ello nadie deba hacer abstracción de lo que piensa o siente. Podemos afirmar que la simpatía tiene más que ver con la expresión subjetiva de sentimientos y pensamientos, mientras que la empatía busca la comprensión objetiva del mundo interno del otro. \n(Artés, 2021)¬¬Según el texto, ¿en qué se basa la diferencia entre simpatía y empatía hacia otras personas?",
     "respOpciones": [
       "1) En el balance con las propias emociones.",
       "2) En la experimentación de su mundo interior.",
@@ -1030,11 +1030,11 @@ var preguntas =
       "4) En la identificación imparcial con sus sentimientos."
     ],
     "idRespPregunta": 3,
-    "respPregunta": "El texto diferencia la simpatía (sintonizar emocionalmente y expresar sentimientos subjetivos) de la empatía (buscar la comprensión objetiva del mundo interno del otro). La diferencia clave, por tanto, no es solo la conexión emocional, sino el nivel de análisis y entendimiento del contexto del otro. La empatía implica una mayor profundización en la comprensión, más allá de la simple coincidencia emocional. Por lo tanto, la diferencia se basa en el grado de entendimiento del mundo interno de la otra persona. \n\nLa opción correcta es la 3."
+    "respPregunta": "El texto diferencia la simpatía (sintonizar emocionalmente y expresar sentimientos subjetivos) de la empatía (buscar la comprensión objetiva del mundo interno del otro). \nLa diferencia clave, por tanto, no es solo la conexión emocional, sino el nivel de análisis y entendimiento del contexto del otro. \nLa empatía implica una mayor profundización en la comprensión, más allá de la simple coincidencia emocional. \nPor lo tanto, la diferencia se basa en el grado de entendimiento del mundo interno de la otra persona. \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 87,
-    "txtPregunta": "Considere los siguientes textos:\nTexto 1: En los años noventa, aparecen las computadoras con fuerza en los hogares y con ellas el e-learning o enseñanza a distancia, toda una revolución que facilitó la educación (...).\nTexto 2: En pleno siglo XXI ha bajado la venta de computadoras y es la era del celular y entramos en el m-learning o aprendizaje móvil, el espacio para aprender de forma inalámbrica, en cualquier momento y en cualquier lugar del mundo.\n¿Cuál es una idea común en ambos textos?",
+    "txtPregunta": "Considere los siguientes textos:\nTexto 1:¬¬ En los años noventa, aparecen las computadoras con fuerza en los hogares y con ellas el e-learning o enseñanza a distancia, toda una revolución que facilitó la educación haciéndola más compatible con los horarios laborales y ofrenciendo la autonomía que no proporciona el aula física. \n(Pediguer, 2015)¬¬Texto 2:¬¬ En pleno siglo XXI ha bajado la venta de computadoras y es la era del celular y entramos en el m-learning o aprendizaje móvil, el espacio para aprender de forma inalámbrica, en cualquier momento y en cualquier lugar del mundo. (Pediguer, 2015)¬¬¿Cuál es una idea común en ambos textos?",
     "respOpciones": [
       "1) El uso del celular es el más efectivo para el aprendizaje.",
       "2) Las computadoras desplazaron la enseñanza tradicional.",
@@ -1042,11 +1042,11 @@ var preguntas =
       "4) El uso de los dispositivos ha transformado la educación tradicional."
     ],
     "idRespPregunta": 4,
-    "respPregunta": "El texto 1 señala que las computadoras revolucionaron la educación con el e-learning. El texto 2 menciona que el celular facilitó el aprendizaje móvil (m-learning). La idea común es que ambos dispositivos tecnológicos, en su respectivo momento, han provocado cambios y transformaciones en la educación en comparación con los modelos más tradicionales. Las opciones 1 y 2 solo reflejan ideas de uno de los textos, y la opción 3 no se menciona en ninguno. \n\nLa opción correcta es la 4."
+    "respPregunta": "El texto 1 señala que las computadoras revolucionaron la educación con el e-learning. \nEl texto 2 menciona que el celular facilitó el aprendizaje móvil (m-learning). \nLa idea común es que ambos dispositivos tecnológicos, en su respectivo momento, han provocado cambios y transformaciones en la educación en comparación con los modelos más tradicionales. \nLas opciones 1 y 2 solo reflejan ideas de uno de los textos, y la opción 3 no se menciona en ninguno. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 88,
-    "txtPregunta": "Considere el siguiente texto:\nLa era de la posverdad se caracteriza por amoldar los medios de información, y los contenidos, al gusto de los usuarios. Se nos muestra una verdad embellecida y configurada a nuestro gusto, algo que aceptamos como más verdadero que la propia verdad de los hechos. (Montoya, 2019)\nUna conclusión que se infiere del texto anterior es que:",
+    "txtPregunta": "Considere el siguiente texto:¬¬La era de la posverdad se caracteriza por amoldar los medios de información, y los contenidos, al gusto de los usuarios. Se nos muestra una verdad embellecida y configurada a nuestro gusto, algo que aceptamos como más verdadero que la propia verdad de los hechos. \n(Montoya, 2019)¬¬Una conclusión que se infiere del texto anterior es que:",
     "respOpciones": [
       "1) las personas deciden el valor de los hechos.",
       "2) el aumento de los medios ha configurado la información.",
@@ -1054,11 +1054,11 @@ var preguntas =
       "4) las personas tienen menos acceso a información crítica y objetiva."
     ],
     "idRespPregunta": 4,
-    "respPregunta": "El texto afirma que la posverdad 'amoldea los contenidos al gusto de los usuarios' y presenta una 'verdad embellecida'. Si la información se configura para agradar en lugar de para reflejar los hechos objetivamente, se puede concluir que el acceso a información crítica y objetiva disminuye. Las otras opciones no se infieren directamente del texto. \n\nLa opción correcta es la 4."
+    "respPregunta": "El texto afirma que la posverdad 'amoldea los contenidos al gusto de los usuarios' y presenta una 'verdad embellecida'. \nSi la información se configura para agradar en lugar de para reflejar los hechos objetivamente, se puede concluir que el acceso a información crítica y objetiva disminuye. \nLas otras opciones no se infieren directamente del texto. \n\nLa opción correcta es la 4."
   },
   {
     "idPregunta": 89,
-    "txtPregunta": "Considere los siguientes textos:\nTexto 1: (...) la primera razón por la que debemos llegar a tiempo es por una cuestión de educación y respeto. (...) que una persona llegue tarde resulta un incordio para el resto.\nTexto 2: La puntualidad es la cortesía de las personas inteligentes y comprensivas que saben que los demás tienen otras ocupaciones (...). Si pudiéramos sumar los minutos que llegamos tarde (...) y pudiéramos calcular un costo promedio por hora (...) estaríamos en capacidad de comprender la pérdida colectiva, el desperdicio nacional, que representa el desprecio por esta palabra.\nDe ambos textos se deduce que la impuntualidad genera:",
+    "txtPregunta": "Considere los siguientes textos:\nTexto 1:¬¬  Desde pequeños nos enseñan a llegar a tiempo a clase, y en muchos colegios y después de universidades, no se les permite la entrada a los alumnos que llegan con retraso al aula. Ya que eso hace que se tenga que parar la clase o que suponga una distracción para el resto del alumnado. En definitiva, que una persona llegue tarde resulta un incordio para el resto. Por eso, la primera razón por la que debemos llegar a tiempo es por una cuestión de educación y respeto. La puntualidad también puede hacer que el resto de personas del equipo confíen en ti. Si eres puntual, seguramente tendrás otras cualidades como puede ser, por ejemplo, el orden, que representa también a una persona responsable. Ya no solo es cuestión de confianza, de educación o de responsabilidad, incluso es ser inteligente: llegar antes a los lugares te permitirá aprovechar el tiempo al máximo. Si le das valor a tu tiempo y al de las personas con las que has quedado, no debes llegar tarde. Tampoco ocurre nada si alguna vez llegas tarde, pero que no se convierta en una costumbre. \n(Martín, 2014)¬¬Texto 2:¬¬  La puntualidad es la cortesía de las personas inteligentes y comprensivas que saben que los demás tienen otras ocupaciones, aparte de las que nosotros les queremos imponer. El desprestigio, soslayo o incumplimiento de la gentileza que encierra esta palabra no obedecea los nuevos tiempos del caótico posmodernismo, pues lamentablemente parece que ya venía con algunos ancestros muy lejanos en el ADN de los pueblos latinos. Si pudiéramos sumar los minutos que llegamos tarde a las citas o que llegan retrasados nuestros trabajadores, y pudiéramos calcular un costo promedio por hora, así como se calculan las pérdidas por el atasco automovilístico, entonces estaríamos en capacidad de comprender la pérdida colectiva, el desperdicio nacional, que representa el desprecio por esta palabra. \n(Morales, 2014)¬¬De ambos textos se deduce que la impuntualidad genera:",
     "respOpciones": [
       "1) un hábito que produce desconfianza.",
       "2) un juicio negativo que afecta a las personas.",
@@ -1066,11 +1066,11 @@ var preguntas =
       "4) un comportamiento que conlleva pérdidas económicas."
     ],
     "idRespPregunta": 2,
-    "respPregunta": "El texto 1 describe la impuntualidad como una falta de respeto y un 'incordio'. El texto 2 la califica como una falta de cortesía y 'desprecio' que además genera pérdidas. Ambas descripciones (falta de respeto, descortesía) contribuyen a generar un juicio negativo sobre la persona impuntual. Las opciones 1 y 4 son mencionadas, pero solo en uno de los textos o de forma parcial, mientras que la 2 engloba la consecuencia común en ambos. \n\nLa opción correcta es la 2."
+    "respPregunta": "El texto 1 describe la impuntualidad como una falta de respeto y un 'incordio'. \nEl texto 2 la califica como una falta de cortesía y 'desprecio' que además genera pérdidas. \nAmbas descripciones (falta de respeto, descortesía) contribuyen a generar un juicio negativo sobre la persona impuntual. \nLas opciones 1 y 4 son mencionadas, pero solo en uno de los textos o de forma parcial, mientras que la 2 engloba la consecuencia común en ambos. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 90,
-    "txtPregunta": "Considere los siguientes textos:\nTexto 1: Si eres puntual, seguramente tendrás otras cualidades como puede ser (...) el orden, que representa también a una persona responsable. (...) llegar antes a los lugares te permitirá aprovechar el tiempo al máximo. (Además menciona evitar la distracción en clase y asegurar el ingreso).\nTexto 2: Si pudiéramos sumar los minutos que llegamos tarde a las citas o que llegan retrasados nuestros trabajadores, y pudiéramos calcular un costo promedio por hora (...) estaríamos en capacidad de comprender la pérdida colectiva, el desperdicio nacional (...).\nConsidere las siguientes consecuencias:\nA. Mayor productividad.\nB. Asegurar el ingreso a clases.\nC. Menos distracción para los demás.\n¿Cuáles se mencionan en ambos textos como consecuencias de la puntualidad?",
+    "txtPregunta": "Considere las siguientes consecuencias:\nA. Mayor productividad.\nB. Asegurar el ingreso a clases.\nC. Menos distracción para los demás.\n \n¿Cuáles se mencionan en ambos textos como consecuencias de la puntualidad?",
     "respOpciones": [
       "1) A y B",
       "2) B y C",
@@ -1078,11 +1078,11 @@ var preguntas =
       "4) Solo C"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "&bullet; A. 'Mayor productividad' se menciona en ambos textos. El texto 1 habla de 'aprovechar el tiempo al máximo', y el texto 2 explica cómo la impuntualidad representa una 'pérdida colectiva' y 'desperdicio', infiriéndose que la puntualidad evita esto, llevando a mayor productividad.\n&bullet; B y C. 'Asegurar el ingreso a clases' y 'Menos distracción para los demás' se mencionan únicamente en el texto 1. \n\nPor lo tanto, la única consecuencia mencionada en ambos textos es A. \n\nLa opción correcta es la 3."
+    "respPregunta": "&bullet; A. 'Mayor productividad' se menciona en ambos textos. \nEl texto 1 habla de 'aprovechar el tiempo al máximo', y el texto 2 explica cómo la impuntualidad representa una 'pérdida colectiva' y 'desperdicio', infiriéndose que la puntualidad evita esto, llevando a mayor productividad.\n&bullet; B y C. 'Asegurar el ingreso a clases' y 'Menos distracción para los demás' se mencionan únicamente en el texto 1. \nPor lo tanto, la única consecuencia mencionada en ambos textos es A. \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 91,
-    "txtPregunta": "Considere el siguiente texto:\n(...) El arte callejero, al integrar sus elementos en lugares públicos bastante transitados, pretende sorprender a los espectadores. Suele tener un llamativo mensaje subversivo que critica a la sociedad con ironía e invita a la lucha social, la crítica política o, simplemente, a la reflexión.\nConsidere las siguientes definiciones:\nA. Forma de expresión que invita a la crítica y a la rebeldía.\nB. Creaciones que exploran diferentes manifestaciones artísticas.\nC. Tendencia nacida para transmitir el sentimiento de una generación.\nSegún el texto, ¿cuáles de las anteriores definen el arte callejero?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Muchos movimientos artísticos surgieron por una necesidad de expresar, transmitir pensamientos y creencias sociales y culturales. El arte callejero, al integrar sus elementos en lugares públicos bastante transitados, pretende sorprender a los espectadores. Suele tener un llamativo mensaje subversivo que critica a la sociedad con ironía e invita a la lucha social, la crítica política o, simplemente, a la reflexión.\n(Villalba, 2011)¬¬Considere las siguientes definiciones:\nA. Forma de expresión que invita a la crítica y a la rebeldía.\nB. Creaciones que exploran diferentes manifestaciones artísticas.\nC. Tendencia nacida para transmitir el sentimiento de una generación.\n \nSegún el texto, ¿cuáles de las anteriores definen el arte callejero?",
     "respOpciones": [
       "1) Solo A",
       "2) A y C",
@@ -1094,7 +1094,7 @@ var preguntas =
   },
   {
     "idPregunta": 92,
-    "txtPregunta": "Considere el siguiente texto:\nLa literatura como arte produce goce estético, pero también aporta conocimientos (...); asimismo, nos enfrenta a los valores más intrínsecos de la especie humana como la solidaridad, el respeto, el amor, la convivencia. Además, nos despierta la sensibilidad y la imaginación (...). Por otra parte, nos ofrece modelos que contribuyen a mejorar la expresión escrita.\nConsidere las siguientes afirmaciones sobre la literatura:\nA. Usa la creatividad para conocer diferentes contextos.\nB. Favorece la innovación de la escritura.\nC. Cumple diversas funciones: artística, social y educativa.\nDe las anteriores, ¿cuáles se infieren del texto?",
+    "txtPregunta": "Considere el siguiente texto:¬¬La literatura como arte produce goce estético, pero también aporta conocimientos informaciones, maneras de ver el mundo; asimismo, nos enfrenta a los valores más intrínsecos de la especie humana como la solidaridad, el respeto, el amor, la convivencia. Además, nos despierta la sensibilidad y la imaginación, ya que abre nuestros sentidos hacia otros mundos creados y por crearse, a conectarnos con otros modos de sentir. Por otra parte, nos ofrece modelos que contribuyen a mejorar la expresión escrita. \n(Flores, 2018)¬¬Considere las siguientes afirmaciones sobre la literatura:\nA. Usa la creatividad para conocer diferentes contextos.\nB. Favorece la innovación de la escritura.\nC. Cumple diversas funciones: artística, social y educativa.\n \nDe las anteriores, ¿cuáles se infieren del texto?",
     "respOpciones": [
       "1) Solo A",
       "2) B y C",
@@ -1102,11 +1102,11 @@ var preguntas =
       "4) A y B"
     ],
     "idRespPregunta": 3,
-    "respPregunta": "&bullet; A. El texto no menciona específicamente el uso de la creatividad para conocer contextos.\n&bullet; B. El texto habla de 'mejorar la expresión escrita', no necesariamente de 'innovarla'.\n&bullet; C. Se puede inferir que la literatura cumple estas tres funciones: artística ('goce estético'), social ('nos enfrenta a los valores (...) la convivencia') y educativa ('aporta conocimientos', 'mejorar la expresión escrita'). \n\nPor lo tanto, solo la afirmación C se puede inferir del texto. \n\nLa opción correcta es la 3."
+    "respPregunta": "&bullet; A. El texto no menciona específicamente el uso de la creatividad para conocer contextos.\n&bullet; B. El texto habla de 'mejorar la expresión escrita', no necesariamente de 'innovarla'.\n&bullet; C. Se puede inferir que la literatura cumple estas tres funciones: artística ('goce estético'), social ('nos enfrenta a los valores (...) la convivencia') y educativa ('aporta conocimientos', 'mejorar la expresión escrita'). \nPor lo tanto, solo la afirmación C se puede inferir del texto. \n\nLa opción correcta es la 3."
   },
   {
     "idPregunta": 93,
-    "txtPregunta": "Considere el siguiente texto:\nExiste una obra literaria escrita en la Edad de Oro del Islam conformada por relatos de varios escritores provenientes de Asia y África. El libro innova por su gran cantidad de técnicas narrativas, por ejemplo, él mismo puede definirse como un relato enmarcado, es decir, conformado por una historia principal, que abarca otras. (Elaboración propia)\nConsidere las siguientes afirmaciones:\nA. La literatura de la Edad Media del Islam se conformó exclusivamente de autores asiáticos y africanos.\nB. La historia enmarcada corresponde a una forma original de estructurar la narración.\nC. La diversidad cultural influye en esa obra literaria de la Edad de Oro islámica.\nDe las anteriores, ¿cuáles se infieren del texto?",
+    "txtPregunta": "Considere el siguiente texto:¬¬Existe una obra literaria escrita en la Edad de Oro del Islam conformada por relatos de varios escritores provenientes de Asia y África. El libro innova por su gran cantidad de técnicas narrativas, por ejemplo, él mismo puede definirse como un relato enmarcado, es decir, conformado por una historia principal, que abarca otras. \n(Elaboración propia)¬¬Considere las siguientes afirmaciones:\nA. La literatura de la Edad Media del Islam se conformó exclusivamente de autores asiáticos y africanos.\nB. La historia enmarcada corresponde a una forma original de estructurar la narración.\nC. La diversidad cultural influye en esa obra literaria de la Edad de Oro islámica.\n \nDe las anteriores, ¿cuáles se infieren del texto?",
     "respOpciones": [
       "1) Solo A",
       "2) Solo C",
@@ -1114,11 +1114,11 @@ var preguntas =
       "4) B y C"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "&bullet; A. No se puede deducir del texto. Aunque menciona autores de Asia y África, no afirma que fueran los únicos ('exclusivamente').\n&bullet; B. Sí se puede inferir. El texto destaca que la obra 'innova' por sus técnicas y menciona el 'relato enmarcado' como ejemplo, lo que implica que es una forma original de estructurar la narración.\n&bullet; C. También se deduce. Al mencionar que los relatos provienen de escritores de distintas regiones (Asia y África), sugiere una influencia de diversas culturas en la obra.\n\nEn conclusión, se infieren B y C. \n\nPor lo tanto, la opción correcta es la 4."
+    "respPregunta": "&bullet; A. No se puede deducir del texto. Aunque menciona autores de Asia y África, no afirma que fueran los únicos ('exclusivamente').\n&bullet; B. Sí se puede inferir. El texto destaca que la obra 'innova' por sus técnicas y menciona el 'relato enmarcado' como ejemplo, lo que implica que es una forma original de estructurar la narración.\n&bullet; C. También se deduce. Al mencionar que los relatos provienen de escritores de distintas regiones (Asia y África), sugiere una influencia de diversas culturas en la obra.\nEn conclusión, se infieren B y C. \n\nPor lo tanto, la opción correcta es la 4."
   },
   {
     "idPregunta": 94,
-    "txtPregunta": "Considere la siguiente información:\nA. Cada persona tiene un único documento de identidad.\nB. La papeleta presidencial presenta varios candidatos presidenciales.\nC. Una persona con documento de identidad tiene la opción de elegir entre varios candidatos en la papeleta presidencial.\nLas relaciones se simbolizan así: 1→1 (uno a uno), 1→N (uno a varios), N→N (varios a varios), N→1 (varios a uno).\n¿Cómo se representa la relación de los objetos: persona → documento de identidad → candidatos en la papeleta presidencial?",
+    "txtPregunta": "Considere la siguiente información:\nA. Cada persona tiene un único documento de identidad.\nB. La papeleta presidencial presenta varios candidatos presidenciales.\nC. Una persona con documento de identidad tiene la opción de elegir entre varios candidatos en la papeleta presidencial.\n \nLas relaciones se simbolizan así: \n1→1 (uno a uno), \n1→N (uno a varios), \nN→N (varios a varios), \nN→1 (varios a uno).\n \n¿Cómo se representa la relación de los objetos: persona → documento de identidad → candidatos en la papeleta presidencial?",
     "respOpciones": [
       "1) 1→1→1",
       "2) 1→1→N",
@@ -1126,11 +1126,11 @@ var preguntas =
       "4) 1→N→1"
     ],
     "idRespPregunta": 2,
-    "respPregunta": "La relación 'persona → documento de identidad' es 1→1, ya que cada persona tiene un único documento. La relación 'documento de identidad → candidatos en la papeleta' es 1→N, porque una persona (identificada con su documento) puede elegir entre varios candidatos. Por lo tanto, la cadena de relaciones es 1→1→N. \n\nLa opción correcta es la 2."
+    "respPregunta": "La relación 'persona → documento de identidad' es 1→1, ya que cada persona tiene un único documento. \nLa relación 'documento de identidad → candidatos en la papeleta' es 1→N, porque una persona (identificada con su documento) puede elegir entre varios candidatos. \nPor lo tanto, la cadena de relaciones es 1→1→N. \n\nLa opción correcta es la 2."
   },
   {
     "idPregunta": 95,
-    "txtPregunta": "Considere el siguiente diagrama y sus instrucciones:[IMG-129]A. El diagrama representa posibles caminos para ir de INICIO a FIN.\nB. Hay cinco etapas; los números indican el fin de cada etapa.\nC. Una etapa es independiente y no necesaria. Las otras cuatro deben cumplirse en orden numérico ascendente.\nD. Las flechas indican direcciones posibles.\nE. Se puede pasar más de una vez por un cuadro.\n¿Cuántos caminos hay para llegar a 1 saliendo de INICIO?",
+    "txtPregunta": "Considere el siguiente diagrama y sus instrucciones:[IMG-129]A. El diagrama representa posibles caminos para ir de [~INICIO~] a [~FIN~].\nB. Hay cinco etapas; los números indican el fin de cada etapa.\nC. Una etapa es independiente y no necesaria. Las otras cuatro deben cumplirse en orden numérico ascendente.\nD. Las flechas indican direcciones posibles y no es necesario seguirlas todas para completar un proceso. Cuando se equivoque, usted puede retroceder hasta donde sea necesario.\nE. Se puede pasar más de una vez por un cuadro.\n \n¿Cuántos caminos hay para llegar a [~1~] saliendo de [~INICIO~]?",
     "respOpciones": [
       "1) 2",
       "2) 3",
@@ -1138,7 +1138,6 @@ var preguntas =
       "4) Más de 4"
     ],
     "idRespPregunta": 4,
-    "respPregunta": "Se deben trazar las rutas desde INICIO hasta el cuadro 1 siguiendo las flechas.\n1) INICIO → B → Z → G → 1\n2) INICIO → B → Z → H → Y → J → K → 1\n3) INICIO → C → F → L → K → 1\n4) INICIO → D → 3 → L → K → 1\n5) INICIO → C → F → G → 1\nYa se han encontrado 5 caminos distintos, y es posible que existan más (por ejemplo, haciendo bucles permitidos por la instrucción E). Por lo tanto, la respuesta es que hay más de 4 caminos. \n\nLa opción correcta es la 4."
+    "respPregunta": "Se deben trazar las rutas desde INICIO hasta el cuadro 1 siguiendo las flechas.\n1) INICIO → B → Z → G → 1\n2) INICIO → B → Z → H → Y → J → K → 1\n3) INICIO → C → F → L → K → 1\n4) INICIO → D → 3 → L → K → 1\n5) INICIO → C → F → G → 1\nYa se han encontrado 5 caminos distintos, y es posible que existan más (por ejemplo, haciendo bucles permitidos por la instrucción E). \nPor lo tanto, la respuesta es que hay más de 4 caminos. \n\nLa opción correcta es la 4."
   }
-
 ]
