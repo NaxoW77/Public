@@ -76,6 +76,14 @@ function init() {
     });
 }
 
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 function randomize() {
     random = !random;
     if (random) {
@@ -90,11 +98,11 @@ function randomize() {
     let questionList = document.querySelectorAll("div.questionDiv");
     questionList.forEach(question => contentDiv.removeChild(question));
     questionList = Array.from(questionList);
-    questionList.sort(() => Math.random() - 0.5);
-    for (let q in questionList) {
-        questionList[q].querySelector(".questionId").innerText = (parseInt(q) + 1);
-        contentDiv.appendChild(questionList[q]);
-    }
+    questionList = shuffle(questionList);
+    questionList.forEach((q, i) => {
+        q.querySelector(".questionId").innerText = (i + 1);
+        contentDiv.appendChild(q);
+    });
 }
 
 function checkAnswers() {
