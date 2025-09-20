@@ -1,16 +1,19 @@
-var contentDiv = document.getElementById("content");
-var sendButton = document.getElementById("sendButton");
-var resetButton = document.getElementById("resetButton");
-var result = document.getElementById("result");
+let contentDiv = document.getElementById("content");
+let sendButton = document.getElementById("sendButton");
+let resetButton = document.getElementById("resetButton");
+let randButton = document.getElementById("randButton");
+let result = document.getElementById("result");
+let random = false;
 
 sendButton.addEventListener("click", checkAnswers);
 resetButton.addEventListener("click", reset);
+randButton.addEventListener("click", randomize);
 
 function htmlFormat(text) {
     let formattedText = text
         .replace(/\n\n(.+)/g, "<span class='final'>$1</span>")
 
-        .replace(/¬¬([^¬¬]+)¬¬/g, "<span class='quote'>$1</span>")
+        .replace(/¬¬([^¬]+)¬¬/g, "<span class='quote'>$1</span>")
         .replace(/¬([^¬]+)¬/g, "<span class='center'>$1</span>")
 
         .replace(/\n \n+/g, "</p><p>")
@@ -36,16 +39,24 @@ function htmlFormat(text) {
     return formattedText;
 }
 
-window.addEventListener("load", function () {
-    for (p of preguntas) {
+window.addEventListener("load", init);
+
+function init() {
+    let questionList = document.querySelectorAll("div.questionDiv");
+    if (questionList.length > 0) {
+        questionList.forEach(question => contentDiv.removeChild(question));
+    }
+
+    for (let p of preguntas) {
         p.txtPregunta = htmlFormat(p.txtPregunta)
         p.respPregunta = htmlFormat(p.respPregunta)
 
 
-        var el = document.createElement("div");
-        el.innerHTML = `<h3>${p.idPregunta}. ${p.txtPregunta}</h3>`;
+        let el = document.createElement("div");
+        el.classList.add("questionDiv");
+        el.innerHTML = `<h3><span class="questionId">${p.idPregunta}</span>. ${p.txtPregunta}</h3>`;
         el.id = "p-" + p.idPregunta;
-        for (o in p.respOpciones) {
+        for (let o = 0; o < p.respOpciones.length; o++) {
             p.respOpciones[o] = htmlFormat(p.respOpciones[o])
             el.innerHTML += `<label><input type="radio" name="${p.idPregunta}" value="${parseInt(o) + 1}">${p.respOpciones[o]}<br></label>`;
         }
@@ -56,14 +67,35 @@ window.addEventListener("load", function () {
     document.querySelectorAll("input").forEach(input => {
         input.addEventListener("click", function (e) {
             document.querySelector(".evaluation").classList.remove("hidden");
-            var currentName = e.target.name;
-            var nextQuestion = document.querySelector(`input[name="${parseInt(currentName) + 1}"]`);
+            let currentQuestion = e.target.parentElement.parentElement;
+            let nextQuestion = currentQuestion.nextElementSibling;
             if (nextQuestion) {
                 nextQuestion.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         });
     });
-});
+}
+
+function randomize() {
+    random = !random;
+    if (random) {
+        randButton.classList.add("rand");
+        randButton.textContent = "Modo: Aleatorio";
+    } else {
+        randButton.classList.remove("rand");
+        randButton.textContent = "Modo: Normal";
+        init();
+        return;
+    }
+    let questionList = document.querySelectorAll("div.questionDiv");
+    questionList.forEach(question => contentDiv.removeChild(question));
+    questionList = Array.from(questionList);
+    questionList.sort(() => Math.random() - 0.5);
+    for (let q in questionList) {
+        questionList[q].querySelector(".questionId").innerText = (parseInt(q) + 1);
+        contentDiv.appendChild(questionList[q]);
+    }
+}
 
 function checkAnswers() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -75,14 +107,14 @@ function checkAnswers() {
     document.querySelectorAll("label").forEach(label => label.classList.add("disabled"));
     document.querySelectorAll(".respDiv").forEach(div => div.classList.remove("hidden"));
 
-    var score = 0;
-    var correctAnswers = [];
-    var incorrectAnswers = [];
-    var unanswered = [];
+    let score = 0;
+    let correctAnswers = [];
+    let incorrectAnswers = [];
+    let unanswered = [];
 
-    for (p of preguntas) {
-        var preguntaDiv = document.getElementById("p-" + p.idPregunta);
-        var selected = document.querySelector(`input[name="${p.idPregunta}"]:checked`);
+    for (let p of preguntas) {
+        let preguntaDiv = document.getElementById("p-" + p.idPregunta);
+        let selected = document.querySelector(`input[name="${p.idPregunta}"]:checked`);
         document.querySelector(`input[name="${p.idPregunta}"][value="${p.idRespPregunta}"]`).parentElement.classList.add("correct");
         if (selected != null) {
             if (selected.value == p.idRespPregunta) {

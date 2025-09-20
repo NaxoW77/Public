@@ -1,4 +1,4 @@
-var preguntas =
+let preguntas =
 [
   {
     "idPregunta": 1,
