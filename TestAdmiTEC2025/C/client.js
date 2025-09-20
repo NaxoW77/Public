@@ -144,10 +144,11 @@ function checkAnswers() {
         }
     }
 
-    result.innerText = `Preguntas respondidas: ${score}/${preguntas.length} \n\nRespuestas correctas: ${correctAnswers.length} \nRespuestas incorrectas: ${incorrectAnswers.length} \nSin responder: ${unanswered.length}\n\nNota: ${(score * 100 / preguntas.length).toFixed(2)}/100.00`;
+    result.innerText = `Preguntas correctas: ${score}/${preguntas.length} \n\nRespuestas correctas: ${correctAnswers.length} \nRespuestas incorrectas: ${incorrectAnswers.length} \nSin responder: ${unanswered.length}\n\nNota: ${(score * 100 / preguntas.length).toFixed(2)}/100.00`;
 }
 
 function reset() {
     window.scrollTo({ top: 0 });
     window.location.reload();
 }
+
