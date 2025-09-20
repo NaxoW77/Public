@@ -59,7 +59,7 @@ function init() {
         el.id = "p-" + p.idPregunta;
         for (let o = 0; o < p.respOpciones.length; o++) {
             p.respOpciones[o] = htmlFormat(p.respOpciones[o])
-            p.respOpciones[o] = "<span class='hidden'>" + p.respOpciones[o].substring(0, 3) + "</span>"+p.respOpciones[o].substring(3);
+            p.respOpciones[o] = "<span class='hidden'>" + p.respOpciones[o].substring(0, 2) + "</span>"+p.respOpciones[o].substring(2);
             el.innerHTML += `<label><input type="radio" name="${p.idPregunta}" value="${parseInt(o) + 1}">${p.respOpciones[o]}<br></label>`;
         }
         el.innerHTML += `<div class="respDiv hidden"><h1>Explicación:</h1> <p>${p.respPregunta}</p></div>`;
