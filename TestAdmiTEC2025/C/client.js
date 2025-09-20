@@ -94,8 +94,7 @@ function randomize() {
     } else {
         randButton.classList.remove("rand");
         randButton.textContent = "Modo: Normal";
-        init();
-        return;
+        window.location.reload();
     }
     let questionList = document.querySelectorAll("div.questionDiv");
     questionList.forEach(question => contentDiv.removeChild(question));

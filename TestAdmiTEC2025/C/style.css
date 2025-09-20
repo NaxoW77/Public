@@ -58,6 +58,11 @@ label img {
   border: 1px solid black;
 }
 
+label:has(input:checked):not(.disabled) {
+  background-color: rgb(187, 241, 255);
+  border: 3px outset rgb(141, 197, 211);
+}
+
 .imgDiv {
   display: block;
   margin-top: 20px;
@@ -71,6 +76,7 @@ label img {
 .imgDiv img {
   max-width: 100%;
 }
+
 
 .respDiv {
   background-color: rgb(200, 255, 200);
@@ -117,7 +123,7 @@ label img {
   margin-top: 10px;
 }
 .incorrect {
-  background-color: rgba(255, 200, 200, 0.5);
+  background-color: rgba(255, 170, 170, 0.562);
   border: 3px outset red;
   padding: 20px;
   margin-top: 10px;
