@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    body {
+      background-color: black;
+      color: lime;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      animation: rotate1 0.5s ease-in-out infinite;
+      position: absolute;
+      top: 10%;
+    }
+
+    h2 {
+      animation: rotate 1s linear infinite;
+      position: relative;
+      top: 25%;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotateX(360deg);
+      }
+    }
+
+    @keyframes rotate1 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    p {
+      position: absolute;
+      top: 50%;
+      padding: 10px;
+      color: black;
+      background-color: lime;
+      border: 3px solid green;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      font-size: 50px;
+    }
+
+    #ping {
+      display: none;
+    }
+
+    @keyframes rotateX {
+      0% {
+        transform: rotateX(0deg);
+      }
+
+      100% {
+        transform: rotateX(360deg);
+      }
+    }
+
+    @keyframes rotateY {
+      0% {
+        transform: rotateY(0deg);
+      }
+
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    @keyframes rotateZ {
+      0% {
+        transform: rotateZ(0deg);
+      }
+
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+
+    @keyframes scaleX {
+      0% {
+        transform: scaleX(1);
+      }
+
+      100% {
+        transform: scaleX(2);
+      }
+    }
+
+    @keyframes scaleY {
+      0% {
+        transform: scaleY(1);
+      }
+
+      100% {
+        transform: scaleY(2);
+      }
+    }
+
+    @keyframes scaleZ {
+      0% {
+        transform: scaleZ(1);
+      }
+
+      100% {
+        transform: scaleZ(2);
+      }
+    }
+
+    @keyframes translateX {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(100px);
+      }
+    }
+
+    @keyframes translateY {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(100px);
+      }
+    }
+
+    @keyframes translateZ {
+      0% {
+        transform: translateZ(0);
+      }
+
+      100% {
+        transform: translateZ(100px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>jajaja doxeado</h1>
+  <h2 id="d">[]</h2>
+  <p>Haz click</p>
+  <h3 id="ping">Ping: $ms</h3>
+</body>
+<script>
+  let pingStart = null;
+  let pingTime = 0;
+  let lowPing = Infinity;
+  let highPing = -Infinity;
+  let pings = [];
+  let promPing = 0;
+  let pingTest = 0;
+
+  window.addEventListener("load", load);
+  window.addEventListener("keydown", keyEvent);
+  window.addEventListener("click", clickEvent);
+  window.addEventListener("contextmenu", clickEvent);
+  window.addEventListener("dblclick", clickEvent);
+  window.addEventListener("wheel", clickEvent);
+  window.addEventListener("mousemove", function (e) {
+    e.preventDefault();
+    if (Math.floor(Math.random() * 25) == 0) clickEvent(e);
+  });
+  window.addEventListener("auxclick", clickEvent);
+  window.addEventListener("touchstart", clickEvent);
+
+  /////////////////////////////////////////////////////
+
+
+
+  ///////////////////REQUESTS/////////////////////
+
+  function serverResponse(serverMsg, dataMsg, dataMsg2) {
+    if (serverMsg == "res_con") {
+      setInterval(ping, 1000);
+      document.getElementById("d").textContent = JSON.stringify(dataMsg, null, 2);
+    }
+
+    if (serverMsg == "res_pong") {
+      pingTest = 0;
+
+      let pingEnd = performance.now();
+      pingTime = Math.round(pingEnd - pingStart);
+      pings.push(pingTime);
+
+      console.log(`PING: ${pingTime}ms`);
+
+      console.log(pings);
+
+      let sumaPing = 0;
+      for (const ping of pings) {
+        sumaPing += ping;
+        if (ping < lowPing) lowPing = ping;
+        if (ping > highPing) highPing = ping;
+      }
+      promPing = (sumaPing / pings.length).toFixed(2);
+
+      document.getElementById("ping").style.display = "block";
+      document.getElementById("ping").innerHTML = "Ping: " + pingTime + "ms" + "<br>Rango: " + lowPing + "ms < " + highPing + "ms" + "<br>Promedio: " + promPing + "ms";
+      let pingResult = {
+        ping: pingTime,
+        low: lowPing,
+        high: highPing,
+        prom: promPing
+      }
+      sendReq("pingResult", pingResult);
+    }
+    if (serverMsg == "res_reset") {
+      window.location.reload();
+    }
+  }
+
+  ///////////////////REQUESTS/////////////////////
+
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  function playNote(frequency, duration) {
+    const oscillator = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+    const delay = audioCtx.createDelay();
+    const feedback = audioCtx.createGain();
+    const panner = audioCtx.createPanner();
+    const filter = audioCtx.createBiquadFilter();
+
+    let types = ['sine', 'square', 'sawtooth', 'triangle'];
+    oscillator.type = types[Math.floor(Math.random() * types.length)];
+    oscillator.frequency.value = frequency;
+
+    // Volumen random entre 50% y 100%
+    gainNode.gain.value = 0.5 + Math.random() * 0.5;
+
+    // Filtro random (bajos, agudos o bandpass)
+    const filterTypes = ['lowpass', 'highpass', 'bandpass', 'allpass'];
+    filter.type = filterTypes[Math.floor(Math.random() * filterTypes.length)];
+    filter.frequency.value = 300 + Math.random() * 3000; // frecuencia entre graves y agudos
+
+    // Reverb simulada
+    delay.delayTime.value = 0.1 + Math.random() * 0.3; // tiempo del eco random
+    feedback.gain.value = 0.3 + Math.random() * 0.4;   // feedback random
+
+    // Paneo 3D random
+    panner.setPosition(
+      -1 + Math.random() * 2, // x: -1 a 1
+      0,                       // y
+      -1 + Math.random() * 2   // z: -1 a 1
+    );
+
+    // Conexión de nodos: oscillator -> filtro -> gain -> paneo -> destino
+    oscillator.connect(filter);
+    filter.connect(gainNode);
+    gainNode.connect(panner);
+    panner.connect(audioCtx.destination);
+
+    // Conectar reverb simulada
+    gainNode.connect(delay);
+    delay.connect(feedback);
+    feedback.connect(delay);
+    delay.connect(panner);
+
+    oscillator.start();
+
+    setTimeout(function () {
+      oscillator.stop();
+    }, duration);
+  }
+
+  function keyEvent(e) {
+    playNote(Math.round(e.keyCode * 10), 100);
+  }
+
+  function clickEvent(e) {
+    try { e.preventDefault(); } catch (err) { console.error(err); };
+    playNote(Math.round(Math.random() * 3000), Math.round(Math.random() * 120));
+  }
+
+  function load() {
+    soundIntervals();
+  }
+
+  let animations = ["rotateX", "rotateY", "rotateZ", "scaleX", "scaleY", "scaleZ", "translateX", "translateY", "translateZ"];
+  function soundIntervals() {
+
+    for (let i = 0; i < 3; i++) {
+      clickEvent();
+      let newEl = document.createElement("div");
+      newEl.style.position = "absolute";
+
+      // Tamaño random
+      const rWidth = Math.round(Math.random() * 500);
+      const rHeight = Math.round(Math.random() * 500);
+      newEl.style.width = rWidth + "px";
+      newEl.style.height = rHeight + "px";
+
+      let borders = ["none", "solid", "dotted", "dashed", "double", "groove", "ridge", "inset", "outset"];
+      newEl.style.border = Math.round(Math.random() * 10) + "px " + borders[Math.floor(Math.random() * borders.length)] + " hsla(" + Math.round(Math.random() * 360) + ", 100%, 50%, 1)";
+      const offsetX = Math.round(Math.random() * 50) - 25;
+      const offsetY = Math.round(Math.random() * 50) - 25;
+      const blur = Math.round(Math.random() * 30); // blur random entre 0 y 30px
+      const hue = Math.round(Math.random() * 360);
+      const alpha = Math.random(); // entre 0 y 1
+
+      newEl.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px hsla(${hue}, 100%, 50%, ${alpha})`;
+
+      let filters = ["blur", "brightness", "contrast", "grayscale", "hue-rotate", "invert", "opacity", "saturate", "sepia"];
+      let filter = filters[Math.floor(Math.random() * filters.length)];
+
+      let value;
+      switch (filter) {
+        case "blur":
+          value = Math.round(Math.random() * 10) + "px"; // 0 a 10px
+          break;
+        case "hue-rotate":
+          value = Math.round(Math.random() * 360) + "deg"; // 0 a 360 grados
+          break;
+        default:
+          value = Math.round(Math.random() * 100) + "%"; // resto usa %
+      }
+
+      newEl.style.filter = `${filter}(${value})`;
+
+      // Posición random pero dentro de la pantalla
+      newEl.style.left = Math.round(Math.random() * (window.innerWidth - rWidth)) + "px";
+      newEl.style.top = Math.round(Math.random() * (window.innerHeight - rHeight)) + "px";
+      newEl.style.transform = `translate(${rWidth / 2}px, ${rHeight / 2}px)`;
+
+      // Border radius random
+      newEl.style.borderRadius = Math.round(Math.random() * 10) + "px";
+
+      // Fondo random
+      newEl.style.backgroundColor = "rgba(" +
+        Math.round(Math.random() * 255) + "," +
+        Math.round(Math.random() * 255) + "," +
+        Math.round(Math.random() * 255) + "," +
+        Math.round(Math.random() * 100) + "%)";
+
+      // Z-index
+      newEl.style.zIndex = "-11";
+
+      // Animación random
+      const animName = animations[Math.floor(Math.random() * animations.length)];
+      newEl.style.animation = animName + " " + (Math.random() * 1) + "s infinite ease-in-out";
+
+      // Transform si querés moverla dentro de su espacio
+
+      document.body.appendChild(newEl);
+      setTimeout(() => newEl.remove(), Math.round(Math.random() * 1000));
+    }
+
+    setTimeout(soundIntervals, Math.round(Math.random() * 250));
+  }
+
+  function logOut() {
+    redirectTo("/login");
+  }
+
+  function ping() {
+    pingStart = performance.now();
+    if (pingTest == 1) {
+      window.location.reload();
+    } else {
+      pingTest = 1;
+      sendReq("ping");
+    }
+  }
+
+  function sendReq(...args) {
+    if (args[0] != "ping") console.log("→ " + "req_" + JSON.stringify(args));
+    if (socket.readyState == socket.CLOSED) {
+      window.location.reload();
+    }
+    socket.send("req_" + JSON.stringify(args));
+  }
+</script>
+<script>///////////////////VARIABLES////////////////////
+
+  let socket;
+  const socketURL = 'ws://' + window.location.host + '/server'
+  socket = new WebSocket(socketURL);
+
+  ///////////////////VARIABLES////////////////////
+
+
+  ////////////////////SERVER////////////////////
+
+  socket.onopen = () => {
+    sendReq("con");
+  }
+
+  socket.onmessage = e => {
+    console.log("← " + e.data)
+    let args = "";
+    let serverMsg = "";
+    let dataMsg = "";
+    let dataMsg2 = "";
+    try {
+      args = JSON.parse(e.data.slice(4));
+      serverMsg = "res_" + args[0] || "";
+      dataMsg = args[1] || "";
+      dataMsg2 = args[2] || "";
+    } catch (err) {
+      console.error(err);
+    };
+    if (serverMsg != "res_pong") console.log("← " + e.data)
+    serverResponse(serverMsg, dataMsg, dataMsg2);
+  }
+
+  ////////////////////SERVER////////////////////
+
+
+
+  ////////////////////FUNCTIONS////////////////////
+  function redirectTo(url) {
+    if (socket.readyState == socket.CLOSED) {
+      window.location.reload();
+    }
+    setTimeout(() => {
+      window.location.href = url;
+    }, 150);
+  }
+
+  function sendReq(...args) {
+    if (args[0] != "ping") console.log("→ " + "req_" + JSON.stringify(args));
+    if (socket.readyState == socket.CLOSED) {
+      window.location.reload();
+    }
+    socket.send("req_" + JSON.stringify(args));
+  }
+  ////////////////////FUNCTIONS////////////////////</script>
+
+</html>
