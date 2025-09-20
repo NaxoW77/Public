@@ -35,6 +35,7 @@ function htmlFormat(text) {
         .replace(/\[IMG-(\d+)\]/g, (match, num) => {
             return `<span class="imgDiv"><img src="C/img/${num}.png"></span>`;
         })
+        .replace(/correcta es la (\d+)/g, "correcta es la <span class='respId'>$1</span>")
 
     return formattedText;
 }
@@ -58,6 +59,7 @@ function init() {
         el.id = "p-" + p.idPregunta;
         for (let o = 0; o < p.respOpciones.length; o++) {
             p.respOpciones[o] = htmlFormat(p.respOpciones[o])
+            p.respOpciones[o] = "<span class='hidden'>" + p.respOpciones[o].substring(0, 3) + "</span>"+p.respOpciones[o].substring(3);
             el.innerHTML += `<label><input type="radio" name="${p.idPregunta}" value="${parseInt(o) + 1}">${p.respOpciones[o]}<br></label>`;
         }
         el.innerHTML += `<div class="respDiv hidden"><h1>Explicación:</h1> <p>${p.respPregunta}</p></div>`;
@@ -101,19 +103,22 @@ function randomize() {
     questionList = shuffle(questionList);
     questionList.forEach((q, i) => {
         q.querySelector(".questionId").innerText = (i + 1);
+        let options = Array.from(q.querySelectorAll("label"));
+        options = shuffle(options);
+        options.forEach((opt, o) => {
+            q.appendChild(opt);
+        });
         contentDiv.appendChild(q);
     });
 }
 
 function checkAnswers() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelectorAll(".hidden").forEach(el => el.classList.remove("hidden"));
     sendButton.classList.add("hidden");
-    resetButton.classList.remove("hidden");
-    result.classList.remove("hidden");
     result.innerText = "";
     document.querySelectorAll("input").forEach(input => input.disabled = true);
     document.querySelectorAll("label").forEach(label => label.classList.add("disabled"));
-    document.querySelectorAll(".respDiv").forEach(div => div.classList.remove("hidden"));
 
     let score = 0;
     let correctAnswers = [];
